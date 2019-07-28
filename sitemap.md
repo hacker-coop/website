@@ -4,8 +4,7 @@
 .
 +-- Startseite
 +-- Testseite
-+-- Musthave
-|   +-- Impressum
++-- Impressum
 |   +-- Datenschutzerklaerung
 +-- Dummy
 |   +-- Amet
