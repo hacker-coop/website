@@ -1,5 +1,6 @@
 # Sitemap
 
+```
 .
 +-- Startseite
 +-- Testseite
@@ -9,5 +10,7 @@
 +-- Dummy
 |   +-- Amet
 |   +-- Magna
+
+```
 
 * Die Dummyseiten nur Beispeilseite fuer weitere Unterbaumseiten.*
