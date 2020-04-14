@@ -1,6 +1,17 @@
 <!doctype html>
 <html>
   <head>
+<!--
+__      ___________________
+\ \     \________  _______|___
+ \ \        / /  | |  |  ____|
+  \ \  /\  / /   | |  | |__
+   \ \/  \/ /    | |  |  __|
+    \  /\  /     | |  | |
+     \/  \/      |_|  |_|
+     Werkkooperative der
+    Technikfreundinnen e.G.
+-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
@@ -8,25 +19,42 @@
   </head>
   <body>
   <header>
-    <h1>Vebit</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
+  <nav>
+    <ul>
+      <li>
+        <a
+          {%- if this._path == '/' %} class="active" {% endif -%}
+        href="{{ '/'|url }}">HOME</a>
+      </li>
+          {%- for title, href in bag('nav-bar', "NavBar").items() %}
+      <li>
+        <a
+          {%- if this.is_child_of(href) %} class="active" {% else %} {% endif -%}
+      href="{{ href|url }}">
+      {{- title -}}
+        </a>
+      {%- if  bag('nav-bar', title) %}
+        {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
+        <ul>
+          <li>
+            <a href="{{ nav_url if 'http' in nav_url else nav_url|url -}}
+            ">{{ nav_title }}</a>
+          </li>
+        </ul>
+        {%- endfor %}
+        {%- endif %}
+      </li>
+        {%- endfor %}
       </ul>
     </nav>
   </header>
+  <tr/>
   <div class="page">
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2020 by vebit.
+    &copy; Copyright 2020 by VEBIT e.V. | MIT License
+    <!-- MIT (C) 2020 by VEBIT e.V + Members
+         MIT (C) 2020 by L3D <l3d at c3woc.de> -->
   </footer>
 </body>
