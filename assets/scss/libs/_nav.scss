@@ -1,9 +1,16 @@
 // css dropdown menu
+nav {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
 nav ul {
 	padding: 0;
   margin: 0;
 	list-style: none;
 	position: relative;
+  background: rgba( 0,0,0,0.8 );
+  padding: 0.5em;
 	}
 nav ul li {
 	display:inline-block;
@@ -28,5 +35,5 @@ nav a:any-link {
 }
 
 nav a:any-link:hover {
-   text-decoration-line: underline;
+  text-decoration-line: underline;
 }

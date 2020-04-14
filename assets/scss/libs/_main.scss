@@ -5,11 +5,13 @@ html {
   background-color: black;
   color: greenyellow;
   text-align: center;
+  height: 100%;
+  font-size: 140%;
 }
 
 body {
   display: inline-block;
-  max-width: 80em;
+  width: 60em;
   text-align: left;
 }
 
@@ -17,3 +19,6 @@ h2 {
   padding-top: 1em;
 }
 
+.page{
+  min-height: 32em;
+}

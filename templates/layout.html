@@ -23,7 +23,7 @@ __      ___________________
     <ul>
       <li>
         <a
-          {%- if this._path == '/' %} class="active" {% endif -%}
+          {%- if this._path == '/' %} class="active" {% else %} {% endif -%}
         href="{{ '/'|url }}">HOME</a>
       </li>
           {%- for title, href in bag('nav-bar', "NavBar").items() %}
@@ -48,7 +48,6 @@ __      ___________________
       </ul>
     </nav>
   </header>
-  <tr/>
   <div class="page">
     {% block body %}{% endblock %}
   </div>
