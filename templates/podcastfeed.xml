@@ -1,0 +1,89 @@
+{#-
+License: MIT
+(C)2020 by L3D <l3d@c3woc.de>
+Source: https://github.com/c3woc/c3woc-podcast.git
+-#}
+{%- set search = "podcast" -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href=
+  {%- if '/css/xml.min.css'|asseturl == empty -%}
+    {%- if '/css/xml.css'|asseturl == empty -%}
+      "https://{{ '/'|url(external=true) }}/css/main.min.css"
+    {%- else -%}
+      "{{ '/css/xml.css'|asseturl }}"
+    {%- endif -%}
+  {%- else -%}
+    "{{ '/css/xml.min.css'|asseturl }}"
+  {%- endif -%}
+type="text/css"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title type="text">
+        Das heisse Eisen
+    <link>{{ '/'|url(external=true) }}</link>
+    <language>de</language>
+    <copyright>>&#169; 2020 Vebit e.V. and Members</copyright>
+    <itunes:author class="itunes_author">Vebit e.V.</itunes:author>
+    <description>
+        Der Waffelpodcast: 'Das heisse Eisen'.
+        Venty und L3D erzählen euch alles, was man über
+        Waffeln wissen muss.
+    </description>
+    <itunes:type class="itunes_serial">serial</itunes:type>
+    <itunes:owner class="itunes_owner">
+      <itunes:name>L3D</itunes:name>
+      <itunes:email>l3d@c3woc.de</itunes:email>
+    </itunes:owner>
+    <itunes:image href="{{ '/'|url(external=true) }}/images/podcast.itunes.svg.png" class="itunes_feed_image"></itunes:image>
+    <id>{{ '/'|url(external=true) }}/podcast-he.xml</id>
+    <itunes:category text="Education">
+      <itunes:category text="Technology"/>
+      <itunes:category text="Science"/>
+    </itunes:category>
+    <itunes:explicit class="itunes_explicit">no</itunes:explicit>
+    <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
+    <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
+    <pubDate>2019-06-14T00:42:23Z</pubDate>
+    <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
+    <itunes:subtitle class="itunes_subtitle">Der Podcast des CCC Waffel Operation Center</itunes:subtitle>
+{#  #}    <itunes:summary class="itunes_summary">
+              Der Waffelpodcast: 'Das heisse Eisen'. Mit Venty und L3D.
+          </itunes:summary>
+{#  #}    <itunes:keywords class="itunes_keywords">
+              Waffel, C3WOC, CCC, Chaos, Waffle, Waffles, Waffeln, VOC, WOC, Operation, Center
+          </itunes:keywords>
+{#  #}    <itunes:new-feed-url class="itunes_new-feed-url">{{ '/'|url(external=true) }}podcast-he.xml</itunes:new-feed-url>
+{#  #}    <itunes:block class="itunes_block">no</itunes:block>
+{#  #}    <itunes:category text="Technology">Technology</itunes:category>
+{#  #}    <category>Waffles</category>
+      {%- set pages = site.query('/eisen').include_undiscoverable(true).all() -%}
+      {%- set firstrun = true %}
+      {%- for page in pages -%}
+        {%- if not page._hidden %}
+{#  #}    <item>
+{#  #}      <title>{{ page.title }}</title>
+{#  #}      <link>{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/</link>
+{#  #}      <author class="itunes_author">
+              {%- if page.author -%}
+                {{ page.author }}
+              {%- else -%}
+                L3D und Venty
+              {%- endif -%}
+            </author>
+{#  #}      <pubDate>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</pubDate>
+{#  #}      <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{{ page.mp3leng }}"/>
+{#  #}      <guid isPermaLink="false">{{ page._id }}</guid>
+{#  #}      <download>{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}</download>
+{#  #}      <itunes:explicit class="itunes_explicit">no</itunes:explicit>
+{#  #}      <content type="html">
+              {{ page.xml }}
+            {%- if page.xml_img -%}
+              &lt;img width=&quot;23%&quot; src=&quot;{{ page.xml_img }}&quot; /&gt;
+            {% endif %}
+              &lt;br/&gt;&lt;a href="{{ page|url(external=true) }}{{ page.podcastmp3 }}" class="button special primary" download&gt;{{ page.shorttitle }} - Download&lt;/a&gt;
+{#  #}      </content>
+{#  #}    </item>
+        {%- endif %}
+      {%- endfor %}
+  </channel>
+</rss>
