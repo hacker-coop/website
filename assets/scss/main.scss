@@ -1,0 +1,18 @@
+@import 'libs/main';
+@import 'libs/table';
+
+/*
+vebit.xyz Website
+MIT (c) 2020 by Vebit e.V. Mebers
+MIT (c) 2020 by L3D <l3d@c3woc.de>
+SRC: https://git.vebit.xyz/vebit/website.git
+*/
+
+a, a:any-link {
+   color: greenyellow;
+   text-decoration-line: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

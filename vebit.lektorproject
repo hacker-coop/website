@@ -1,0 +1,5 @@
+[project]
+name = VEBIT e.V.
+
+[packages]
+lektor-scss = 1.3.6
