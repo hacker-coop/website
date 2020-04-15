@@ -1,17 +1,17 @@
 {% extends "layout.html" %}
-{% from "macros/podcast.html" import render_blog_post %}
+{% from "macros/blog.html" import render_blog_post %}
 {% from "macros/pagination.html" import render_pagination %}
       {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
-<!-- Main Blog -->
+{#
+ Main body partfor the podcast
+#}
 <div id="main">
   <header>
     <h2>{{ this.title }}</h2>
     <p>{{ this.description }}</p>
   </header>
-  <center>
-    <a href="{{ this.link|url }}" {{ this.spruch }}</a>
-  </center>
+  <a href="{{ this.link|url }}"> {{ this.spruch }}</a>
   <section id="content">
     {% for child in this.pagination.items %}
       {{ render_blog_post(child, from_index=true) }}
