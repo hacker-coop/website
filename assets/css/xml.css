@@ -1,0 +1,95 @@
+/* This CSS stylesheet is an example of how we can style XML with CSS */
+
+/* Group behavior */
+channel {
+  display:block;
+  border: 1px solid gray;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+  list-style: none;
+  color: black;
+}
+item {
+  display:block;
+  border: 1px solid silver;
+  margin:0.5em;
+  padding:0.5em;
+  background-color:whitesmoke;
+}
+
+/* single items */
+title {
+  display:block;
+  color: #ee7402;
+  font-size: 120%;
+}
+title:before,
+.itunes_subtitle:after,
+description:after,
+.itunes_subtitle:before{
+  content: '\a';
+  white-space: pre;
+}
+title:after,
+link:after,
+download:after,
+content:after,
+content:before{
+  content: '\a \a ';
+  white-space: pre;
+}
+link,
+download{
+  color: navy;
+  text-decoration: underline;
+} 
+link:before{ content: "Link: "; }
+download:before{ content: "Download: "; }
+description{
+  color: #f94f22;
+}
+language:before{ content:" (In "; }
+language:after{ content:"utscher Sprache)"; }
+description:before{ 
+  content: "\a \a Beschreibung: ";
+  white-space: pre;
+}
+id,
+copyright,
+generator,
+updated,
+pubDate,
+.itunes_summary,
+.itunes_keywords,
+.itunes_explicit,
+.itunes_owner,
+.itunes_new-feed-url,
+.itunes_author,
+guid,
+.itunes_serial,
+lastBuildDate{ display: none; }
+name {color:red; text-decoration: underline;}
+price {color:green;}
+stock {color:brown;}
+country {color:blue;}
+content {
+  color: #424242;
+  background-color: #ccc;
+  display:block;
+  border: 1px solid gray;
+  margin:1em;
+  margin-right: 12em;
+  padding:0.5em;
+  background-color: #ccc;
+  list-style: none;
+}
+.itunes_block{
+  content: '\a\a\a\a\a\a\a\a\a\a';
+  padding: 64px;
+  float: right;
+  margin: 4px;
+  background: url("/images/podcast.min.png") no-repeat;
+  color: rgba(0,0,0,0);
+}
+.itunes_subtitle{ font-size: 70%;}
