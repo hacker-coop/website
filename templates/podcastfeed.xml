@@ -9,10 +9,10 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {%- set podcastsubtitle = "Der Podcast der Werkkooperative der Technikfreundinnen e.G." -%}
 {%- set podcastsummary = "Der Podcast der Werkkooperative der Technikfreundinnen e.G." -%}
 {%- set podcastauthor = "Vebit e.V. and Members" -%}
-{%- set podcastemail = vorstand@vebit.xyz -%}
-{%- set podcastxml = /podcast/wtf.xml -%}
+{%- set podcastemail = "vorstand@vebit.xyz" -%}
+{%- set podcastxml = "/podcast/wtf.xml" -%}
 {%- set podcastkeywords = "WTF, Hacker, CCC, COOP" -%}
-{%- set podcastkategory = "Technology-%}
+{%- set podcastkategory = "Technolog" -%}
 
 <?xml version="1.0" encoding="UTF-8"?>
  <?xml-stylesheet href="{{ '/css/xml.css'|asseturl }}" type="text/css" ?>
