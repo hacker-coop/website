@@ -1,8 +1,16 @@
 title: WTF eG Podcast S01E01
 ---
-author: ajuvo, vv01f, estelle, L3D
+author: ajuvo, vv01f, therojam, estelle, L3D
 ---
 body:
+
+Die erste Folge des Podcast der Werkkooperative der Technikfreundinnen e.G.
+
+Die Außenstellen Berlin, Leipzig, Dresden und Bodensee haben sich im Internet getroffen und geben erste Einblicke in die werdende Genossenschaft. Was geplant ist, was man machen könnte und was als nächstes passiert.
+---
+pub_date: 2020-04-12
+---
+beitrag:
 
 Linksammlung:
 * Webseite: https://vebit.xyz
@@ -15,10 +23,18 @@ Linksammlung:
 * Verschlüsselt E-Mails schreiben? https://howtopgp.jugendhackt.de/#/
 
 Weitere öffentliche Meetups werden u.a. auf Mastodon bekannt gegeben!
-…
+
 ---
-pub_date: 2020-04-12
----
-shorttitle: WTF S01E01
----
-twitter_handle: https://chaos.social/@hackergeno
+xml:
+
+Linksammlung:
+* Webseite: https://vebit.xyz
+* Eigenes git: https://git.vebit.xyz/vebit/
+* Github: https://github.com/hacker-coop/
+* Das "Vebit public Repo": https://git.vebit.xyz/vebit/public.git
+* Das Wiki: https://kb.vebit.xyz
+* Passwort zum Wiki und mehr gibt es bei mailto:interesse@vebit.xyz
+* Mastodon: https://chaos.social/@hackergeno
+* Verschlüsselt E-Mails schreiben? https://howtopgp.jugendhackt.de/#/
+
+Weitere öffentliche Meetups werden u.a. auf Mastodon bekannt gegeben!
