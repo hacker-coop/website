@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% from "macros/blog.html" import render_blog_post %}
 {% block title %}{{ this.title }}{% endblock %}
-{% block expand_ogg_image %}"{% if this.xml_img %}{{ this.xml_img|url }}{% else %}{{ '/images/wtf.png'|asseturl }}{% endif %}"{% endblock %}
+{% block expand_ogg_image %}"{% if this.img %}{{ this.img|url }}{% else %}{{ '/images/wtf.png'|asseturl }}{% endif %}"{% endblock %}
 {% block expand_description %}
-    <meta name="description" content="{{ this.xml }}" />
+    <meta name="description" content="{{ this.body }}" />
 {% endblock %}
 {% block body %}
 <!-- Main -->

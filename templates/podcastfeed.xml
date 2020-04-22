@@ -52,7 +52,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {#  #}    <itunes:new-feed-url class="itunes_new-feed-url">{{ podcastxml|url(external=true) }}</itunes:new-feed-url>
 {#  #}    <itunes:block class="itunes_block">no</itunes:block>
 {#  #}    <itunes:category text="Technology">{{ podcastkategory }}</itunes:category>
-      {%- set pages = site.query('/{{ search }}').include_undiscoverable(true).all() -%}
+      {%- set pages = site.query( '/podcast' ).include_undiscoverable(true).all() -%}
       {%- set firstrun = true %}
       {%- for page in pages -%}
         {%- if not page._hidden %}
@@ -66,8 +66,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
                 {{ podcastauthor }}
               {%- endif -%}
             </author>
-{#  #}      <pubDate>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</pubDate>
-{#  #}      <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{{ page.mp3leng }}"/>
+{#        <pubDate>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</pubDate>
+  #}      <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{{ page.mp3leng }}"/>
 {#  #}      <guid isPermaLink="false">{{ page._id }}</guid>
 {#  #}      <download>{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}</download>
 {#  #}      <itunes:explicit class="itunes_explicit">no</itunes:explicit>
