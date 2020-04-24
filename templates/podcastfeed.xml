@@ -34,9 +34,10 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         {{ podcastdescribtion }}
     </description>
     <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
-    <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}/title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
+    <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
     <atom:link rel="self" type="application/rss+xml"	title="{{ podcasttitle }}"	href="{{ podcastxml|url(external=true) }}" />
     <atom:link rel="first" type="application/rss+xml"	href="{{ podcastxml|url(external=true) }}" />
+    <atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>
     <language>{{ podcastlanguage }}</language>
     <copyright>>&#169; 2020 {{ podcastauthor }}</copyright>
     <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
