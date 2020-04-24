@@ -76,7 +76,13 @@ Source: https://github.com/c3woc/c3woc-podcast.git
             {%- if page.xml_img -%}
               &lt;img width=&quot;23%&quot; src=&quot;{{ page.xml_img }}&quot; /&gt;
             {% endif %}
-              &lt;br/&gt;&lt;a href="{{ page|url(external=true) }}{{ page.podcastmp3 }}" class="button special primary" download&gt;{{ page.shorttitle }} - Download&lt;/a&gt;
+              &lt;br/&gt;&lt;a href="{{ page|url(external=true) }}{{ page.podcastmp3 }}" download&gt;
+                {%- if page.podcasttitle %}
+                  {{ page.podcasttitle }}
+                {%- else -%}
+                  Download Podcast
+                {%- endif -%}
+                &lt;/a&gt;
 {#  #}      </content>
 {#  #}    </item>
         {%- endif %}
