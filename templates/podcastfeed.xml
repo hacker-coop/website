@@ -13,19 +13,33 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {%- set podcastxml = "/podcast/wtf.xml" -%}
 {%- set podcastkeywords = "WTF, Hacker, CCC, COOP" -%}
 {%- set podcastkategory = "Technolog" -%}
+{%- set podcastlanguage = "de-DE" -%}
+{%- set podcastlogassetimagepath = "/images/wtf.png" -%}
 
 <?xml version="1.0" encoding="UTF-8"?>
- <?xml-stylesheet href="{{ '/css/xml.css'|asseturl }}" type="text/css" ?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+{#- custom CSS fuer das XML... -#}
+<?xml-stylesheet href="{{ '/css/xml.css'|asseturl }}" type="text/css" ?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:psc="http://podlove.org/simple-chapters"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:fh="http://purl.org/syndication/history/1.0" >
   <channel>
     <title type="text">{{ podcasttitle }}</title>
-    <link>{{ '/'|url(external=true) }}</link>
-    <language>de</language>
-    <copyright>>&#169; 2020 {{ podcastauthor }}</copyright>
-    <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
+    <link>{{ '/'|url(external=true) }}{{ search }}/</link>
     <description>
         {{ podcastdescribtion }}
     </description>
+    <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
+    <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}/title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
+    <atom:link rel="self" type="application/rss+xml"	title="{{ podcasttitle }}"	href="{{ podcastxml|url(external=true) }}" />
+    <atom:link rel="first" type="application/rss+xml"	href="{{ podcastxml|url(external=true) }}" />
+    <language>{{ podcastlanguage }}</language>
+    <copyright>>&#169; 2020 {{ podcastauthor }}</copyright>
+    <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
     <itunes:type class="itunes_serial">serial</itunes:type>
     <itunes:owner class="itunes_owner">
       <itunes:name>{{ podcastauthor }}</itunes:name>
@@ -41,7 +55,6 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
     <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
     <pubDate>1980-01-01T00:42:23Z</pubDate>
-    <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
     <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
 {#  #}    <itunes:summary class="itunes_summary">
             {{ podcastsummary }}
