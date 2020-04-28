@@ -7,6 +7,7 @@ all:
 	set -e
 	sudo make install
 	make build
+	make server
 
 .ONESHELL:
 install:
