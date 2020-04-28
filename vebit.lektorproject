@@ -11,7 +11,7 @@ url_style = absolute
 enabled = yes
 default = yes
 locale = de_DE
-# target = rsync://vebit@vebit.xyz/var/www/vebit.xyz
+target = rsync://vebit@vebit.xyz/var/www/virtual/vebit/html/vebit.xyz
 
 [alternatives.de]
 name = Deutsch
