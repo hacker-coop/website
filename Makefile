@@ -5,7 +5,8 @@ LEKTOR_DEPLOY_FLAGS=
 
 all:
 	set -e
-	build
+	sudo make install
+	make build
 
 .ONESHELL:
 install:
