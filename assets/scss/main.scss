@@ -29,3 +29,6 @@ a, a:any-link {
   background: rgb(80, 42, 0);
   padding: 2px;
 }
+time[datetime]:after {
+	content: " (" attr(datetime) ")";
+}
