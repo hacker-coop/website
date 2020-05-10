@@ -1,3 +1,6 @@
+{#- Mit macros werden variablen aus
+   anderen Unterseiten eingebunden -#}
+
 {%- macro _title() -%}
   {%- block title -%}
     Werkkooperative der Technikfreundinnen e.G.
@@ -36,8 +39,13 @@ __        ____________________
     <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
     <meta name="description" itemprop="description" content={{ description }}>
     <meta property="og:description" content={{ description }}>
-    <meta content="" itemprop="image" property="og:image" />
-    <meta content="http://www.example.com/permalink" itemprop="url" property="og:url" />
+    <meta content="{%- block og_image %}/images/wtf.png
+      {%- endblock %}" itemprop="image" property="og:image" />{% if this._path == '/' %}
+    <meta content="https://vebit.xyz/" itemprop="url" property="og:url" />{% elif this._path == '/podcast'  %}
+    <meta content="https://vebit.xyz/podcast/" itemprop="url" property="og:url" />{% elif this._path == '/impressum'  %}
+    <meta content="https://vebit.xyz/impressum/" itemprop="url" property="og:url" />{% elif this._path == '/medien'  %}
+    <meta content="https://vebit.xyz/medien/" itemprop="url" property="og:url" />{% elif this._path == '/datenschutz'  %}
+    <meta content="https://vebit.xyz/datenschutz/" itemprop="url" property="og:url" />{% endif %}
     <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast abonnieren" href="https://vebit.xyz/wtf.xml"/>
   </head>
   <body>
@@ -45,8 +53,7 @@ __        ____________________
   <nav>
     <ul>
       <li>
-        <a
-          {%- if this._path == '/' %} class="active" {% else %} {% endif -%}
+        <a {%- if this._path == '/' %} class="active" {% else %} {% endif -%}
         href="{{ '/'|url }}">HOME</a>
       </li>
           {%- for title, href in bag('nav-bar', "NavBar").items() %}
