@@ -12,7 +12,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {%- set podcastemail = "vorstand@vebit.xyz" -%}
 {%- set podcastxml = "/wtf.xml" -%}
 {%- set podcastkeywords = "WTF, Hacker, CCC, COOP" -%}
-{%- set podcastkategory = "Technolog" -%}
+{%- set podcastkategory = "Technology" -%}
 {%- set podcastlanguage = "de-DE" -%}
 {%- set podcastlogassetimagepath = "/images/wtf.png" -%}
 
@@ -28,12 +28,12 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:fh="http://purl.org/syndication/history/1.0" >
   <channel>
+    <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
     <title type="text">{{ podcasttitle }}</title>
     <link>{{ '/'|url(external=true) }}{{ search }}/</link>
     <description>
         {{ podcastdescribtion }}
     </description>
-    <lastBuildDate>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</lastBuildDate>
     <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
     <atom:link rel="self" type="application/rss+xml"	title="{{ podcasttitle }}"	href="{{ podcastxml|url(external=true) }}" />
     <atom:link rel="first" type="application/rss+xml"	href="{{ podcastxml|url(external=true) }}" />
@@ -41,7 +41,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
     <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
     <itunes:type class="itunes_serial">serial</itunes:type>
-    <itunes:summary class="itunes_summary">
+    <itunes:summary class="itunessummary">
     {{ podcastsummary }}
     </itunes:summary>
     <itunes:owner class="itunes_owner">
@@ -106,9 +106,9 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}"/>
         <itunes:subtitle>{{ page.body }}</itunes:subtitle>
 		    <itunes:title>{{ page.title }}</itunes:title>
-		    <itunes:episodeType>full</itunes:episodeType>
-		    <itunes:summary><![CDATA[{{ page.xml }}]]></itunes:summary>
-    		<content:encoded><![CDATA[{{ page.xml }}<br/>
+		    <itunes:episodeType class="episodeType">full</itunes:episodeType>
+		    <itunes:summary class="itunessummary"><![CDATA[{{ page.xml }}]]></itunes:summary>
+    		<content:encoded class="encoded"><![CDATA[{{ page.xml }}<br/>
         <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
 
 {#-
