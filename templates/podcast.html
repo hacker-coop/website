@@ -22,7 +22,7 @@
   </section>
 </div>
 {% endblock %}
-{% block expand_description %}
-  <meta name="description" content="{{ this.description }}" />
-{% endblock %}
+{% block site_description -%}
+  "{{ this.description }}"
+{%- endblock %}
 

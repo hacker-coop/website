@@ -1,22 +1,44 @@
+{%- macro _title() -%}
+  {%- block title -%}
+    Werkkooperative der Technikfreundinnen e.G.
+  {%- endblock -%}
+{%- endmacro -%}
+{%- set title = _title() -%}
+
+{%- macro _description() -%}
+  {%- block site_description -%}
+        "Interessierst du dich für eine völlig neue Form der IT-Arbyte? Dann bist du hier richtig. Wem soll sie nützen? Uns allen, wenn es nach uns geht."
+  {%- endblock -%}
+{%- endmacro -%}
+{%- set description = _description() -%}
+
 <!doctype html>
 <html>
   <head>
 <!--
-__      ___________________
-\ \     \________  _______|___
- \ \        / /  | |  |  ____|
-  \ \  /\  / /   | |  | |__
-   \ \/  \/ /    | |  |  __|
-    \  /\  /     | |  | |
-     \/  \/      |_|  |_|
-     Werkkooperative der
-    Technikfreundinnen e.G.
+
+__        ____________________
+\ \       \_______. .________|
+ \ \           / /| |  ________
+  \ \    .    / / | |  |  ____|
+   \ \  / \  / /  | |  | |__
+    \ \/ . \/ /   | |  |  __|
+     \  / \  /    | |  | |
+      \/   \/     |_|  |_|
+       Werkkooperative der
+       Technikfreundinnen e.G.
+
 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% block title %}Welcome{% endblock %} — VEBIT e.V.</title>
+    <title>{{ title }}  — VEBIT e.V.</title>
+    <meta property="og:title" itemprop="name" content="{{ title }} — VEBIT e.V."/>
     <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
-    <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast als RSS-Feed abonnieren" href="https://vebit.xyz/wtf.xml"/>
+    <meta name="description" itemprop="description" content={{ description }}>
+    <meta property="og:description" content={{ description }}>
+    <meta content="" itemprop="image" property="og:image" />
+    <meta content="http://www.example.com/permalink" itemprop="url" property="og:url" />
+    <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast abonnieren" href="https://vebit.xyz/wtf.xml"/>
   </head>
   <body>
   <header>
@@ -53,7 +75,8 @@ __      ___________________
     {% block body %}{% endblock %}
   </div>
   <footer>
-    <!-- &copy; Copyright 2020 by VEBIT e.V. | --><a href="/impressum/">Impressum</a> | <a href="/datenschutz/">Datenschutz</a>
+    <!-- &copy; Copyright 2020 by VEBIT e.V. | -->
+    <p><a href="/impressum/">Impressum</a> | <a href="/datenschutz/">Datenschutz</a></p>
     <!-- MIT (C) 2020 by VEBIT e.V + Members
          MIT (C) 2020 by L3D <l3d at c3woc.de> -->
   </footer>
