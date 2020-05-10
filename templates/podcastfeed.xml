@@ -101,14 +101,14 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         </itunes:author>
         <pubDate>{{ page.pub_date|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</pubDate>
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
-		    <description><![CDATA[{{ page.xml }}]]></description>
+		    <description><![CDATA[{{ page.feed_shownotes }}]]></description>
 		    <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
         <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}"/>
-        <itunes:subtitle>{{ page.body }}</itunes:subtitle>
+        <itunes:subtitle>{{ page.podcast_teaser }}</itunes:subtitle>
 		    <itunes:title>{{ page.title }}</itunes:title>
 		    <itunes:episodeType class="episodeType">full</itunes:episodeType>
-		    <itunes:summary class="itunessummary"><![CDATA[{{ page.xml }}]]></itunes:summary>
-    		<content:encoded class="encoded"><![CDATA[{{ page.xml }}<br/>
+		    <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
+    		<content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
         <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
 
 {#-

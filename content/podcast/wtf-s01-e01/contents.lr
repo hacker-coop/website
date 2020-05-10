@@ -6,13 +6,13 @@ author1: Ajuvo
 ---
 author2: vv01f
 ---
-author3: therojam
+author3: L3D
 ---
 author4: Estelle
 ---
-author5: L3D
+author5: therojam
 ---
-body:
+podcast_teaser:
 
 Die erste Folge des Podcast der Werkkooperative der Technikfreundinnen e.G.
 
@@ -20,7 +20,7 @@ Die Außenstellen Berlin, Leipzig, Dresden und Bodensee haben sich im Internet g
 ---
 pub_date: 2020-04-12
 ---
-beitrag:
+podcast_shownotes:
 
 Linksammlung:
 * Webseite: https://vebit.xyz
@@ -34,7 +34,7 @@ Linksammlung:
 
 Weitere öffentliche Meetups werden u.a. auf Mastodon bekannt gegeben!
 ---
-xml:
+feed_shownotes:
 
 <h1>WTF eG Podcast S01E01</h1><h2>Linksammlung:</h2><ul>
 <li>Webseite: <a href="https://vebit.xyz" target="_blank" rel="noopener">https://vebit.xyz</a></li>

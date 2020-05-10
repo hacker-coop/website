@@ -26,10 +26,10 @@
 <!-- Content -->
   <section id="content">
     {% if from_index %}
-      {{ post.body }}
+      {{ post.podcast_teaser }}
     {% else %}
-      {{ post.body }}
-      {{ post.beitrag }}
+      {{ post.podcast_teaser }}
+      {{ post.podcast_shownotes }}
     {% endif %}
     </section>
     {% if from_index -%}
