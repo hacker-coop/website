@@ -4,7 +4,7 @@
       {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 {#
- Main body partfor the podcast
+ Main body part for the podcast
 #}
 <div id="main">
   <header>
@@ -23,6 +23,6 @@
 </div>
 {% endblock %}
 {% block site_description -%}
-  "{{ this.description }}"
+  {{ this.description }}
 {%- endblock %}
 

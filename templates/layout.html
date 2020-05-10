@@ -10,7 +10,7 @@
 
 {%- macro _description() -%}
   {%- block site_description -%}
-        "Interessierst du dich für eine völlig neue Form der IT-Arbyte? Dann bist du hier richtig. Wem soll sie nützen? Uns allen, wenn es nach uns geht."
+      Interessierst du dich für eine völlig neue Form der IT-Arbyte? Dann bist du hier richtig. Wem soll sie nützen? Uns allen, wenn es nach uns geht.
   {%- endblock -%}
 {%- endmacro -%}
 {%- set description = _description() -%}
@@ -37,8 +37,8 @@ __        ____________________
     <title>{{ title }}  — VEBIT e.V.</title>
     <meta property="og:title" itemprop="name" content="{{ title }} — VEBIT e.V."/>
     <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
-    <meta name="description" itemprop="description" content={{ description }}>
-    <meta property="og:description" content={{ description }}>
+    <meta name="description" itemprop="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
     <meta content="{%- block og_image %}/images/wtf.png
       {%- endblock %}" itemprop="image" property="og:image" />{% if this._path == '/' %}
     <meta content="https://vebit.xyz/" itemprop="url" property="og:url" />{% elif this._path == '/podcast'  %}
