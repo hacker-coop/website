@@ -6,7 +6,6 @@
    to make the Podcast XML Feed more
    attractive and graphically enhance it.
 */
-
 channel {
   display:block;
   border: 1px solid gray;
@@ -40,7 +39,6 @@ item {
   padding:0.5em;
   background-color:whitesmoke;
 }
-
 title {
   display:block;
   color: #ee7402;
