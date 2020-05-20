@@ -48,7 +48,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
       <itunes:name>{{ podcastauthor }}</itunes:name>
       <itunes:email>{{ podcastemail }}</itunes:email>
     </itunes:owner>
-    <itunes:image href="{{ podcastlogassetimagepath|url(external=true) }}" class="itunes_feed_image"></itunes:image>
+    <itunes:image href="{{ podcastlogassetimagepath|url(external=true) }}" class="itunes_feed_image"/>
     <itunes:category text="Education">
       <itunes:category text="Technology"/>
       <itunes:category text="Science"/>
