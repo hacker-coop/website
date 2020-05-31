@@ -6,4 +6,12 @@ description: Der Podcast der Werkkooperative der Technikfreundinnen e.G.
 ---
 link: /wtf.xml
 ---
-spruch: Podcast XML Feed
+spruch: Podcast MP3 Feed
+---
+enable: yes
+---
+enable2: yes
+---
+link2: /wtf-ogg.xml
+---
+spruch2: Podcast OGG Feed

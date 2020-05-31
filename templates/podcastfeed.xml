@@ -15,6 +15,12 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {%- set podcastkategory = "Technology" -%}
 {%- set podcastlanguage = "de-DE" -%}
 {%- set podcastlogassetimagepath = "/images/wtf.png" -%}
+{#- Make sure you set the the correct property for mp3 and ogg feed!
+    For MP3 Feed set the path for the xml file to the mp3feed variable.
+    Same procedure for ogg and the oggfeed variable -#}
+{%- set mp3feed = '/wtf.xml' -%}
+{%- set oggfeed = '/wtf-ogg.xml' -%}
+
 
 <?xml version="1.0" encoding="UTF-8"?>
 {#- custom CSS fuer das XML... -#}
@@ -103,7 +109,12 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
 		    <description><![CDATA[{{ page.feed_shownotes }}]]></description>
 		    <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
-        <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/{{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}"/>
+        <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/
+            {%- if this.path == oggfeed -%}
+              {{ page.podcastogg }}" type="audio/ogg" length="{% if page.oggleng %}{{ page.oggleng }}{% else %}1337{% endif %}
+            {%- else -%}
+              {{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}
+            {%- endif -%}"/>
         <itunes:subtitle>{{ page.podcast_teaser }}</itunes:subtitle>
 		    <itunes:title>{{ page.title }}</itunes:title>
 		    <itunes:episodeType class="episodeType">full</itunes:episodeType>

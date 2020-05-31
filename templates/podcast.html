@@ -11,7 +11,12 @@
     <h2>{{ this.title }}</h2>
     <p>{{ this.description }}</p>
   </header>
-  <a class="yellow" href="{{ this.link|url }}"> {{ this.spruch }}</a>
+  {% if this.enable -%}
+    <a class="yellow" href="{{ this.link|url }}"> {{ this.spruch }}</a>
+  {%- endif %}
+  {% if this.enable2 -%}
+    <a class="yellow" href="{{ this.link2|url }}"> {{ this.spruch2 }}</a>
+  {%- endif %}
   <section id="content">
     {% for child in this.pagination.items %}
       {{ render_blog_post(child, from_index=true) }}
