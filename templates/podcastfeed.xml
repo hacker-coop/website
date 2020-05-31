@@ -39,6 +39,11 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <link>{{ '/'|url(external=true) }}{{ search }}/</link>
     <description>
         {{ podcastdescribtion }}
+        {%- if this.path == oggfeed -%}
+          Dieser Podcast wird als OGG Feed bereit gestellt.
+        {% else %}
+          Dieser Podcast wird als MP3 Feed bereit gestellt.
+        {% endif %}
     </description>
     <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
     <atom:link rel="self" type="application/rss+xml"	title="{{ podcasttitle }}"	href="{{ podcastxml|url(external=true) }}" />
@@ -120,7 +125,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 		    <itunes:episodeType class="episodeType">full</itunes:episodeType>
 		    <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
     		<content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
-        <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
+        <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser {% if this.path == oggfeed %}OGG{% else %}MP3{% endif %} Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
 
 {#-
 
