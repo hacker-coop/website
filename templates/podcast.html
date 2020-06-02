@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% from "macros/blog.html" import render_blog_post %}
+{% from "macros/pagination.html" import render_pagination %}
+      {% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+{#
+ Main body part for the podcast
+#}
+<div id="main">
+  <header>
+    <h2>{{ this.title }}</h2>
+    <p>{{ this.description }}</p>
+  </header>
+  {% if this.enable -%}
+    <a class="yellow" href="{{ this.link|url }}"> {{ this.spruch }}</a>
+  {%- endif %}
+  {% if this.enable2 -%}
+    <a class="yellow" href="{{ this.link2|url }}"> {{ this.spruch2 }}</a>
+  {%- endif %}
+  <section id="content">
+    {% for child in this.pagination.items %}
+      {{ render_blog_post(child, from_index=true) }}
+    {% endfor %}
+    <center>
+      {{ render_pagination(this.pagination) }}
+    </center>
+  </section>
+</div>
+{% endblock %}
+{% block site_description -%}
+  {{ this.description }}
+{%- endblock %}
+

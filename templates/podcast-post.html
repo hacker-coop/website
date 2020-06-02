@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% from "macros/blog.html" import render_blog_post %}
+{% block title -%}
+  {{ this.title }}
+{%- endblock %}
+{% block site_description -%}
+  {{ this.podcast_teaser }}
+{%- endblock %}
+{% block body %}
+<!-- Main -->
+<div id="main">
+  <div class="container">
+    {{ render_blog_post(this) }}
+  </div>
+</div>
+{% endblock %}

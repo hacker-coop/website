@@ -1,0 +1,48 @@
+a:hover:hover {
+  text-decoration: none;
+}
+a:link {
+  position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        visibility: hidden;
+    }
+
+    &:before {
+        background-color: yellow;
+        z-index: -1;
+    }
+
+    &:after {
+        background-color: blue;
+        z-index: -2;
+    }
+
+    &:hover {
+        &:before {
+            visibility: visible;
+            animation: line-glitchy 0.3s ease 0.3s infinite;
+        }
+        &:after {
+            visibility: visible;
+            animation: line-glitchy 0.3s ease infinite reverse;
+        }
+    }
+}
+
+
+@keyframes line-glitchy {
+    0%   {transform: translate(-1px, 1px);}
+    25%  {transform: translate(-1px, -1px);}
+    50%  {transform: translate(1px, 1px);}
+    75%  {transform: translate(1px, -1px);}
+    100%  {transform: translate(-1px, 1px);}
+}
+

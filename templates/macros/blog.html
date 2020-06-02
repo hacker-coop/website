@@ -1,0 +1,69 @@
+{% macro render_blog_post(post, from_index=false) %}
+  {% if from_index %}
+  <br/>
+  {% endif %}
+  <div class="blog-post">
+    <header>
+    {% if from_index %}
+      <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
+    {% else %}
+      <h2>{{ post.title }}</h2>
+    {% endif %}
+      <p>Von
+        {%- if post.author1 %} {{ post.author1 }}{% endif %}
+        {%- if post.author2 %}{% if post.author3 %},{% else %} und{% endif %} {{ post.author2 }}{% endif %}
+        {%- if post.author3 %}{% if post.author4 %},{% else %} und{% endif %} {{ post.author3 }}{% endif %}
+        {%- if post.author4 %}{% if post.author5 %},{% else %} und{% endif %} {{ post.author4 }}{% endif %}
+        {%- if post.author5 %}{% if post.author6 %},{% else %} und{% endif %} {{ post.author5 }}{% endif %}
+        {%- if post.author6 %}{% if post.author7 %},{% else %} und{% endif %} {{ post.author6 }}{% endif %}
+        {%- if post.author7 %}{% if post.author8 %},{% else %} und{% endif %} {{ post.author7 }}{% endif %}
+        {%- if post.author8 %} und {{ post.author8 }}{% endif -%}
+        {{ ' ' }}aus der <a href="https://chaos.social/@hackergeno">WTF e.G.</a>
+         {%- if post.pub_date -%}
+         {{ ' ' }}am {{ post.pub_date.strftime('%d.%m.%Y') }}{%
+      endif %}</p>
+	</header>
+<!-- Content -->
+  <section id="content">
+    {% if from_index %}
+      {{ post.podcast_teaser }}
+    {% else %}
+      {{ post.podcast_teaser }}
+      {{ post.podcast_shownotes }}
+    {% endif %}
+    </section>
+    {% if from_index -%}
+    <br/>
+    <a class="blue" href="{{ post|url }}{{ post.podcastmp3  }}" download>
+      {%- if post.podcasttitle -%}
+        {{ post.podcasttitle }}
+      {%- else -%}
+        Download Folge
+      {%- endif -%}
+    </a>
+    <br/><br/>
+    <a href="{{ post|url }}" class="blue">Podcastfolge durchst&ouml;bern</a>
+    <br/><br/>
+    {% else -%}
+    <a href="{{ post|url }}{{ post.podcastmp3  }}">{{ post.title }}</a><br/><br/>
+    {% if post.podcastmp3 -%}
+      <a class="blue" href="{{ post|url }}{{ post.podcastmp3  }}" download>
+        {%- if post.podcasttitle -%}
+          {{ post.podcasttitle }}
+        {% else %}
+          Download Folge
+        {%- endif -%}
+      {{ ' als MP3' }}</a>
+    {% endif %}
+    {% if post.podcastogg -%}
+      <a class="blue" href="{{ post|url }}{{ post.podcastogg  }}" download>
+        {%- if post.podcasttitle -%}
+          {{ post.podcasttitle }}
+        {% else %}
+          Download Folge
+        {%- endif -%}
+      {{ ' als OGG' }}</a>
+    {% endif %}<br/>
+    {% endif %}
+  </div>
+{% endmacro %}

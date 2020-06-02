@@ -1,0 +1,106 @@
+{#- Mit macros werden variablen aus
+   anderen Unterseiten eingebunden -#}
+
+{%- macro _title() -%}
+  {%- block title -%}
+    Werkkooperative der Technikfreundinnen e.G.
+  {%- endblock -%}
+{%- endmacro -%}
+{%- set title = _title() -%}
+
+{%- macro _description() -%}
+  {%- block site_description -%}
+      Interessierst du dich für eine völlig neue Form der IT-Arbyte? Dann bist du hier richtig. Wem soll sie nützen? Uns allen, wenn es nach uns geht.
+  {%- endblock -%}
+{%- endmacro -%}
+{%- set description = _description() -%}
+
+<!doctype html>
+<html>
+  <head>
+<!--
+
+__        ____________________
+\ \       \_______. .________|
+ \ \           / /| |  ________
+  \ \    .    / / | |  |  ____|
+   \ \  / \  / /  | |  | |__
+    \ \/ . \/ /   | |  |  __|
+     \  / \  /    | |  | |
+      \/   \/     |_|  |_|
+       Werkkooperative der
+       Technikfreundinnen e.G.
+
+-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ title }}  — VEBIT e.V.</title>
+    <meta property="og:title" itemprop="name" content="{{ title }} — VEBIT e.V."/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <link rel="stylesheet" href="{{ '/css/main.min.css'|asseturl }}">
+    <meta name="description" itemprop="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta content="{%- block og_image %}https://vebit.xyz/images/wtf.png
+      {%- endblock %}" itemprop="image" property="og:image" />{% if this._path == '/' %}
+    <meta content="https://vebit.xyz/" itemprop="url" property="og:url" />{% elif this._path == '/podcast'  %}
+    <meta content="https://vebit.xyz/podcast/" itemprop="url" property="og:url" />{% elif this._path == '/impressum'  %}
+    <meta content="https://vebit.xyz/impressum/" itemprop="url" property="og:url" />{% elif this._path == '/medien'  %}
+    <meta content="https://vebit.xyz/medien/" itemprop="url" property="og:url" />{% elif this._path == '/datenschutz'  %}
+    <meta content="https://vebit.xyz/datenschutz/" itemprop="url" property="og:url" />{% endif %}
+    <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast abonnieren" href="https://vebit.xyz/wtf.xml"/>
+  </head>
+  <body>
+  <header>
+  <nav>
+    <ul>
+      <li>
+        <a {%- if this._path == '/' %} class="active" {% else %} {% endif -%}
+        href="{{ '/'|url }}">HOME</a>
+      </li>
+          {%- for title, href in bag('nav-bar', "NavBar").items() %}
+      <li>
+        <a
+          {%- if this.is_child_of(href) %} class="active" {% else %} {% endif -%}
+      href="{{ href|url }}">
+      {{- title -}}
+        </a>
+      {%- if  bag('nav-bar', title) %}
+        {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
+        <ul>
+          <li>
+            <a href="{{ nav_url if 'http' in nav_url else nav_url|url -}}
+            ">{{ nav_title }}</a>
+          </li>
+        </ul>
+        {%- endfor %}
+        {%- endif %}
+      </li>
+        {%- endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    <!-- &copy; Copyright 2020 by VEBIT e.V. | -->
+    <p><a href="/impressum/">Impressum</a> | <a href="/datenschutz/">Datenschutz</a></p>
+    <!-- MIT (C) 2020 by VEBIT e.V + Members
+         MIT (C) 2020 by L3D <l3d at c3woc.de> -->
+  </footer>
+</body>

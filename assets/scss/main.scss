@@ -1,0 +1,35 @@
+@import 'libs/main';
+@import 'libs/nav';
+@import 'libs/footer';
+@import 'libs/table';
+@import 'libs/pagination';
+@import 'effects/glitch';
+
+/*
+vebit.xyz Website
+MIT (c) 2020 by Vebit e.V. Mebers
+MIT (c) 2020 by L3D <l3d@c3woc.de>
+SRC: https://git.vebit.xyz/vebit/website.git
+*/
+
+a, a:any-link {
+   color: greenyellow;
+   text-decoration-line: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.blue {
+  background: navy;
+  padding: 2px;
+}
+
+.yellow {
+  background: rgb(80, 42, 0);
+  padding: 2px;
+}
+time[datetime]:after {
+	content: " (" attr(datetime) ")";
+}

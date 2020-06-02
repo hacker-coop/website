@@ -1,0 +1,25 @@
+_model: page
+---
+title: Impressum
+---
+body:
+
+```
+VEBIT e. V.
+Riesaer Straße 32
+01127 Dresden
+VR 11346, AG Dresden
+```
+
+<i>impressum at vebit punkt xyz</i>
+
+<small>
+Diese Seiten wurden mit <a href="https://www.getlektor.com/">Lektor</a> erstellt.
+Der Coder dieses Site-Builders steht unter MIT-Lizenz.
+</small>
+
+<small>
+Die Quellen für den Inhalt sind <a href="https://git.vebit.xyz/vebit/website/">in unserem Git</a> so wie <a href="https://github.com/hacker-coop/website">auf GitHub</a> verfügbar.
+</small>
+---
+description: Impressum des Verein zur Erschließung neuer Betätigungsformen in der Informationstechnologie e. V.

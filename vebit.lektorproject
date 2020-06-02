@@ -1,0 +1,22 @@
+[project]
+name = VEBIT e.V.
+url = https://vebit.xyz/
+url_style = absolute
+excluded_assets = sass, *.scss
+
+[servers.vebit]
+name = vebit
+url = https://vebit.xyz/
+url_style = absolute
+enabled = yes
+default = yes
+locale = de_DE
+target = rsync://vebit@vebit.xyz/var/www/virtual/vebit/html
+
+[alternatives.de]
+name = Deutsch
+primary = yes
+locale = de_DE
+
+[packages]
+lektor-scss = 1.3.8
