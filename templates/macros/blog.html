@@ -34,32 +34,42 @@
     </section>
     {% if from_index -%}
     <br/>
-    <a class="blue" href="{{ post|url }}{{ post.podcastmp3  }}" download>
-      {%- if post.podcasttitle -%}
-        {{ post.podcasttitle }}
-      {%- else -%}
-        Download Folge
-      {%- endif -%}
-    </a>
-    <br/><br/>
+    <audio controls>
+      {% if post.podcastogg -%}
+        <source src="{{ post|url(external=true)}}{{ post.podcastogg }}" type="audio/ogg">
+      {%- endif %}
+      {% if post.podcastmp3 -%}
+        <source src="{{  post|url(external=true) }}{{ post.podcastmp3 }}" type="audio/mpeg">
+      {%- endif %}
+      Your browser does not support the audio element.
+    </audio>
+    <br/>
     <a href="{{ post|url }}" class="blue">Podcastfolge durchst&ouml;bern</a>
     <br/><br/>
     {% else -%}
-    <a href="{{ post|url }}{{ post.podcastmp3  }}">{{ post.title }}</a><br/><br/>
+    <audio controls>
+      {% if post.podcastogg -%}
+        <source src="{{ post.podcastogg|url(external=true) }}" type="audio/ogg">
+      {%- endif %}
+      {% if post.podcastmp3 %}
+        <source src="{{ post.podcastmp3|url(external=true) }}" type="audio/mpeg">
+      {%- endif %}
+      Your browser does not support the audio element.
+    </audio><br/><br/>
     {% if post.podcastmp3 -%}
-      <a class="blue" href="{{ post|url }}{{ post.podcastmp3  }}" download>
+      <a class="blue" href="{{ post.podcastmp3|url  }}" download>
         {%- if post.podcasttitle -%}
           {{ post.podcasttitle }}
-        {% else %}
+        {%- else -%}
           Download Folge
         {%- endif -%}
       {{ ' als MP3' }}</a>
     {% endif %}
     {% if post.podcastogg -%}
-      <a class="blue" href="{{ post|url }}{{ post.podcastogg  }}" download>
+      <a class="blue" href="{{ post.podcastogg|url  }}" download>
         {%- if post.podcasttitle -%}
           {{ post.podcasttitle }}
-        {% else %}
+        {%- else -%}
           Download Folge
         {%- endif -%}
       {{ ' als OGG' }}</a>
