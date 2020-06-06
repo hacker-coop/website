@@ -68,32 +68,38 @@ __        ____________________
   </head>
   <body>
   <header>
-  <nav>
-    <ul>
-      <li>
-        <a {%- if this._path == '/' %} class="active" {% else %} {% endif -%}
-        href="{{ '/'|url }}">HOME</a>
-      </li>
-          {%- for title, href in bag('nav-bar', "NavBar").items() %}
-      <li>
-        <a
-          {%- if this.is_child_of(href) %} class="active" {% else %} {% endif -%}
-      href="{{ href|url }}">
-      {{- title -}}
-        </a>
-      {%- if  bag('nav-bar', title) %}
-        {%- for nav_title, nav_url in bag('nav-bar', title).items() %}
-        <ul>
-          <li>
-            <a href="{{ nav_url if 'http' in nav_url else nav_url|url -}}
-            ">{{ nav_title }}</a>
-          </li>
-        </ul>
-        {%- endfor %}
-        {%- endif %}
-      </li>
-        {%- endfor %}
+    <nav>
+      <ul>
+{%- for title, mapping in bag('nav-bar').items() %}
+        <li {% if
+          this._path == mapping['href'] or
+          mapping['href'] != '/' and this.is_child_of(mapping['href'])
+        %}class="active"{% endif %}>
+      <a href="{{ mapping['href']|url }}">
+    {{- title -}}
+      </a>
+      <ul>
+  {%- if mapping.get('list_childs') %}
+    {%- set root = site.get( mapping['href'], alt=this.alt) %}
+    {%- for child in root.children recursive %}
+      {%- if loop.index <= 7 %}
+        <li {% if this._path == child._path %}class="active"{% endif %}>
+          <a href="{{ child|url }}">{{ child.title  }}</a>
+        </li>
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+  {%- for nav_title, nav_url in mapping['items'].items() %}
+        <li>
+          <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+        {%- if nav_title in mapping.get('buttons', []) %} class="button nav"{% endif %}>
+            {{- nav_title -}}
+          </a>
+        </li>
+  {%- endfor %}
       </ul>
+    </li>
+{%- endfor %}
     </nav>
   </header>
   <div class="page">

@@ -1,0 +1,22 @@
+{
+  "home": {
+    "href": "/",
+    "items": {}
+  },
+  "Podcast": {
+    "href": "/podcast",
+    "list_childs": true,
+    "items": {
+      "MP3 Abonieren": "/wtf.xml",
+      "OGG Abonieren": "/wtf-ogg.xml"
+    }
+  },
+  "Impressum": {
+    "href": "/impressum",
+    "items": {}
+  },
+  "Datenschutz": {
+    "href": "/datenschutz",
+    "items": {}
+  }
+}
