@@ -70,7 +70,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <updated>{{ none|datetimeformat('YYYY-MM-ddThh:mm:ss') }}Z</updated>
     <pubDate>1980-01-01T00:42:23Z</pubDate>
     <language>{{ podcastlanguage }}</language>
-    <copyright>>&#169; 2020 {{ podcastauthor }}</copyright>
+    <copyright>&#169; 2020 {{ podcastauthor }}</copyright>
     <id>{{ podcastxml|url(external=true) }}</id>
     <itunes:keywords class="itunes_keywords">
       {{ podcastkeywords }}
