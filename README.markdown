@@ -16,6 +16,8 @@ make server
 
 Starte einen lokalen Webserver und ermöglicht dir die geklonte Webseite bequem auf [localhost:5000](http://localhost:5000/) zu bearbeiten.
 
+*Mehre Tricks zum bedienen von Lektor in der `Makefile`!*
+
  Beitragen:
 -------------
 Reiche dein Pull-Request bei [git.vebit.xyz/vebit/website](https://git.vebit.xyz/vebit/website.git) ein, wenn du dort einen Account hast. Oder auf [github.com/hacker-coop/website.git](https://github.com/hacker-coop/website.git).
