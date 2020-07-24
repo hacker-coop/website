@@ -1,6 +1,6 @@
 # VEBIT Webseite
 
-Dieses repo enthält den static side generator mit Inhalt zu [vebit.xyz](https://vebit.xyz).
+Hier findet ihr den Static Side Generator zur [vebit.xyz](https://vebit.xyz) Webseite.
 
 ## Verwenden
 
