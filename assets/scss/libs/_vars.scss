@@ -14,20 +14,21 @@
 		navPanel:			275px,
 		border-radius:		6px,
 		element-height:		3em,
-		element-margin:		1em
+		element-margin:		2em,
+		container-width:	60em
 	);
 
 // Font.
 	$font: (
 		family:				('Source Sans Pro', sans-serif),
 		family-fixed:		monospace,
-		weight:				400,
-		weight-bold:		600,
+		weight:				300,
+		weight-bold:		400,
 	);
 
 // Palette.
 	$palette: (
-		bg:					#050915, //#444, //#f5f5f5,
+		bg:					#f5f5f5,
 		fg:					#777,
 		fg-bold:			#646464,
 		fg-light:			#999,
@@ -37,15 +38,11 @@
 		border2-bg:			#f0f0f0,
 
 		header: (
-			bg:				#050915, //#444,
+			bg:				#444,
 			fg:				#bbb,
 			fg-bold:		#fff,
 			fg-light:		#999
 		),
-
-        anchor: (
-            fg:             mix(#90b0ba, #00f, 50%)
-        ),
 
 		accent1: (
 			bg:				#666,

@@ -14,6 +14,8 @@
   {%- endblock -%}
 {%- endmacro -%}
 {%- set description = _description() -%}
+{%- set bodytitle = 'WTF' -%}
+{%- set bodysubtitle = 'Werkkooperative der Technikfreundinnen e.G. i.g.' -%}
 
 <!doctype html>
 <html>
@@ -66,12 +68,14 @@ __        ____________________
     <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast MP3 abonnieren" href="https://vebit.xyz/wtf.xml"/>
     <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast OGG abonnieren" href="https://vebit.xyz/wtf-ogg.xml"/>
   </head>
-  <body{% if this._path == '/' %} class="landing"{% endif %}>
+
+  <body{% if this._path == '/' %} class="landing is-preload"{% endif %}>
   <div id="page-wrapper">
-  <header id="header">
+  <header id="header" class="alt">
+    <h1><a href="{{ '/' | url(external=true) }}">{{ bodytitle }}</a> {{ bodysubtitle }}</h1>
     <nav id="nav">
-{%- for title, mapping in bag('nav-bar').items() %}
       <ul>
+{%- for title, mapping in bag('nav-bar').items() %}
         <li
           {%- if this._path == mapping['href'] or mapping['href'] != '/' and this.is_child_of(mapping['href']) -%}
             {{ ' ' }}class="active"
@@ -85,7 +89,7 @@ __        ____________________
     {%- set root = site.get( mapping['href'], alt=this.alt) %}
         <ul> <!-- XPAND -->
     {%- for child in root.children recursive %}
-      {%- if loop.index <= 7 %}
+      {%- if loop.index <= 4 %}
           <li
             {%- if this._path == child._path -%}
               {{ ' ' }}class="active"
@@ -109,12 +113,51 @@ __        ____________________
         </ul>
        </li>
   {%- endif %}
-      </ul>
 {%- endfor %}
+      </ul>
     </nav>
   </header>
+
+{% block body %}{% endblock %}
+
+
+
+    <!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li style="color: green"><a href="https://chaos.social/@hackergeno" title="Mastodon" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
+						<li style="color: green"><a href="https://github.com/hacker-coop" title="Mastodon" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li style="color: orange;"><a href="https://kb.vebit.xyz/wiki/Home" title="semi-public Wiki" class="icon brands fa-wikipedia-w"><span class="label">semi-public Wiki</span></a></li>
+						<li style="color: red;"><a href="https://meta.vebit.xyz/" title="internes Forum" class="icon brands fa-discourse"><span class="label">internes Forum</span></a></li>
+						<li style="color: red;"><a href="https://git.vebit.xyz/vebit/" title="internes Git" class="icon brands fa-git"><span class="label">internes Git</span></a></li>
+						<li style="color: green;"><a href="https://vebit.xyz/podcast/" title="Podcast" class="icon brands fa-podcast"><span class="label">internes Git</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Copyright {{ none|datetimeformat('YYYY') }} VEBIT e.V.</li>
+            <li><a href="https://github.com/hacker-coop/website/blob/master/LICENCE">MIT License</a></li>
+            <li><a href="{{ '/impressum/'|url(external=true) }}">Impressum</a></li>
+            <li><a href="{{ '/datenschutz/'|url(external=true) }}">Datenschutz</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+			<script src="/js/jquery.dropotron.min.js"></script>
+			<script src="/js/jquery.scrollex.min.js"></script>
+			<script src="/js/browser.min.js"></script>
+			<script src="/js/breakpoints.min.js"></script>
+			<script src="/js/util.js"></script>
+			<script src="/js/main.js"></script>
+
+	</body>
+</html>
+
+
+{#
+
   <div class="page">
-    {% block body %}{% endblock %}
   </div>
   </div>
   <footer>
@@ -124,3 +167,5 @@ __        ____________________
          MIT (C) 2020 by L3D <l3d at c3woc.de> -->
   </footer>
 </body>
+
+#}
