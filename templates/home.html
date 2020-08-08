@@ -17,6 +17,9 @@
       <section class="box special">
         <header class="major">
           <h2>{{ this.about_header }}</h2>
+          {% if this.about_header_2 is defined and this.about_header_2 != '' -%}
+            <h3>{{ this.about_header_2 }}
+          {% endif -%}
           {{ this.about_text }}
         </header>
         <span class="image featured">
