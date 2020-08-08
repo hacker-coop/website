@@ -1,0 +1,18 @@
+<div id="{{ this.mapid }}" style="width: {{ this.width }}%; height: {{ this.height }}px;"></div>
+<script>
+var karte = L.map("{{ this.mapid }}").setView([{{ this.lat }}, {{ this.long }}], {{ this.zoom }});
+
+L.titleLayer("https://tiles.ffbsee.de:9090/{z}/{x}/{y}.png", {
+maxZoom: 18,
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+    id: 'bodensee.space.streets'
+    }).addTo(karte);
+    
+    L.marker([47.77244, 9.19941], {icon: redIcon}).addTo(mymap)
+        .bindPopup("<b>see-base</b><br />Ort: &Uuml;berlingen<br /><a target=\"_top\" href=\"see-base/\">Infos</a><p>Space is: <b>CLOSED</b></p>"
+);
+var popup = L.popup();
+
+    mymap.on('click', onMapClick);
+</script>

@@ -120,39 +120,35 @@ __        ____________________
 
 {% block body %}{% endblock %}
 
-
-
     <!-- Footer -->
-				<footer id="footer">
-					<ul class="icons">
-						<li style="color: red;"><a href="https://git.vebit.xyz/vebit/" title="internes Git" class="icon brands fa-galaxy"><span class="label">internes Git</span></a></li>
-						<li style="color: green"><a href="https://chaos.social/@hackergeno" title="Mastodon" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
-						<li style="color: green"><a href="https://github.com/hacker-coop" title="Mastodon" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li style="color: orange;"><a href="https://kb.vebit.xyz/wiki/Home" title="semi-public Wiki" class="icon brands fa-wikipedia-w"><span class="label">semi-public Wiki</span></a></li>
-						<li style="color: red;"><a href="https://meta.vebit.xyz/" title="internes Forum" class="icon brands fa-discourse"><span class="label">internes Forum</span></a></li>
-						<li style="color: red;"><a href="https://git.vebit.xyz/vebit/" title="internes Git" class="icon brands fa-git"><span class="label">internes Git</span></a></li>
-					</ul>
+        <footer id="footer">
+          <ul class="icons">
+            <li style="color: red;"><a href="https://git.vebit.xyz/vebit/" title="internes Git" class="icon brands fa-galaxy"><span class="label">internes Git</span></a></li>
+            <li style="color: green"><a href="https://chaos.social/@hackergeno" title="Mastodon" class="icon brands fa-mastodon"><span class="label">Mastodon</span></a></li>
+            <li style="color: green"><a href="https://github.com/hacker-coop" title="Mastodon" class="icon brands fa-github"><span class="label">Github</span></a></li>
+            <li style="color: orange;"><a href="https://kb.vebit.xyz/wiki/Home" title="semi-public Wiki" class="icon brands fa-wikipedia-w"><span class="label">semi-public Wiki</span></a></li>
+            <li style="color: red;"><a href="https://meta.vebit.xyz/" title="internes Forum" class="icon brands fa-discourse"><span class="label">internes Forum</span></a></li>
+            <li style="color: red;"><a href="https://git.vebit.xyz/vebit/" title="internes Git" class="icon brands fa-git"><span class="label">internes Git</span></a></li>
+            <li style="color: green;"><a href="https://vebit.xyz/podcast/" title="Podcast" class="icon brands fa-itunes"><span class="label">Podcast</span></a></li>
+          </ul>
 					<ul class="copyright">
-						<li>&copy; Copyright {{ none|datetimeformat('YYYY') }} VEBIT e.V.</li>
+            <li>&copy; Copyright {{ none|datetimeformat('YYYY') }} VEBIT e.V.</li>
             <li><a href="https://github.com/hacker-coop/website/blob/master/LICENCE">MIT License</a></li>
             <li><a href="{{ '/impressum/'|url(external=true) }}">Impressum</a></li>
             <li><a href="{{ '/datenschutz/'|url(external=true) }}">Datenschutz</a></li>
 <!--        MIT (C) 2020 by VEBIT e.V + Members
             MIT (C) 2020 by L3D <l3d at c3woc.de> -->
-					</ul>
-				</footer>
+        </ul>
+      </footer>
+    </div>
 
-		</div>
-
-		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/jquery.dropotron.min.js"></script>
-			<script src="/js/jquery.scrollex.min.js"></script>
-			<script src="/js/browser.min.js"></script>
-			<script src="/js/breakpoints.min.js"></script>
-			<script src="/js/util.js"></script>
-			<script src="/js/main.js"></script>
-	</body>
+    <!-- Scripts -->
+    <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/jquery.dropotron.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/browser.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/breakpoints.min.js'|asseturl }}"></script>
+    <script src="{{ '/js/util.js'|asseturl }}"></script>
+    <script src="{{ '/js/main.js'|asseturl }}"></script>
+  </body>
 </html>
-
-

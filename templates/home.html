@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+<section id="banner">
+    <h2>{{ this.title }}</h2>
+    <p>{{this.slogan}}</p>
+</section>
+
+<section id="main" class="container">
+
+    <section class="box special">
+        <header class="major">
+            <h2>{{ this.about_header }}</h2>
+            {{ this.about_text }}
+        </header>
+        <span class="image featured">
+            {% if this.big_picture %}
+                <img src="{{ this.big_picture }}" alt="" />
+            {% else %}
+                <img src="../images/defaults/big_picture.jpg" alt="" />
+            {% endif %}
+        </span>
+    </section>
+
+    <section class="box special features">
+        <h3>{{ this.box_header }}</h3>
+
+        {% for blk in this.featurebox.blocks %}
+            {% if loop.index % 2 == 1 %}
+                <div class="features-row">
+                    {{ blk }}
+                    {% if loop.last %}
+                        </div>
+                    {% endif %}
+            {% else %}
+                    {{ blk }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
+
+    <div class="row">
+        {{ this.promobox1 }}
+        {{ this.promobox2 }}
+    </div>
+
+</section>
+
+{% endblock %}
