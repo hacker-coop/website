@@ -2,25 +2,25 @@
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
 
-<section id="banner">
-    <h2>{{ this.title }}</h2>
-    <p>{{this.slogan}}</p>
-</section>
+    <section id="banner">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    {%- if this.head_add %}
+      <ul class="actions special">
+        <li><a href="{{ this.head_link_1 }}" class="button primary">{{ this.head_text_1 }}</a></li>
+        <li><a href="{{ this.head_link_2 }}" class="button">{{ this.head_text_2 }}</a></li>
+      </ul>
+    {% endif -%}
+    </section>
 
-<section id="main" class="container">
-
-    <section class="box special">
+    <section id="main" class="container">
+      <section class="box special">
         <header class="major">
-            <h2>{{ this.about_header }}</h2>
-            {{ this.about_text }}
+          <h2>{{ this.about_header }}</h2>
+          {{ this.about_text }}
         </header>
         <span class="image featured">
-            {% if this.big_picture %}
-                <img src="{{ this.big_picture }}" alt="" />
-            {% else %}
-                <img src="../images/defaults/big_picture.jpg" alt="" />
-            {% endif %}
-        </span>
+        <span class="image featured"><img src="{{ this.big_picture | default('/images/wtf.svg') }}"/></span>
     </section>
 
     <section class="box special features">
