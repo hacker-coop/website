@@ -18,17 +18,15 @@
         <header class="major">
           <h2>{{ this.about_header }}</h2>
           {% if this.about_header_2 is defined and this.about_header_2 != '' -%}
-            <h3>{{ this.about_header_2 }}
+            <h3>{{ this.about_header_2 }}</h3>
           {% endif -%}
           {{ this.about_text }}
         </header>
-        <span class="image featured">
         <span class="image featured"><img src="{{ this.big_picture | default('/images/wtf.svg') }}"/></span>
     </section>
 
     <section class="box special features">
-        <h3>{{ this.box_header }}</h3>
-
+      <h3>{{ this.box_header }}</h3>
         {% for blk in this.featurebox.blocks %}
             {% if loop.index % 2 == 1 %}
                 <div class="features-row">
