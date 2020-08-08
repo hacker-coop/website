@@ -66,44 +66,56 @@ __        ____________________
     <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast MP3 abonnieren" href="https://vebit.xyz/wtf.xml"/>
     <link rel="alternate" type="application/rss+xml" title="WTF-eG-Podcast OGG abonnieren" href="https://vebit.xyz/wtf-ogg.xml"/>
   </head>
-  <body>
-  <header>
-    <nav>
-      <ul>
+  <body{% if this._path == '/' %} class="landing"{% endif %}>
+  <div id="page-wrapper">
+  <header id="header">
+    <nav id="nav">
 {%- for title, mapping in bag('nav-bar').items() %}
-        <li {% if
-          this._path == mapping['href'] or
-          mapping['href'] != '/' and this.is_child_of(mapping['href'])
-        %}class="active"{% endif %}>
-      <a href="{{ mapping['href']|url }}">
-    {{- title -}}
-      </a>
       <ul>
+        <li
+          {%- if this._path == mapping['href'] or mapping['href'] != '/' and this.is_child_of(mapping['href']) -%}
+            {{ ' ' }}class="active"
+          {%- endif %}>
+          <a href="{{ mapping['href']|url }}">
+            {{- title -}}
+          </a>
+
+
   {%- if mapping.get('list_childs') %}
     {%- set root = site.get( mapping['href'], alt=this.alt) %}
+        <ul> <!-- XPAND -->
     {%- for child in root.children recursive %}
       {%- if loop.index <= 7 %}
-        <li {% if this._path == child._path %}class="active"{% endif %}>
-          <a href="{{ child|url }}">{{ child.title  }}</a>
-        </li>
+          <li
+            {%- if this._path == child._path -%}
+              {{ ' ' }}class="active"
+            {%- endif %}>
+            <a href="{{ child|url }}">{{ child.title  }}</a>
+          </li>
       {%- endif %}
     {%- endfor %}
+  {% else %}
+        </li>
   {%- endif %}
   {%- for nav_title, nav_url in mapping['items'].items() %}
-        <li>
-          <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
+         <li>
+           <a href={{ nav_url if 'http' in nav_url else nav_url|url }}
         {%- if nav_title in mapping.get('buttons', []) %} class="button nav"{% endif %}>
             {{- nav_title -}}
-          </a>
-        </li>
+           </a>
+         </li>
   {%- endfor %}
+  {%- if mapping.get('list_childs') %}
+        </ul>
+       </li>
+  {%- endif %}
       </ul>
-    </li>
 {%- endfor %}
     </nav>
   </header>
   <div class="page">
     {% block body %}{% endblock %}
+  </div>
   </div>
   <footer>
     <!-- &copy; Copyright 2020 by VEBIT e.V. | -->
