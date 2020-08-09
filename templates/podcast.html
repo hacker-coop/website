@@ -20,16 +20,25 @@
       <a class="button special" href="{{ this.link2|url }}"> {{ this.spruch2 }}</a>
     {%- endif %}
   </center>
+  <br/><br/><br/>
   {% endif -%}
-  <section id="content">
-    {% for child in this.pagination.items %}
+
+{#-  Die Podcast Folgen werden aus dem blog template importiert :P -#}
+
+{% for child in this.pagination.items %}
+  <div class="row">
+    <div class="col-12">
+      <section class="box">
       {{ render_blog_post(child, from_index=true) }}
-    {% endfor %}
-    <center>
-      {{ render_pagination(this.pagination) }}
-    </center>
-  </section>
-</div>
+      </section>
+    </div>
+  </div>
+{% endfor %}
+
+  <center>
+    {{ render_pagination(this.pagination) }}
+  </center>
+</section>
 {% endblock %}
 {% block site_description -%}
   {{ this.description }}
