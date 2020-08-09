@@ -15,7 +15,6 @@
 */
 
 // Breakpoints.
-
 	@include breakpoints((
 		wide:      ( 1281px,  1680px ),
 		normal:    ( 981px,   1280px ),
@@ -711,6 +710,7 @@
 		&.brands {
 			&:before {
 				font-family: 'Font Awesome 5 Brands';
+        text-shadow: 1px 1px 3px black, 0px 0px 1px white;
 			}
 		}
 
@@ -1372,7 +1372,7 @@
 
 	#banner {
 		background-attachment:	scroll,							fixed;
-		background-color:		#666;
+		background-color:		#f60;
 		background-image:		url('images/overlay.png'),		url('../../images/banner.svg');
 		background-position:	top left,						center center;
 		background-repeat:		repeat,							no-repeat;
@@ -1459,7 +1459,7 @@
 /* Footer */
 
 	#footer {
-		background: #f0f0f0;
+		background: #f60;
 		padding: 4em 0 6em 0;
 		text-align: center;
 
