@@ -11,6 +11,10 @@
       "OGG Abonieren": "/wtf-ogg.xml"
     }
   },
+  "Weitere Infos": {
+    "href": "/about",
+    "items": {}
+  },
   "Impressum": {
     "href": "/impressum",
     "items": {}
