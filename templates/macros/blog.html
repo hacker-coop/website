@@ -1,5 +1,4 @@
 {% macro render_blog_post(post, from_index=false) %}
-  <div class="blog-post">
     <header>
     {% if from_index %}
       <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
@@ -15,21 +14,28 @@
         {%- if post.author6 %}{% if post.author7 %},{% else %} und{% endif %} {{ post.author6 }}{% endif %}
         {%- if post.author7 %}{% if post.author8 %},{% else %} und{% endif %} {{ post.author7 }}{% endif %}
         {%- if post.author8 %} und {{ post.author8 }}{% endif -%}
-        {{ ' ' }}aus der <a style="color: navy;" href="https://chaos.social/@hackergeno">WTF e.G.</a>
+        {{ ' ' }}aus der <a style="color:
+            {%- if from_index  -%}
+              {{ ' navy;' }}
+            {%- else -%}
+              {{ ' lightblue' }}
+            {%- endif -%}
+              " href="https://chaos.social/@hackergeno">WTF e.G.</a>
          {%- if post.pub_date -%}
          {{ ' ' }}am {{ post.pub_date.strftime('%d.%m.%Y') }}{%
       endif %}</p>
 	</header>
 <!-- Content -->
-  <section id="content">
     {% if from_index %}
+    <section id="content">
       {{ post.podcast_teaser }}
     {% else %}
+    <section class="box">
       {{ post.podcast_teaser }}
       {{ post.podcast_shownotes }}
     {% endif %}
-    </section>
     {% if from_index -%}
+    </section>
     <br/>
     <audio controls>
       {% if post.podcastogg -%}
@@ -72,5 +78,7 @@
       {{ ' als OGG' }}</a>
     {% endif %}<br/>
     {% endif %}
-  </div>
+    {% if not from_index -%}
+  </section>
+    {% endif %}
 {% endmacro %}
