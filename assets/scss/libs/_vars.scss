@@ -22,8 +22,8 @@
 	$font: (
 		family:				('Source Sans Pro', sans-serif),
 		family-fixed:		monospace,
-		weight:				400,
-		weight-bold:		500,
+		weight:				500,
+		weight-bold:		600,
 	);
 
 // Palette.
@@ -38,17 +38,17 @@
 		border2-bg:		#f0f0f0,
 
 		header: (
-			bg:				#444,
-			fg:				#bbb,
+			bg:				#f60,
+			fg:				lightblue,
 			fg-bold:		#fff,
-			fg-light:		#2a7fff
+			fg-light:		#f60
 		),
 
 		accent1: (
-			bg:				#666,
-			fg:				mix(#666, #ffffff, 25%),
+			bg:				#2a7fff,
+			fg:				mix(#2a7fff, #ffffff, 32%),
 			fg-bold:		#ffffff,
-			fg-light:		mix(#666, #ffffff, 40%)
+			fg-light:		mix(#2a7fffff, #ffffff, 55%)
 		),
 
 		accent2: (
