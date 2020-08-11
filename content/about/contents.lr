@@ -6,14 +6,14 @@ description: Erfahre mehr über die WTF eg. Was haben wir vor? Wie macht man mit
 ---
 body:
 
-<div style="font-size: 14pt;">Wir haben hier ein paar Informationen zur Genossenschaft zusammen gefasst. Teilweise als Audio und auch das ein oder andere Video.</div><br/>
-Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interesse</code> an <i>interesse at vebit dot xyz</i>. Wenn du einen GPG Key suchst, findest du diesen <a href="https://vebit.xyz/vorstand.gpg">hier</a>.
+<h3>Wir haben hier ein paar Informationen zur Genossenschaft zusammen gefasst. Teilweise als Audio und auch das ein oder andere Video.</h3>
+Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interesse</code> an <i>interesse at vebit dot xyz</i>. Wenn du hierfür einen GPG Key suchst, findest du diesen <a href="https://vebit.xyz/vorstand.gpg">hier</a>.
 
 
  Wieso das alles?
 ----------------
-> Die Genossenschaft ermöglicht es uns Hackern legal uns bürokratiehasselfrei so wie steuergünstig Nebentätigkeiten zu betreiben, Geld zu nehmen von Leuten so wie Projekte zu iniziieren, wenn man mal eine Firma braucht. 
-> Also so zu sagen eine Firma, die man mal benutzen kann, wenn man sie braucht. Oder auch eine Firma, in der man Arbeiten kann und sich selber in der eigenen Firma anstellt. 
+> Die Genossenschaft ermöglicht es uns Hackern legal uns bürokratiehasselfrei so wie steuergünstig Nebentätigkeiten zu betreiben, Geld zu nehmen von Leuten so wie Projekte zu iniziieren, wenn man mal eine Firma braucht.
+> Also so zu sagen eine Firma, die man mal benutzen kann, wenn man sie braucht. Oder auch eine Firma, in der man Arbeiten kann und sich selber in der eigenen Firma anstellt.
 > Damit bieten sich den interessierten Hacksen und Hackern viele Möglichkeiten.
 <audio controls>
 <source src="/audio/short.ogg" type="audio/ogg">
@@ -46,7 +46,7 @@ So mancher von uns braucht nur mal zwischendurch eine Firma. Für ein cooles Pro
 Oder man möchte das zugeworfene Kleingeld für gefällige Dienste rechtssicher und steuerehrlich in einen solidarischen Topf geben.
 Manchmal kann man auch Fördermittel für Projekte bekommen - wenn man denn nicht "nur" ein kleiner Freelancer ist.
 >
-> Für alles das gibt es seit 150 Jahren eine Lösung. Nennt sich Genossenschaft. Ist ein bisschen aufwändig. Jedenfalls für einen alleine. Auch für 10 Leute. Aber nicht für 100 von uns. 
+> Für alles das gibt es seit 150 Jahren eine Lösung. Nennt sich Genossenschaft. Ist ein bisschen aufwändig. Jedenfalls für einen alleine. Auch für 10 Leute. Aber nicht für 100 von uns.
 
 <center><iframe width="640" height="480" src="https://media.ccc.de/v/35c3chaoswest-37-hacker-eg-genossenschaft-fr-chaosnahes-wirtschaften/oembed" frameborder="0" allowfullscreen></iframe></center>
 
