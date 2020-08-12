@@ -2,7 +2,7 @@ title: WTF eG
 ---
 _model: home
 ---
-slogan: Werkkooperative der Technikfreundinnen e.G. i.g.
+slogan: Werkkooperative der Technikfreundinnen e.G. i.G.
 ---
 about_header: Willkommen beim Projekt „Hacker eG“
 ---
@@ -24,7 +24,7 @@ icon: fa-paperclip
 ----
 accent: accent4
 ----
-text: Viele von uns erledigen neben ihrem Alltagsjob nebenbei $Dinge, für die deren Nutznießer uns gern ein bisschen Geld geben würden. Man betreut eine Webseite, einen Server, macht einen Podcast, administriert und scriptet vor sich hin...  - aber Geld nehmen, Rechnungen schreiben? Dafür ein Gewerbe anmelden? Buchführung, Steuererklärung? Spar dir den Aufwand und lass‘ das die Genossenschaft machen!
+text: Viele von uns erledigen neben ihrem Alltagsjob nebenbei $Dinge, für die deren Nutznießer uns gern ein bisschen Geld geben würden. Man betreut eine Webseite, einen Server, macht einen Podcast, administriert und scriptet vor sich hin – aber Geld nehmen, Rechnungen schreiben? Dafür ein Gewerbe anmelden? Merhaufwand für Buchführung und Steuererklärung? Spare dir den Aufwand und lass‘ das deine Genossenschaft machen!
 #### featurebox ####
 title: Virtuelle Teams
 ----
@@ -69,7 +69,7 @@ accent: accent3
 text:
 
 Was eine/r nicht kann, das können viele. Auch finanziell.<br/>
-Man könnte sich nach Bedarf zu virtuellen Teams zusammentun. Aber in rechtssicherer, wirtschaftlich stabiler Umgebung. Die gemeinsame Sicherheit kostet Geld. Aber wenn wir viele sind, wird das wirtschaftlich machbar. Und wir können zusammen Dinge tun, Dinge finanzieren, Dinge kaufen. Crowdfunding, Crowdbuying, Startup, Ausschreibung, Förderanträge, Zollnummer, usw.
+Man könnte sich nach Bedarf zu virtuellen Teams zusammentun. Aber in rechtssicherer, wirtschaftlich stabiler Umgebung. Die gemeinsame Sicherheit kostet Geld. Aber wenn wir viele sind, wird das wirtschaftlich machbar. Und wir können zusammen Dinge tun, Dinge finanzieren, Dinge kaufen. Crowdfunding, Crowdbuying, Startup, Ausschreibung, Förderanträge, Zollnummer usw.
 #### featurebox ####
 title: Freiberuflerin und/oder Angestellter
 ----
@@ -79,7 +79,7 @@ accent: accent4
 ----
 text:
 
-Beteilige Dich an Deinem eigenen Arbeitgeber, in dem Du Dich selber bei der Genossenschaft anstellen lässt. Ganz oder teilweise. Oder mit Mini- oder Midijob.<br/>
+Beteilige Dich an Deinem eigenen Arbeitgeber, in dem Du Dich bei der Genossenschaft anstellen lässt. In Voll- oder Teilzeit, mit Mini- oder Midijob.<br/>
 Natürlich kannst Du auch freiberuflich für die Genossenschaft arbyten, wenn die gesetzlichen Voraussetzungen dafür vorliegen oder geschaffen sind.
 #### featurebox ####
 title: Helfen und Lernen
@@ -90,7 +90,7 @@ accent: accent2
 ----
 text:
 
-Profitiere von dem Know-How aus der Genossenschaft. Und von der Beratung durch unsere Fachleute, Anwälte usw.<br/>
+Profitiere von dem Know-How aus der Genossenschaft und von der Beratung mit unseren Mitgliedern und Fachleuten.<br/>
 Und helfe anderen Genossinnen weiter. Tausche Leistungen unter Genossenschaftsteilhabern.
 #### featurebox ####
 title: Langfristige Träume verwirklichen
@@ -114,7 +114,7 @@ head_text_1: Mitmachen
 ---
 head_text_2: Weitere Infos
 ---
-about_header_2: des Vereins zur Erschließung neuer Betätigungsformen in der Informationstechnologie e.V. (VEB IT), mit dem Ziel der Gründung der Werkkooperative der Technikfreundinnen eG
+about_header_2: des Vereins zur Erschließung neuer Betätigungsformen in der Informationstechnologie e. V. (VEB IT), mit dem Ziel der Gründung der Werkkooperative der Technikfreundinnen eG
 ---
 box_header: Genossenschaft für hackerkompatibles Wirtschaften
 ---
@@ -125,7 +125,7 @@ title: Wie mitmachen?
 ----
 picture: 
 ----
-text: Du solltest ein wenig Hacker Spirit haben. Ob Du nun Coder oder Cu:nstlerin bist. Ob Dein Nick schon bekannt ist oder nicht. Triff uns, erzähle uns von Dir, schreib uns erstmal eine mail. Lege gern Deinen GPG key bei.
+text: Du solltest ein wenig Hacker Spirit haben. Ob Du nun Coder oder Cu:nstlerin bist. Ob Dein Nick schon bekannt ist oder nicht. Triff uns, erzähle uns von Dir, schreib uns eine Mail. Lege gern Deinen PGP-Key bei.
 ----
 url: https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown
 ----
