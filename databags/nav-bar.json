@@ -15,6 +15,10 @@
     "href": "/about",
     "items": {}
   },
+  "Mitglied werden": {
+    "href": "/member",
+    "items": {}
+  },
   "Impressum": {
     "href": "/impressum",
     "items": {}

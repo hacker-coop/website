@@ -1,0 +1,62 @@
+_model: page
+---
+title: Mitglied werden
+---
+description: Hier erfährst du alles was du wissen musst um bei uns mit zu machen. Außerdem ist die Satzung hier verlinkt.
+---
+body:
+
+<h3>Der VEBIT eV ist angetreten die notwendigen Mittel zu sammeln und Schritte zu unternehmen eine „Hacker Genossenschaft“ zu gründen.</h3>
+<center><a href="/about/" class="button special">Weitere Informationen</a></center><br />
+
+Um Teil der Genossenscahft zu werden, wirst du erstmal Mitglied im VEBIT e.V.. Dazu gibt es die Satzung und eine Beitragsordnung zu lesen.
+Die Beiträge rechnen nicht auf Anteile der Genossenschaft an.
+
+<center>
+<a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/satzung.markdown" class="button">Satzung</a>
+<a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/beitragsordnung.markdown" class="button">Beitragsordnung</a>
+</center><br />
+
+<h3>Der Vorstand bittet alle willigen Chaoten ihren Beitritt zu erklären:</h3>
+
+0. PGP-Key zur Vefügung stellen (als Anhang oder Link via E-Mail) – und bitte möglichst vor Ablauf hinreichend verlängern.
+1. Beitrag an das in der Erklärung benannte Konto überweisen oder in anderer Weise an uns übergeben.
+2. [Beitrittserklärung] in Papierform(!) an uns senden.
+3. [Fragebogen], gerne auch nur Digital via E-Mail, abgeben.
+
+PDF-Formulare und ihre direkte Nutzung sind sehr abhängig von den
+verwendeten Elementen und dem verwendeten Programm. Getestet wurde
+zum direkten Befüllen u. a. Libre Office Draw und Foxit Reader.
+  
+Ein weiterer Beitrag aus den Reihen der neuen Mitglieder war eine
+[Beitrittserklärung als ODT](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_beitrittserklaerung_ausfuellbar.odt)
+(und [PDF](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_beitrittserklaerung_ausfuellbar.pdf)) sowie ein
+[Deckblatt](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_rueckadressblatt_ausfuellbar.odt)
+([PDF](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_rueckadressblatt_ausfuellbar.pdf)).
+
+[Beitrittserklärung]: https://git.vebit.xyz/vebit/wiki/src/branch/master/vebit_beitrittserklaerung_ausfuellbar.pdf
+[Fragebogen]: https://git.vebit.xyz/vebit/wiki/src/branch/master/fragebogen.pdf
+
+
+## Aufnahme von Mitgliedern
+
+Nachdem die Gründung der Genossenschaft finanziell nach bestem Wissen
+sicher gestellt ist, bearbeiten wir die Beitrittsanträge nun nach
+Sichtung in Reihenfolge der Einreichung. Zunächst werden die Anträge
+natürlicher Personen bearbeitet, juristische Personen folgen
+im Anschluss.
+
+Unvollständige Beitrittserklärungen, z.B. ohne Mitteilung und
+Bereitstellung von PGP-Schlüssel, ein Ausbleiben des Mitgliedsbeitrages
+oder andere Ausschlussgründe führen zur Verzögerung der Aufnahme.
+
+
+### Ablauf beim eV
+
+0. PGP-Schlüssel werden vereinsintern abgelegt.
+1. Beitrittserklärung und Fragebogen werden digital verschlüsselt und im Original abgelegt.
+2. Zahlungseingang wird festgestellt.
+3. Account (E-Mail, Nick) im LDAP (für Dienste wie Forum, Git, …) wird angelegt.
+4. Beitritt wird mit einem Brief an die angegebene Anschrift bestätigt.
+5. Der Nutzer kann sein Passwort setzen.
+
