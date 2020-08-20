@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+
+    <section id="banner">
+      <h2>{{ this.title }}</h2>
+      <p>{{ this.slogan }}</p>
+    {%- if this.head_add %}
+      <ul class="actions special">
+        <li><a href="{{ this.head_link_1 }}" class="button primary">{{ this.head_text_1 }}</a></li>
+        <li><a href="{{ this.head_link_2 }}" class="button">{{ this.head_text_2 }}</a></li>
+      </ul>
+    {% endif -%}
+    </section>
+
+    <section id="main" class="container">
+      <section class="box special">
+        <header class="major">
+          <h2>{{ this.about_header }}</h2>
+          {% if this.about_header_2 is defined and this.about_header_2 != '' -%}
+            <h3>{{ this.about_header_2 }}</h3>
+          {% endif -%}
+          {{ this.about_text }}
+        </header>
+        <span class="image featured"><img src="{{ this.big_picture | default('/images/wtf.svg') }}"/></span>
+    </section>
+
+    <section class="box special features">
+      <h3>{{ this.box_header }}</h3>
+        {% for blk in this.featurebox.blocks %}
+            {% if loop.index % 2 == 1 %}
+                <div class="features-row">
+                    {{ blk }}
+                    {% if loop.last %}
+                        </div>
+                    {% endif %}
+            {% else %}
+                    {{ blk }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </section>
+
+    <div class="row">
+        {{ this.promobox1 }}
+        {{ this.promobox2 }}
+    </div>
+
+</section>
+
+{% endblock %}

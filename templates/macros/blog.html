@@ -1,15 +1,11 @@
 {% macro render_blog_post(post, from_index=false) %}
-  {% if from_index %}
-  <br/>
-  {% endif %}
-  <div class="blog-post">
     <header>
     {% if from_index %}
       <h2><a href="{{ post|url }}">{{ post.title }}</a></h2>
     {% else %}
       <h2>{{ post.title }}</h2>
     {% endif %}
-      <p>Von
+      <p style="color: #2a7fff;">Von
         {%- if post.author1 %} {{ post.author1 }}{% endif %}
         {%- if post.author2 %}{% if post.author3 %},{% else %} und{% endif %} {{ post.author2 }}{% endif %}
         {%- if post.author3 %}{% if post.author4 %},{% else %} und{% endif %} {{ post.author3 }}{% endif %}
@@ -18,21 +14,28 @@
         {%- if post.author6 %}{% if post.author7 %},{% else %} und{% endif %} {{ post.author6 }}{% endif %}
         {%- if post.author7 %}{% if post.author8 %},{% else %} und{% endif %} {{ post.author7 }}{% endif %}
         {%- if post.author8 %} und {{ post.author8 }}{% endif -%}
-        {{ ' ' }}aus der <a href="https://chaos.social/@hackergeno">WTF e.G.</a>
+        {{ ' ' }}aus der <a style="color:
+            {%- if from_index  -%}
+              {{ ' navy;' }}
+            {%- else -%}
+              {{ ' lightblue' }}
+            {%- endif -%}
+              " href="https://chaos.social/@hackergeno">WTF e.G.</a>
          {%- if post.pub_date -%}
          {{ ' ' }}am {{ post.pub_date.strftime('%d.%m.%Y') }}{%
       endif %}</p>
 	</header>
 <!-- Content -->
-  <section id="content">
     {% if from_index %}
+    <section id="content">
       {{ post.podcast_teaser }}
     {% else %}
+    <section class="box">
       {{ post.podcast_teaser }}
       {{ post.podcast_shownotes }}
     {% endif %}
-    </section>
     {% if from_index -%}
+    </section>
     <br/>
     <audio controls>
       {% if post.podcastogg -%}
@@ -44,7 +47,7 @@
       Your browser does not support the audio element.
     </audio>
     <br/>
-    <a href="{{ post|url }}" class="blue">Podcastfolge durchst&ouml;bern</a>
+    <a href="{{ post|url }}" class="button">Podcastfolge durchst&ouml;bern</a>
     <br/><br/>
     {% else -%}
     <audio controls>
@@ -57,7 +60,7 @@
       Your browser does not support the audio element.
     </audio><br/><br/>
     {% if post.podcastmp3 -%}
-      <a class="blue" href="{{ post.podcastmp3|url  }}" download>
+      <a class="button" href="{{ post.podcastmp3|url  }}" download>
         {%- if post.podcasttitle -%}
           {{ post.podcasttitle }}
         {%- else -%}
@@ -66,7 +69,7 @@
       {{ ' als MP3' }}</a>
     {% endif %}
     {% if post.podcastogg -%}
-      <a class="blue" href="{{ post.podcastogg|url  }}" download>
+      <a class="button special" href="{{ post.podcastogg|url  }}" download>
         {%- if post.podcasttitle -%}
           {{ post.podcasttitle }}
         {%- else -%}
@@ -75,5 +78,7 @@
       {{ ' als OGG' }}</a>
     {% endif %}<br/>
     {% endif %}
-  </div>
+    {% if not from_index -%}
+  </section>
+    {% endif %}
 {% endmacro %}

@@ -6,6 +6,12 @@
 {%- endblock -%}
 
 {% block body %}
-  <h2>{{ this.title }}</h2>
-  {{ this.body }}
+<section id="main" class="container">
+  <header>
+    <h2>{{ this.title }}</h2>
+  </header>
+  <div class="box">
+   {{ this.body }}
+  </div>
+</section>
 {% endblock %}

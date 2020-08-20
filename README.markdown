@@ -1,3 +1,5 @@
+[![MIT License](https://raw.githubusercontent.com/hacker-coop/website/master/.github/license.svg?sanitize=true)](https://git.vebit.xyz/vebit/website/src/branch/master/LICENCE)
+
 # VEBIT Webseite
 
 Hier findet ihr den Static Side Generator zur [vebit.xyz](https://vebit.xyz) Webseite.

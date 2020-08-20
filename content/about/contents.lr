@@ -1,0 +1,66 @@
+_model: page
+---
+title: Die Genossenschaft "WTF eG"
+---
+description: Erfahre mehr über die WTF eg. Was haben wir vor? Wie macht man mit? Und warum?
+---
+body:
+
+<h3>Wir haben hier ein paar Informationen zur Genossenschaft zusammen gefasst. Teilweise als Audio und auch das ein oder andere Video.</h3>
+Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interesse</code> an <i>interesse at vebit dot xyz</i>. Wenn du hierfür einen PGP Key suchst, findest du diesen <a href="https://vebit.xyz/vorstand.gpg">hier</a>.
+
+
+ Wieso das alles?
+----------------
+> Die Genossenschaft ermöglicht es uns Hackern legal uns bürokratiehasselarm Nebentätigkeiten zu betreiben, Geld zu nehmen von Leuten so wie Projekte zu iniziieren, wenn man mal eine Firma braucht.
+> Also so zu sagen eine Firma, die man mal benutzen kann, wenn man sie braucht. Oder auch eine Firma, in der man Arbeiten kann und sich selber in der eigenen Firma anstellt.
+> Damit bieten sich den interessierten Hacksen und Hackern viele Möglichkeiten.
+<audio controls>
+<source src="/audio/short.ogg" type="audio/ogg">
+<source src="/audio/short.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<a class="button" href="/audio/short.mp3" download>Wieso das alles als MP3 Downloaden</a>
+
+
+
+ Mitgliedschaft im VEBIT e.V.
+----------------
+> Wir sind kurz davor die Firmenrechtsform "Genossenschaft" zu gründen. Das ist kostenintensiv und damit dafür nicht einer alleine seinen Kopf hinhalten muss, haben wir den VEBIT e.V. gegründet.
+<audio controls>
+<source src="/audio/mitgliedschaft.ogg" type="audio/ogg">
+<source src="/audio/mitgliedschaft.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<a class="button" href="/audio/mitglidschaft.mp3" download>Mitgliedschaft als MP3 Downloaden</a>
+
+
+ Hacker e.G. Vorstellung auf dem 35c3
+----------------------------------------------
+> Viele von uns brauchen neben ihrem alltäglichen Broterwerb eine Genossenschaft, die uns gehört und uns bei Bedarf sogar nebenbei anstellt. Viele von uns wissen nicht, dass das so ist und warum. Dieser Vortrag erklärt die Zusammenhänge und das Vorhaben.
+>
+> Viele von uns haben einen Voll- oder Teilzeitjob zum täglichen Broterwerb und tun daneben gutes im Chaos und darüber hinaus. Manchmal würde man dafür auch gern etwas Geld nehmen und auch gern bekommen – und nimmt dann doch keins, weil man dann ja u. a. ein Gewerbe anmelden, ein Unternehmen gründen müsste, Steuerberater beschäftigen und noch einiges mehr.
+So mancher von uns braucht nur mal zwischendurch eine Firma. Für ein cooles Projekt, den Containerimport aus China, oder zur Überbrückung zwischen zwei Jobs. Erst gründen und dann wieder abwickeln lohnt sich oft nicht und wenn doch weiß man nicht wirklich wie man vorgeht.
+Oder man möchte Zuwendungen für Gefälligkeitsdienste rechtssicher an andere Projekte abgeben.
+Manchmal kann man auch Fördermittel für Projekte bekommen – wenn man denn nicht „nur“ ein kleiner Freelancer ist.
+>
+> Für alles das gibt es seit 150 Jahren eine Lösung. Die nennt sich Genossenschaft. Sie ist aufwändig, jedenfalls für einen alleine. Auch für 10 Leute, aber nicht für 100 von uns.
+
+<center><iframe width="640" height="480" src="https://media.ccc.de/v/35c3chaoswest-37-hacker-eg-genossenschaft-fr-chaosnahes-wirtschaften/oembed" frameborder="0" allowfullscreen></iframe></center>
+
+<a href="https://media.ccc.de/v/35c3chaoswest-37-hacker-eg-genossenschaft-fr-chaosnahes-wirtschaften" class="button special">Video auf media.ccc.de</a>
+<a class="button" href="https://cdn.media.ccc.de/congress/35C3-chaoswest/h264-hd/35c3-chaoswest-37-deu-Hacker_eG_-_Genossenschaft_fuer_chaosnahes_Wirtschaften_hd.mp4">Direkt zum Video</a>
+<a class="button" href="https://youtu.be/fsUjAhpYVtw">Video auf YouTube</a>
+
+ Podcast
+-------------
+Die neusten Informationen zu unserer Genossenschaft gibt es als Podcast. Diesen findet ihr auf [vebit.xyz/podcast/](https://vebit.xyz/podcast/).<br/>
+Ihr könnt ihn natürlich auch auf anderen Podcast Platformen finden wie:
+
+<a class="button special" href="https://vebit.xyz/wtf.xml">MP3 Feed zum Abonieren</a>
+<a class="button special" href="https://vebit.xyz/wtf-ogg.xml">OGG Feed zum Abonieren</a>
+<a class="button" href="https://podcasts.apple.com/us/podcast/wtf-eg-podcast/id1518405048">Apple Podcast</a>
+<a class="button" href="https://fyyd.de/podcast/wtf-eg-podcast/">fyyd</a>
+<a class="button" href="https://de.player.fm/series/wtf-eg-podcast">player.fm</a>

@@ -6,26 +6,39 @@
 {#
  Main body part for the podcast
 #}
-<div id="main">
+<section id="main" class="container">
   <header>
     <h2>{{ this.title }}</h2>
     <p>{{ this.description }}</p>
   </header>
-  {% if this.enable -%}
-    <a class="yellow" href="{{ this.link|url }}"> {{ this.spruch }}</a>
-  {%- endif %}
-  {% if this.enable2 -%}
-    <a class="yellow" href="{{ this.link2|url }}"> {{ this.spruch2 }}</a>
-  {%- endif %}
-  <section id="content">
-    {% for child in this.pagination.items %}
-      {{ render_blog_post(child, from_index=true) }}
-    {% endfor %}
+  {% if this.enable or this.enable2 -%}
     <center>
-      {{ render_pagination(this.pagination) }}
-    </center>
-  </section>
-</div>
+    {% if this.enable -%}
+      <a class="button special" href="{{ this.link|url }}"> {{ this.spruch }}</a>
+    {%- endif %}
+    {% if this.enable2 -%}
+      <a class="button special" href="{{ this.link2|url }}"> {{ this.spruch2 }}</a>
+    {%- endif %}
+  </center>
+  <br/><br/><br/>
+  {% endif -%}
+
+{#-  Die Podcast Folgen werden aus dem blog template importiert :P -#}
+
+{% for child in this.pagination.items %}
+  <div class="row">
+    <div class="col-12">
+      <section class="box">
+      {{ render_blog_post(child, from_index=true) }}
+      </section>
+    </div>
+  </div>
+{% endfor %}
+
+  <center>
+    {{ render_pagination(this.pagination) }}
+  </center>
+</section>
 {% endblock %}
 {% block site_description -%}
   {{ this.description }}
