@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-    - name: Cache lfs
+    - name: Cache lektor
       uses: actions/cache@v1
       with:
         path: ~/.cache/lektor
