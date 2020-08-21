@@ -1,4 +1,4 @@
-name: Build and Deploy c3woc website
+name: Build and Deploy vebit website
 
 on:
   schedule:
