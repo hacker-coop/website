@@ -1,0 +1,39 @@
+name: lektor check
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.5, 3.6, 3.7, 3.8]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+    - name: Cache lfs
+      uses: actions/cache@v1
+      with:
+        path: ~/.cache/lektor
+        key: lektorcache
+    - name: Cache lfs
+      uses: actions/cache@v1
+      with:
+        path: .git
+        key: lfs
+    - name: install and pull lfs
+      run: |
+        sudo apt-get install git-lfs
+        git lfs pull
+    - name: install lektor
+      run: make install
+    - name: build with lektor
+      run: |
+        make build
