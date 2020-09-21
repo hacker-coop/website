@@ -8,8 +8,53 @@ title: WTF eG Podcast S01E08
 ---
 podcasttitle: WTF eG Podcast S01E08
 ---
-podcastmp3: wtf-s01e08.mp3
+podcastmp3: wtf-s01e08i.mp3
 ---
 podcastogg: wtf-s01e08.ogg
 ---
-_hidden: yes
+feed_shownotes:
+
+<div id="doc" class="markdown-body container-fluid"><h1 id="Shownotes">Shownotes</h1><p><strong>Wichtige Podcastfolge!</strong></p><p>Wir machen die Zeichnungsrunde für das Eigenkapital in der Hacker Genossenschaft. Um Sinvoll am 2.1. die Genossenschaft zu starten, brauchen wir bis Ende Oktober di Zusage von mindesten 50 Hacksen und Hackern so wie mindestens 50’000€ Eigenkapital.</p><p>Wieso das alles? Und wie? Das erfahrt ihr in dieser Podcastfolge.</p><p>Lest das <strong>Manifest</strong>:</p><h3 id="Manifest™"><a href="https://pads.vebit.xyz/s/oed8xhH9e" target="_blank" rel="noopener">Manifest™</a></h3><p><strong><code>tl;dr</code></strong></p><ul>
+<li><strong>Seid ihr Member?</strong><br>
+Dann schickt eine GPG Signierte Mail an <code>vorstand at vebit.xyz</code>:</li>
+</ul><blockquote>
+<p>Hiermit erkläre ich $membername und $member_ID mich verbindlich bereit, der Werkkooperative der Technikfreundinnen beizutreten.<br>
+Ich erkläre mich bereit, den Betrag von $Betrag (mindestens 500 € außer bei finanziell schwachen Mitteln) als meinen Anteil am Eigenkapital der Genossenschaft binnen eines Jahres nach Gründung (als Einmalzahlung oder in Raten) der Genossenschaft zu überweisen. Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100€) zu leisten.</p>
+</blockquote><ul>
+<li><strong>Seid ihr noch kein Member, wollt aber mitmachen?</strong><br>
+-&gt; Werdet Member!<br>
+Ein Webformular wird es dafür bald geben. Solange gibt es PDF’s zum ausfüllen auf <a href="https://vebit.xyz/member/" target="_blank" rel="noopener">vebit.xyz/member/</a> verlinkt.</li>
+</ul></div>
+---
+podcast_shownotes:
+
+<br/>
+
+ Shownotes
+===============
+
+**Wichtige Podcastfolge!**
+
+Wir machen die Zeichnungsrunde für das Eigenkapital in der Hacker Genossenschaft. Um Sinvoll am 2.1. die Genossenschaft zu starten, brauchen wir bis Ende Oktober di Zusage von mindesten 50 Hacksen und Hackern so wie mindestens 50'000€ Eigenkapital.
+
+Wieso das alles? Und wie? Das erfahrt ihr in dieser Podcastfolge.
+
+Lest das **Manifest**:
+<a href="https://pads.vebit.xyz/s/oed8xhH9e" class="button special">Manifest™</a>
+
+**``tl;dr``**
++ **Seid ihr Member?**
+Dann schickt eine GPG Signierte Mail an `vorstand at vebit.xyz`:
+
+> Hiermit erkläre ich $membername und $member_ID mich verbindlich bereit, der Werkkooperative der Technikfreundinnen beizutreten.
+Ich erkläre mich bereit, den Betrag von $Betrag (mindestens 500 € außer bei finanziell schwachen Mitteln) als meinen Anteil am Eigenkapital der Genossenschaft binnen eines Jahres nach Gründung (als Einmalzahlung oder in Raten) der Genossenschaft zu überweisen. Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100€) zu leisten.
+
++ **Seid ihr noch kein Member, wollt aber mitmachen?**
+-> Werdet Member!
+Ein Webformular wird es dafür bald geben. Solange gibt es PDF's zum ausfüllen auf [vebit.xyz/member/](https://vebit.xyz/member/) verlinkt.
+---
+podcast_teaser: Jetzt geht es los. Wir gründen die WTF eG. Dafür müssen wir bis zum 31.10.20 eine gewissen Menge Gründer und Zeichnungskapital (zahlbar nächstes Jahr) zusammenbringen. Hört rein, schreibt ins Forum, und eine Mail.
+---
+mp3leng: 23500865
+---
+oggleng: 46342156
