@@ -17,7 +17,11 @@
   },
   "Mitglied werden": {
     "href": "/member",
-    "items": {}
+    "list_childs": true,
+    "items": {
+      "VEBIT e.V.": "/member",
+      "WTF e.G.": "/membership"
+    }
   },
   "Impressum": {
     "href": "/impressum",
