@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{%- block site_description -%}
+  {{ this.description }}
+{%- endblock -%}
+
+{% block body %}
+<section id="main" class="container">
+  <header>
+    <h2>{{ this.title }}</h2>
+    {{ this.description }}
+  </header>
+  <div class="row">
+    <div class="col-12">
+      <!-- Form -->
+      <section class="box">
+      <section id="content"><h2>Mitgliedschaft</h2>
+        {{ this.body }}
+      </section>
+    </div>
+  </div>
+</section>
+    <script src="jquery-1.8.3.min.js" type="text/javascript" defer="defer"></script>
+    <script src="jquery.dataset.js" type="text/javascript" defer="defer"></script>
+    <script src="membership.js" type="text/javascript" defer="defer"></script>
+{% endblock %}
