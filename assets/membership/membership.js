@@ -14,7 +14,7 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 'Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100 €) zu leisten.</p>'+
 '<p>&nbsp;</p>'+
 
-'<p><input type="radio" name="membership" id="oldmember" value="oldmember" checked="checked"><label for="neumitglied">Ich <strong>bin bereits Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
+'<p><input type="radio" name="membership" id="oldmember" value="oldmember" checked="checked"><label for="oldmember">Ich <strong>bin bereits Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
 
 '<div class="oldmember">'+
 
@@ -23,7 +23,7 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 
 '</div>'+
 
-'<p><input type="radio" name="membership" id="newmember" value="newmember"><label for="neumitglied">Ich <strong>bin noch kein Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
+'<p><input type="radio" name="membership" id="newmember" value="newmember"><label for="newmember">Ich <strong>bin noch kein Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
 '<div class="newmember">'+
 
 '<p>Ich werden in Kürze mit der folgenden E-Mail (und Fingerprint meines PGP-Schlüssels) dem VEBIT e. V. beitreten.</p>'+
@@ -43,7 +43,7 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 
 '<p><input type="text" id="date"></p>'+
 '<p class="desc"><label for="date">Datum</label></p>'+
-'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
+'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnungserklärung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
 
 function getText(id) {
 
@@ -99,14 +99,10 @@ function generateEml() {
 		var email = getText('email');
 		var pgp = getText('pgp');
 	}
-	
-	//~ if (email) eml += '<email>' + escape(email) + '</email>\n';
-	//~ if (pgp) eml += '  <pgp-fpr>' + escape(pgp) + '</pgp-fpr>\n';
-	//~ if (note) eml += '  <note>' + escape(note) + '</note>\n';
-	
+
 	eml += 'Ich erkläre mich, ' + nick + ' (Mitglied ' + chiffre + ') hiermit verbindlich bereit, der *Werkkooperative der Technikfreundinnen* beizutreten.\n';
 	eml += 'Ich sichere zu, den Betrag von ' + (shares*100) + ' € für ' + shares + ' Anteile binnen eines Jahres nach Gründung zu überweisen und den jährlichen Mitgliedsbeitrag (etwa 100 €) zu leisten.\n';
-	eml += 'Ich werde in Kürze mit der E-Mail ' + email + '(' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
+	eml += 'Ich werde in Kürze mit der E-Mail ' + email + ' (' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
 	eml += note + '\n\n';
 	eml += d;
 
