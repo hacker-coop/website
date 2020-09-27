@@ -38,13 +38,13 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 '<p><input type="text" id="nick"></p>'+
 '<p class="desc"><label for="nick">Nick (Nationalien bitte mit Beitrittserklärung und Fragebogen, s. PDF-Dateien)</label></p>'+
 '<p><input type="text" id="shares" value="5"></p>'+
-'<p class="desc"><label for="shares">Anteile (Empfehlung: 5 Anteile zu je 100 €, weniger Anteile bei knappen Mitteln)</label></p>'+
+'<p class="desc"><label for="shares">Anteile (Empfehlung: 5 oder mehr Anteile zu je 100 €, weniger Anteile bei knappen Mitteln)</label></p>'+
 '<p><textarea rows="3" cols="40" id="note"></textarea>'+
 '<p class="desc"><label for="note">Bemerkungen (z. B. zur Zahlungsweise)</label></p>'+
 
 '<p><input type="text" id="date"></p>'+
 '<p class="desc"><label for="date">Datum</label></p>'+
-'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Antrag generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Beitrittserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
+'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
 
 function getText(id) {
 
@@ -137,8 +137,9 @@ function update() {
 		
 	}
 
-	var xmlUri = 'data:application/xml;charset=utf-8,' + encodeURIComponent(generateXml());
-	var emlUri = 'mailto:vorstand@vebit.xyz?subject=Beitrittserklärung&body=' + encodeURIComponent(generateEml());
+	var xmlDat = generateXml();
+	var xmlUri = 'data:application/xml;charset=utf-8,' + encodeURIComponent(xmlDat);
+	var emlUri = 'mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=' + encodeURIComponent(generateEml()+'\n\n\n'+xmlDat);
 	container.find('#ok').attr('href', xmlUri);
 	container.find('#mailto').attr('href', emlUri);
 }
