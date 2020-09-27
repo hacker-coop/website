@@ -8,6 +8,7 @@ function escape(s) {
 		.replace(/>/g, "&gt;");
 }
 
+//~ document.getElementsByClassName('membership-form')[0].innerHTML='';
 var container = $(this);
 container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 '<p>Ich erkläre mich hiermit verbindlich bereit, der <b>Werkkooperative der Technikfreundinnen</b> beizutreten und binnen eines Jahres nach Gründung, als Einmalzahlung oder in Raten, Anteile <i>(Anhalt für den Gesamtbetrag 500 €)</i> zur Zeichnung an die Genossenschaft zu überweisen.<br/>'+
@@ -46,11 +47,24 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 '<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnungserklärung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
 
 function getText(id) {
-
 	return container.find('#' + id).val();
+}
+// change value of input element with id
+function setText(id,v) {
+	return document.getElementById(id).value = v;
 }
 function isChecked(id) {
 	return container.find('#' + id).prop('checked');
+}
+// toggle all elements of ClassName (to displayState)
+function toggle(className, displayState='', type='ClassName'){
+	var elements = document.getElementsByClassName(className)
+	var setState = (displayState == 'show')?'block':'none';
+
+	for (var i = 0; i < elements.length; i++){
+		if (displayState == '') setState = (elements[i].style.display == 'none')?'block':'none';
+		elements[i].style.display = setState;
+	}
 }
 
 function generateXml() {
@@ -139,9 +153,16 @@ function update() {
 	container.find('#mailto').attr('href', emlUri);
 }
 
+//~ var elm = document.getElementsByTagName('input');
+//~ for (var i = 0; i < elm.length; i++) {
+	//~ elm[i].addEventListener('change', update);
+//~ }
+//~ var elm = document.getElementsByTagName('textarea');
+//~ for (var i = 0; i < elm.length; i++) {
+	//~ elm[i].addEventListener('change', update);
+//~ }
 container.find('input').on('change', update);
 container.find('textarea').on('change', update);
 update();
-
 
 });
