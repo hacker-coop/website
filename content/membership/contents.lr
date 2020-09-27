@@ -12,7 +12,7 @@ body:
 <p>Es gibt ein Manifest zur Gründung der Genossenschaft. Dieses findet man dort:</p>
 <a class="button special" href="https://pads.vebit.xyz/s/kSuFZ9fH0">Manifest™</a>
 <br/><br/>
-<h3>PDF-Formulare</h3>
+<h3 id="formulare">PDF-Formulare</h3>
 <p>Hier die Formulare zum <a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown#user-content-aufnahme-von-mitgliedern">Beitrittsprozess</a>:</p>
 
 <ul>
