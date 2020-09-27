@@ -10,12 +10,11 @@ function escape(s) {
 
 var container = $(this);
 container.html('<h3>Zusage der Anteilszeichnung</h3>'+
-'<p>Ich erkläre mich hiermit verbindlich bereit, der <em>Werkkooperative der Technikfreundinnen</em> beizutreten und binnen eines Jahres nach Gründung, als Einmalzahlung oder in Raten, Anteile (Anhalt für den Gesamtbetrag 500 €) zur Zeichnung an die Genossenschaft zu überweisen.<br/>'+
+'<p>Ich erkläre mich hiermit verbindlich bereit, der <b>Werkkooperative der Technikfreundinnen</b> beizutreten und binnen eines Jahres nach Gründung, als Einmalzahlung oder in Raten, Anteile <i>(Anhalt für den Gesamtbetrag 500 €)</i> zur Zeichnung an die Genossenschaft zu überweisen.<br/>'+
 'Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100 €) zu leisten.</p>'+
 '<p>&nbsp;</p>'+
 
 '<p><input type="radio" name="membership" id="oldmember" value="oldmember" checked="checked"><label for="neumitglied">Ich <strong>bin bereits Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
-
 
 '<div class="oldmember">'+
 
