@@ -68,7 +68,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
     <itunes:block class="itunes_block">no</itunes:block>
     <updated>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</updated>
-    <!--pubDate>1980-01-01T00:42:23Z</pubDate-->
+    <pubDate>Sun, 12 Apr 2020 11:42:23 +0000</pubDate>
     <language>{{ podcastlanguage }}</language>
     <copyright>&#169; 2020 {{ podcastauthor }}</copyright>
     <id>{{ podcastxml|url(external=true) }}</id>
