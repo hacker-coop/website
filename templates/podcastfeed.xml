@@ -34,7 +34,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:fh="http://purl.org/syndication/history/1.0" >
   <channel>
-    <lastBuildDate>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss z', 'UTC', locale='en_US') }}</lastBuildDate>
+    <lastBuildDate>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</lastBuildDate>
     <title type="text">{{ podcasttitle }}</title>
     <link>{{ '/'|url(external=true) }}{{ search }}/</link>
     <description>
@@ -67,7 +67,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <itunes:explicit class="itunes_explicit">no</itunes:explicit>
     <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
     <itunes:block class="itunes_block">no</itunes:block>
-    <updated>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss z', 'UTC', locale='en_US') }}</updated>
+    <updated>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</updated>
     <!--pubDate>1980-01-01T00:42:23Z</pubDate-->
     <language>{{ podcastlanguage }}</language>
     <copyright>&#169; 2020 {{ podcastauthor }}</copyright>
@@ -110,7 +110,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
             {{ podcastauthor }}
           {%- endif -%}
         </itunes:author>
-        <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss z', 'UTC', locale='en_US') }}</pubDate>
+        <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</pubDate>
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
 		    <description><![CDATA[{{ page.feed_shownotes }}]]></description>
 		    <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
