@@ -114,9 +114,9 @@ function generateEml() {
 		var pgp = getText('pgp');
 	}
 
-	eml += 'Ich erkläre mich, ' + nick + ' (Mitglied ' + chiffre + ') hiermit verbindlich bereit, der *Werkkooperative der Technikfreundinnen* beizutreten.\n';
+	eml += 'Ich erkläre mich, ' + nick + ((chiffre)?' (Mitglied ' + chiffre + ')':'') + ' hiermit verbindlich bereit, der *Werkkooperative der Technikfreundinnen* beizutreten.\n';
 	eml += 'Ich sichere zu, den Betrag von ' + (shares*100) + ' € für ' + shares + ' Anteile binnen eines Jahres nach Gründung zu überweisen und den jährlichen Mitgliedsbeitrag (etwa 100 €) zu leisten.\n';
-	eml += 'Ich werde in Kürze mit der E-Mail ' + email + ' (' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
+	if(isChecked('newmember'))eml += 'Ich werde in Kürze mit der E-Mail ' + email + ' (' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
 	eml += note + '\n\n';
 	eml += d;
 
