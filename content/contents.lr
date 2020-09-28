@@ -2,7 +2,7 @@ title: WTF eG
 ---
 _model: home
 ---
-slogan: Werkkooperative der Technikfreundinnen e.G. i.G.
+slogan: Werkkooperative der Technikfreundinnen e. G. i. G.
 ---
 about_header: Willkommen beim Projekt „Hacker eG“
 ---
@@ -13,7 +13,7 @@ Wem soll sie nützen? Uns allen, wenn es nach uns geht.
 
 Wenn du mehr wissen willst, sende uns eine E-Mail. Wähle als Betreff „Interesse“ und nenne im Text deinen (Nick)name.<br />
 Wendet euch an <i>interesse&#160;at&nbsp;vebit&#160;punkt&#160;xyz</i>.
-<br /><small>Solltest du einen PGP Key dazu suchen, findest du diesen u.a. <a href="https://vebit.xyz/vorstand.gpg">hier</a>.</small>
+<br /><small>Solltest du einen PGP Key dazu suchen, findest du diesen u. a. <a href="https://vebit.xyz/vorstand.gpg">hier</a>.</small>
 ---
 featurebox:
 
@@ -106,7 +106,7 @@ Realisiere gemeinsam Dein langfristiges Projekt. Von Haecksen und Hackern für H
 ---
 head_add: yes
 ---
-head_link_1: https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown
+head_link_1: https://vebit.xyz/member/
 ---
 head_link_2: https://vebit.xyz/about/
 ---
@@ -125,11 +125,11 @@ title: Wie mitmachen?
 ----
 picture: 
 ----
-text: Du solltest ein wenig Hacker Spirit haben. Ob Du nun Coder oder Cu:nstlerin bist. Ob Dein Nick schon bekannt ist oder nicht. Triff uns, erzähle uns von Dir, schreib uns eine Mail. Lege gern Deinen PGP-Key bei.
+text: Du solltest ein wenig Hacker Spirit haben. Ob Du nun Coder oder Cu:nstlerin bist. Ob Dein Nick schon bekannt ist oder nicht. Triff uns, erzähle uns von Dir, schreib uns eine Mail. Lege gern deinen PGP-Key bei oder varrate uns wo wir ihn finden können.
 ----
 url: https://vebit.xyz/member/
 ----
-url_txt: Mitglied werden VEBIT e.V.
+url_txt: Mitglied werden VEBIT e. V.
 ---
 promobox2:
 

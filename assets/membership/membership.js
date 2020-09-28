@@ -36,7 +36,7 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 '</div>'+
 
 '<p><input type="text" id="nick"></p>'+
-'<p class="desc"><label for="nick">Nick (Bürgerliche Personalien bitte mit <a href="#formulare">Beitrittserklärung und Fragebogen, s. PDF-Dateien</a>)</label></p>'+
+'<p class="desc"><label for="nick">(Nick)name (Bürgerliche Personalien bitte mit <a href="#formulare">Beitrittserklärung und Fragebogen, s. PDF-Dateien</a>)</label></p>'+
 '<p><input type="text" id="shares" value="5"></p>'+
 '<p class="desc"><label for="shares">Anteile (Empfehlung: 5 oder mehr Anteile zu je 100 €, weniger Anteile bei knappen Mitteln)</label></p>'+
 '<p><textarea rows="3" cols="40" id="note"></textarea>'+
