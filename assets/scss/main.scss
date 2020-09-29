@@ -2109,7 +2109,8 @@
 .formbox {
     margin: 1em 2em;
     padding: 0.5em 1em;
-    width: 40em;
+    max-width: 90%;
+    min-width: 45ex;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     background-color: #eee;
 }
@@ -2127,7 +2128,7 @@
 }
 .formbox input[type=text], .formbox textarea {
     margin: 0.5rem 0 0;
-    width: 100%;
+    max-width: 95%;
     font-family: monospace;
     font-size: 110%;
     background-color: white;
@@ -2156,7 +2157,7 @@ ul#progressbars {
 	list-style-type:none;
 }
 #progressbars li label {
-	width: 6ex;
+	max-width: 6ex;
 	display: inline-block;
 	font-size: 120%;
 }
@@ -2168,7 +2169,8 @@ progress[value] {
 	position: relative;
 	left: 6ex;
 	top: 2ex;
-	width: 24ex;
+	max-width: 24ex;
+	min-width: 6ex;
 }
 #progressbars progress::progress-value,
 #progressbars progress::progress-bar {
