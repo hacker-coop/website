@@ -108,11 +108,15 @@ head_add: yes
 ---
 head_link_1: https://vebit.xyz/member/
 ---
-head_link_2: https://vebit.xyz/about/
+head_link_2: https://vebit.xyz/membership/
+---
+head_link_3: https://vebit.xyz/about/
 ---
 head_text_1: Mitmachen
 ---
-head_text_2: Weitere Infos
+head_text_2: Zeichnen
+---
+head_text_3: Weitere Infos
 ---
 about_header_2: des Vereins zur Erschließung neuer Betätigungsformen in der Informationstechnologie e. V. (VEB IT), mit dem Ziel der Gründung der Werkkooperative der Technikfreundinnen eG
 ---
