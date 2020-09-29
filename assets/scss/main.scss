@@ -46,6 +46,18 @@
 		vertical-align: baseline;
 	}
 
+/* adding hover effect for `time` tag*/
+	time:hover::after {
+		border: 1px solid black;
+		position: relative;
+		top: -2ex;
+		
+		blackground-color: #aa0;
+		font-size: 80%;
+		content: attr(datetime);
+	}
+/* / */
+
 	article, aside, details, figcaption, figure,
 	footer, header, hgroup, menu, nav, section {
 		display: block;
