@@ -6,12 +6,36 @@ description: Zeichne Teile der WTF Genossenschaft
 ---
 body:
 
-<div class="membership-form"></div>
+<div class="membership-form formbox">
+<noscript>Hier soll noch – für jene, die kein JavaScript im Browser aktiv haben – ein PDF-Formular verlinkt werden. Unterstützung für derlei Dinge ist gerne gesehen.</noscript></div>
 
-<h3>Manifest</h3>
+<h3 id="manifest">Manifest</h3>
 <p>Es gibt ein Manifest zur Gründung der Genossenschaft. Dieses findet man dort:</p>
 <a class="button special" href="https://pads.vebit.xyz/s/kSuFZ9fH0">Manifest™</a>
 <br/><br/>
+<h3 id="fortschritt-zeichnung">Fortschritt</h3>
+<div class="formbox">
+<p>Mit Stand <time datetime="2020-09-29 11:00">2020-09-29</time> die Zahlen zur Zeichnung:</p>
+<ul id="progressbars">
+<li><label for="deadline">Deadline:	</label><progress value="30" 	data-value="30" 	max="60" data-max="60" id="deadline"></progress></li>
+<li><label for="compeers">Genossen:	</label><progress value="22" 	data-value="22" 	max="100" data-max="100" id="compeers"></progress></li>
+<li><label for="shares">Anteile:		</label><progress value="213"	data-value="213"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<script type="text/javascript" defer="defer">
+function progressupdate(repeat){
+	setTimeout(function () {
+		let e=document.getElementById('deadline');
+		let end=new Date('2020-10-30T23:42:00');
+		let now=new Date();
+		let content=Math.ceil((end-now)/(60*60*24*1000));
+		e.setAttribute('data-value', content)
+		e.value = content;
+		progressupdate(60*1000);
+    }, repeat);
+}
+setTimeout(progressupdate(),3000);
+</script>
+</ul>
+</div>
 <h3 id="formulare">PDF-Formulare</h3>
 <p>Hier die Formulare zum <a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown#user-content-aufnahme-von-mitgliedern">Beitrittsprozess</a>:</p>
 
