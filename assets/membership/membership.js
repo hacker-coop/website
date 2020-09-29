@@ -44,7 +44,8 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 
 '<p><input type="text" id="date"></p>'+
 '<p class="desc"><label for="date">Datum</label></p>'+
-'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnungserklärung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
+'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnungserklärung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>'+
+'<p>Die XML-Datei fasst die Angaben kurz zusammen und wird künftig durch eine PDF ersetzt.</p>' );
 
 function getText(id) {
 	return container.find('#' + id).val();
