@@ -111,6 +111,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
           {%- endif -%}
         </itunes:author>
         <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</pubDate>
+        <itunes:duration>{{ page.duration }}</itunes:duration>
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
 		    <description><![CDATA[{{ page.feed_shownotes }}]]></description>
 		    <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
@@ -122,6 +123,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
             {%- endif -%}"/>
         <itunes:subtitle>{{ page.podcast_teaser }}</itunes:subtitle>
 		    <itunes:title>{{ page.title }}</itunes:title>
+		    <itunes:season>{{ page.season }}</itunes:season>
+		    <itunes:episode>{{ page.episode }}</itunes:episode>
 		    <itunes:episodeType class="episodeType">full</itunes:episodeType>
 		    <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
     		<content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
