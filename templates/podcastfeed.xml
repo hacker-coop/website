@@ -26,12 +26,12 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 {#- custom CSS fuer das XML... -#}
 <?xml-stylesheet href="{{ '/css/xml.css'|asseturl }}" type="text/css" ?>
 <rss version="2.0"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:georss="http://www.georss.org/georss"
-	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-	xmlns:psc="http://podlove.org/simple-chapters"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:psc="http://podlove.org/simple-chapters"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:fh="http://purl.org/syndication/history/1.0" >
   <channel>
     <lastBuildDate>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</lastBuildDate>
@@ -46,8 +46,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         {% endif %}
     </description>
     <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
-    <atom:link rel="self" type="application/rss+xml"	title="{{ podcasttitle }}"	href="{{ podcastxml|url(external=true) }}" />
-    <atom:link rel="first" type="application/rss+xml"	href="{{ podcastxml|url(external=true) }}" />
+    <atom:link rel="self" type="application/rss+xml"    title="{{ podcasttitle }}"  href="{{ podcastxml|url(external=true) }}" />
+    <atom:link rel="first" type="application/rss+xml"   href="{{ podcastxml|url(external=true) }}" />
     <atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>
     <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
     <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
@@ -64,7 +64,6 @@ Source: https://github.com/c3woc/c3woc-podcast.git
       <itunes:category text="Technology"/>
       <itunes:category text="Science"/>
     </itunes:category>
-    <itunes:explicit class="itunes_explicit">no</itunes:explicit>
     <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
     <itunes:block class="itunes_block">no</itunes:block>
     <updated>{{ none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</updated>
@@ -97,7 +96,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
             {{ podcastauthor }}
           {%- endif -%}
         </author>
-		    <itunes:author>
+            <itunes:author>
           {%- if page.author1 %} {{ page.author1 }}
             {%- if page.author2 %}{% if page.author3 -%},{%- else %} und{% endif %} {{ page.author2 }}{% endif -%}
             {%- if page.author3 %}{% if page.author4 -%},{%- else %} und{% endif %} {{ page.author3 }}{% endif -%}
@@ -113,8 +112,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</pubDate>
         <itunes:duration>{{ page.duration }}</itunes:duration>
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
-		    <description><![CDATA[{{ page.feed_shownotes }}]]></description>
-		    <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
+            <description><![CDATA[{{ page.feed_shownotes }}]]></description>
+            <atom:link href="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/" />
         <enclosure url="{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/
             {%- if this.path == oggfeed -%}
               {{ page.podcastogg }}" type="audio/ogg" length="{% if page.oggleng %}{{ page.oggleng }}{% else %}1337{% endif %}
@@ -122,12 +121,13 @@ Source: https://github.com/c3woc/c3woc-podcast.git
               {{ page.podcastmp3 }}" type="audio/mpeg" length="{% if page.mp3leng %}{{ page.mp3leng }}{% else %}1337{% endif %}
             {%- endif -%}"/>
         <itunes:subtitle>{{ page.podcast_teaser }}</itunes:subtitle>
-		    <itunes:title>{{ page.title }}</itunes:title>
-		    <itunes:season>{{ page.season }}</itunes:season>
-		    <itunes:episode>{{ page.episode }}</itunes:episode>
-		    <itunes:episodeType class="episodeType">full</itunes:episodeType>
-		    <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
-    		<content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
+            <itunes:title>{{ page.title }}</itunes:title>
+            <itunes:season>{{ page.season }}</itunes:season>
+            <itunes:episode>{{ page.episode }}</itunes:episode>
+            <itunes:episodeType class="episodeType">full</itunes:episodeType>
+            <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
+            <itunes:explicit class="itunes_explicit">no</itunes:explicit>
+            <content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
         <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser {% if this.path == oggfeed %}OGG{% else %}MP3{% endif %} Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
 
 {#-
