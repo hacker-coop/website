@@ -5,10 +5,10 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 -#}
 {%- set search = "podcast" -%}
 {%- set podcasttitle = "WTF eG Podcast" -%}
-{%- set podcastdescribtion = "Der Podcast der Werkkooperative der Technikfreundinnen e.G." -%}
-{%- set podcastsubtitle = "Der Podcast der Werkkooperative der Technikfreundinnen e.G." -%}
-{%- set podcastsummary = "Der Podcast der Werkkooperative der Technikfreundinnen e.G." -%}
-{%- set podcastauthor = "Vebit e.V. and Members" -%}
+{%- set podcastdescribtion = "Der Podcast der Werkkooperative der Technikfreundinnen e. G." -%}
+{%- set podcastsubtitle = "Der Podcast der Werkkooperative der Technikfreundinnen e. G." -%}
+{%- set podcastsummary = "Der Podcast der Werkkooperative der Technikfreundinnen e. G." -%}
+{%- set podcastauthor = "Vebit e. V. and Members" -%}
 {%- set podcastemail = "vorstand@vebit.xyz" -%}
 {%- set podcastxml = "/wtf.xml" -%}
 {%- set podcastkeywords = "WTF, Hacker, CCC, COOP" -%}

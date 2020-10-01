@@ -3,7 +3,7 @@
 
 {%- macro _title() -%}
   {%- block title -%}
-    Werkkooperative der Technikfreundinnen e.G.
+    Werkkooperative der Technikfreundinnen e. G.
   {%- endblock -%}
 {%- endmacro -%}
 {%- set title = _title() -%}
@@ -15,7 +15,7 @@
 {%- endmacro -%}
 {%- set description = _description() -%}
 {%- set bodytitle = 'WTF' -%}
-{%- set bodysubtitle = 'Werkkooperative der Technikfreundinnen e.G. i.g.' -%}
+{%- set bodysubtitle = 'Werkkooperative der Technikfreundinnen e. G. i. G.' -%}
 
 <!doctype html>
 <html>
@@ -31,13 +31,13 @@ __        ____________________
      \  / \  /    | |  | |
       \/   \/     |_|  |_|
        Werkkooperative der
-       Technikfreundinnen e.G.
+       Technikfreundinnen e. G.
 
 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{{ title }}  — VEBIT e.V.</title>
-    <meta property="og:title" itemprop="name" content="{{ title }} — VEBIT e.V."/>
+    <title>{{ title }}  — VEBIT e. V.</title>
+    <meta property="og:title" itemprop="name" content="{{ title }} — VEBIT e. V."/>
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -131,7 +131,7 @@ __        ____________________
             <li style="color: lawngreen;"><a href="https://vebit.xyz/podcast/" title="Podcast" class="icon brands fa-itunes"><span class="label">Podcast</span></a></li>
           </ul>
 					<ul class="copyright">
-            <li>&copy; Copyright {{ none|datetimeformat('YYYY') }} VEBIT e.V.</li>
+            <li>&copy; Copyright {{ none|datetimeformat('YYYY') }} VEBIT e. V.</li>
             <li><a href="https://github.com/hacker-coop/website/blob/master/LICENCE">MIT License</a></li>
             <li><a href="{{ '/impressum/'|url(external=true) }}">Impressum</a></li>
             <li><a href="{{ '/datenschutz/'|url(external=true) }}">Datenschutz</a></li>
