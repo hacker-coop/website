@@ -15,18 +15,18 @@ body:
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Fortschritt</h3>
 <div class="formbox">
-<p>Mit Stand <time datetime="2020-09-30 23:00">2020-09-30</time> zur Zeichnung:</p>
+<p>Mit Stand <time datetime="2020-10-02 01:13:37">2020-10-02</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li><label for="deadline">Deadline:	</label><progress value="29" 	data-value="29" 	max="60" data-max="60" id="deadline"></progress></li>
-<li><label for="compeers">Genossen:	</label><progress value="23" 	data-value="23" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="shares">Anteile:	</label><progress value="173"	data-value="173"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li><label for="compeers">Genossen:	</label><progress value="24" 	data-value="24" 	max="100" data-max="100" id="compeers"></progress></li>
+<li><label for="shares">Anteile:	</label><progress value="174"	data-value="174"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
 <script type="text/javascript" defer="defer">
 function progressupdate(repeat){
 	setTimeout(function () {
 		let e=document.getElementById('deadline');
 		let end=new Date('2020-10-30T23:42:00');
 		let now=new Date();
-		let content=60-Math.ceil((end-now)/(60*60*24*1000));
+		let content=Math.ceil((end-now)/(60*60*24*1000));
 		e.setAttribute('data-value', content)
 		e.value = content;
 		progressupdate(60*1000);
