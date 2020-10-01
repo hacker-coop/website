@@ -140,19 +140,16 @@ function update() {
 	}
 	if (!getText('date')) {
 		var d = new Date();
-		d.setHours(23);
-		d.setDate(1);
-		var s = d.toISOString().replace(/T.+/, "");
-		container.find('#date').val(s);
-		
+		d.setHours(-Math.ceil(d.getTimezoneOffset()/60));
+		setText('date', d.toISOString().replace(/T.+/, ""));
 	}
 
 	var xmlDat = generateXml();
 	var xmlUri = 'data:application/xml;charset=utf-8,' + encodeURIComponent(xmlDat);
 	var emlUri = 'mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=' + encodeURIComponent(generateEml()+'\n\n\n'+xmlDat);
 	//~ container.find('#ok').attr('href', xmlUri);
-	container.find('#ok').attr('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(generateEml()+'\n\n\n'+xmlDat) );
-	container.find('#mailto').attr('href', emlUri);
+	document.getElementById('ok').setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(generateEml()+'\n\n\n'+xmlDat) );
+	document.getElementById('mailto').setAttribute('href', emlUri);
 }
 
 //~ var elm = document.getElementsByTagName('input');
