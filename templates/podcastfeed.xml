@@ -46,7 +46,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
         {% endif %}
     </description>
     <!-- optional to RSS spec -->
-    <!--lastBuildDate>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</lastBuildDate><!-- todo: implement / use plugin for time_modified (e.g. Lektor-Git-Timestamp) -->
+    <!--lastBuildDate>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</lastBuildDate--><!-- todo: implement / use plugin for time_modified (e.g. Lektor-Git-Timestamp) -->
     <image><url>{{ podcastlogassetimagepath|url(external=true) }}</url><title>{{ podcasttitle }}</title><link>{{ '/'|url(external=true) }}{{ search }}/</link></image>
     <atom:link rel="self" type="application/rss+xml"    title="{{ podcasttitle }}"  href="{{ podcastxml|url(external=true) }}" />
     <atom:link rel="first" type="application/rss+xml"   href="{{ podcastxml|url(external=true) }}" />
@@ -68,7 +68,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     </itunes:category>
     <itunes:subtitle class="itunes_subtitle">{{ podcastsubtitle }}</itunes:subtitle>
     <itunes:block class="itunes_block">no</itunes:block>
-    <!--updated>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</updated><!-- see lastBuildDate -->
+    <!--updated>{ { none|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') } }</updated--><!-- see lastBuildDate -->
     <pubDate>Sun, 12 Apr 2020 11:42:23 +0000</pubDate>
     <language>{{ podcastlanguage }}</language>
     <copyright>&#169; 2020 {{ podcastauthor }}</copyright>
