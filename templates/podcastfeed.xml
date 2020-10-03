@@ -106,7 +106,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
             <itunes:summary class="itunessummary"><![CDATA[{{ page.feed_shownotes }}]]></itunes:summary>
             <itunes:explicit class="itunes_explicit">no</itunes:explicit>
             <content:encoded class="encoded"><![CDATA[{{ page.feed_shownotes }}<br/>
-        <p>Vielen Dank f&uuml;r das anh&ouml;ren dieser {% if this.path == oggfeed %}OGG{% else %}MP3{% endif %} Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr dar&uuml;ber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu d&uuml;rfen!</p>]]></content:encoded>
+        <p>Vielen Dank für das anhören dieser {% if this.path == oggfeed %}OGG{% else %}MP3{% endif %} Podcastfolge. Wenn ihr Fragen oder Anmerkungen habt freuen wir uns sehr darüber diese auf <a href="mailto:{{ podcastemail }}">{{ podcastemail }}</a> empfangen zu dürfen!</p>]]></content:encoded>
 
 {#-
 
