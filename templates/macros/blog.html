@@ -6,15 +6,7 @@
       <h2>{{ post.title }}</h2>
     {% endif %}
       <p style="color: #2a7fff;">Von
-        {%- if post.author1 %} {{ post.author1 }}{% endif %}
-        {%- if post.author2 %}{% if post.author3 %},{% else %} und{% endif %} {{ post.author2 }}{% endif %}
-        {%- if post.author3 %}{% if post.author4 %},{% else %} und{% endif %} {{ post.author3 }}{% endif %}
-        {%- if post.author4 %}{% if post.author5 %},{% else %} und{% endif %} {{ post.author4 }}{% endif %}
-        {%- if post.author5 %}{% if post.author6 %},{% else %} und{% endif %} {{ post.author5 }}{% endif %}
-        {%- if post.author6 %}{% if post.author7 %},{% else %} und{% endif %} {{ post.author6 }}{% endif %}
-        {%- if post.author7 %}{% if post.author8 %},{% else %} und{% endif %} {{ post.author7 }}{% endif %}
-        {%- if post.author8 %} und {{ post.author8 }}{% endif -%}
-        {{ ' ' }}aus der <a style="color:
+        {% if post.authors %}{% for author in post.authors.split(",") %}{% if author == post.authors.split(",")[0] %}{% elif author == post.authors.split(",")[-1] %} und {% else %}, {% endif %}{{ author }}{% endfor %}{% else %}{{ podcastauthor }}{% endif %} aus der <a style="color:
             {%- if from_index  -%}
               {{ ' navy;' }}
             {%- else -%}

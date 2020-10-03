@@ -34,7 +34,7 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:fh="http://purl.org/syndication/history/1.0" >
   <channel>
-	<!-- essential to RSS spec https://www.rssboard.org/rss-specification -->
+    <!-- essential to RSS spec https://www.rssboard.org/rss-specification -->
     <title type="text">{{ podcasttitle }}</title>
     <link>{{ '/'|url(external=true) }}{{ search }}/</link>
     <description>
@@ -85,32 +85,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
       <item>
         <title>{{ page.title }}</title>
         <link>{{ '/'|url(external=true) }}{{ search }}/{{ page._id }}/</link>
-        <author class="itunes_author">
-          {%- if page.author1 %} {{ page.author1 }}
-            {%- if page.author2 %}{% if page.author3 -%},{%- else %} und{% endif %} {{ page.author2 }}{% endif -%}
-            {%- if page.author3 %}{% if page.author4 -%},{%- else %} und{% endif %} {{ page.author3 }}{% endif -%}
-            {%- if page.author4 %}{% if page.author5 -%},{%- else %} und{% endif %} {{ page.author4 }}{% endif -%}
-            {%- if page.author5 %}{% if page.author6 -%},{%- else %} und{% endif %} {{ page.author5 }}{% endif -%}
-            {%- if page.author6 %}{% if page.author7 -%},{%- else %} und{% endif %} {{ page.author6 }}{% endif -%}
-            {%- if page.author7 %}{% if page.author8 -%},{%- else %} und{% endif %} {{ page.author7 }}{% endif -%}
-            {%- if page.author8 %} und {{ page.author8 }}{%- endif -%}
-          {%- else -%}
-            {{ podcastauthor }}
-          {%- endif -%}
-        </author>
-            <itunes:author>
-          {%- if page.author1 %} {{ page.author1 }}
-            {%- if page.author2 %}{% if page.author3 -%},{%- else %} und{% endif %} {{ page.author2 }}{% endif -%}
-            {%- if page.author3 %}{% if page.author4 -%},{%- else %} und{% endif %} {{ page.author3 }}{% endif -%}
-            {%- if page.author4 %}{% if page.author5 -%},{%- else %} und{% endif %} {{ page.author4 }}{% endif -%}
-            {%- if page.author5 %}{% if page.author6 -%},{%- else %} und{% endif %} {{ page.author5 }}{% endif -%}
-            {%- if page.author6 %}{% if page.author7 -%},{%- else %} und{% endif %} {{ page.author6 }}{% endif -%}
-            {%- if page.author7 %}{% if page.author8 -%},{%- else %} und{% endif %} {{ page.author7 }}{% endif -%}
-            {%- if page.author8 %} und {{ page.author8 }}{%- endif -%}
-          {%- else -%}
-            {{ podcastauthor }}
-          {%- endif -%}
-        </itunes:author>
+        <author class="itunes_author">{% if page.authors %}{% for author in page.authors.split(",") %}{% if author == page.authors.split(",")[0] %}{% elif author == page.authors.split(",")[-1] %} und {% else %}, {% endif %}{{ author }}{% endfor %}{% else %}{{ podcastauthor }}{% endif %}</author>
+        <itunes:author>{% if page.authors %}{% for author in page.authors.split(",") %}{% if author == page.authors.split(",")[0] %}{% elif author == page.authors.split(",")[-1] %} und {% else %}, {% endif %}{{ author }}{% endfor %}{% else %}{{ podcastauthor }}{% endif %}</itunes:author>
         <pubDate>{{ page.pub_date|datetimeformat('ccc, dd MMM YYYY hh:mm:ss Z', 'UTC', locale='en_US') }}</pubDate>
         <itunes:duration>{{ page.duration }}</itunes:duration>
         <guid isPermaLink="false">WAFFEL+{{ page._id }}-{{ page.pub_date|datetimeformat('YYYYMMddhhmmss') }}-L3D</guid>
@@ -146,32 +122,8 @@ Source: https://github.com/c3woc/c3woc-podcast.git
 </psc:chapters>
 
 -#}
-{%- if page.author1 %}
-        <atom:contributor><atom:name>{{ page.author1 }}</atom:name></atom:contributor>
-        {% if page.author2 -%}
-          <atom:contributor><atom:name>{{ page.author2 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author3 -%}
-          <atom:contributor><atom:name>{{ page.author3 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author4 -%}
-          <atom:contributor><atom:name>{{ page.author4 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author5 -%}
-          <atom:contributor><atom:name>{{ page.author5 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author6 -%}
-          <atom:contributor><atom:name>{{ page.author6 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author7 -%}
-          <atom:contributor><atom:name>{{ page.author7 }}</atom:name></atom:contributor>
-        {%- endif %}
-        {% if page.author8 -%}
-          <atom:contributor><atom:name>{{ page.author8 }}</atom:name></atom:contributor>
-        {%- endif %}
-    {%- else %}
-        <atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>
-{%- endif %}
+
+{%- if page.authors %}{% for author in page.authors.split(",") %}<atom:contributor><atom:name>{{ author }}</atom:name></atom:contributor>{% endfor %}{%- else %}<atom:contributor><atom:name>{{ podcastauthor }}</atom:name></atom:contributor>{%- endif %}
       </item>
         {%- endif %}
       {%- endfor %}
