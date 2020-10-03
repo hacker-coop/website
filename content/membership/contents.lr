@@ -17,9 +17,9 @@ body:
 <div class="formbox">
 <p>Mit Stand <time datetime="2020-10-02 01:13:37">2020-10-02</time> zur Zeichnung:</p>
 <ul id="progressbars">
-<li><label for="deadline">Deadline:	</label><progress value="31" 	data-value="31" 	max="60" data-max="60" id="deadline"></progress></li>
-<li><label for="compeers">Genossen:	</label><progress value="24" 	data-value="24" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="shares">Anteile:	</label><progress value="174"	data-value="174"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li><label for="deadline">Deadline:	</label><progress value="33" 	data-value="33" 	max="60" data-max="60" id="deadline"></progress></li>
+<li><label for="compeers">Genossen:	</label><progress value="26" 	data-value="26" 	max="100" data-max="100" id="compeers"></progress></li>
+<li><label for="shares">Anteile:	</label><progress value="205"	data-value="205"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
 <script type="text/javascript" defer="defer">
 function progressupdate(repeat){
 	setTimeout(function () {
