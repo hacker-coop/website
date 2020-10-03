@@ -19,8 +19,38 @@ body:
 <ul id="progressbars">
 <li><label for="deadline">Deadline:	</label><progress value="33" 	data-value="33" 	max="60" data-max="60" id="deadline"></progress></li>
 <li><label for="compeers">Genossen:	</label><progress value="26" 	data-value="26" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="shares">Anteile:	</label><progress value="205"	data-value="205"	max="500" data-max="500" id="shares"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li><label for="share">Anteile:	</label><progress value="205"	data-value="205"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
 <script type="text/javascript" defer="defer">
+function ggt(a,b){
+	a=a*1;
+	b=b*1;
+	if (a<b) return ggt(b,a);
+	if (a==b) return a;
+	if (a % b == 0) return b;
+	f = (a - a % b) / b;      
+	return ggt(a - f * b, b);
+}
+
+function kuerze(id){
+	var zid='data-value';
+	var nid='data-max';
+	z = document.getElementById(id).getAttribute(zid) * 1 ;
+	n = document.getElementById(id).getAttribute(nid) * 1 ;
+	g = ggt(z, n);
+	z = z / g;
+	n = n / g;
+	// reiner, ggf. auch unechter, bruch
+	document.getElementById(id).setAttribute(zid, z);
+	document.getElementById(id).setAttribute(nid, n);
+	// ggf. ganze zahl mit echtem bruch = gemischter bruch
+//	f = z % n;
+//	e = (z - f) / n;
+//	g = n;
+//	document.getElementById(iid).value = "" + e;	// integer part=ganzzahliger Anteil
+//	document.getElementById(zid).value = "" + f;	// numerator=zähler
+//	document.getElementById(nid).value = "" + g ;	// denominator=nenner
+}
+
 function progressupdate(repeat){
 	setTimeout(function () {
 		let e=document.getElementById('deadline');
@@ -29,6 +59,9 @@ function progressupdate(repeat){
 		let content=60-Math.ceil((end-now)/(60*60*24*1000));
 		e.setAttribute('data-value', content)
 		e.value = content;
+//		kuerze('deadline');
+//		kuerze('compeers');
+//		kuerze('share');
 		progressupdate(60*1000);
     }, repeat);
 }
