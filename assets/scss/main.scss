@@ -2176,6 +2176,9 @@ progress[value] {
 	background-color: red;
 	color: green;
 }
+#progressbars progress::-moz-progress-bar {
+	background-color: green;
+}
 #progressbars progress[id=deadline] + span.progress-text {
 	color: red;
 }
