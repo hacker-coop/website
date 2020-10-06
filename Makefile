@@ -13,21 +13,31 @@ all:
 install:
 	echo -e "\nYou have to run make install with sudo\n"
 	set -e
-	if hash apt-get 2>/dev/null; then
-	  apt-get update -qq >/dev/null && apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools gcc git-lfs
-	elif hash pacman 2>/dev/null; then
-	  pacman -Sy imagemagick python-pip glibc lib32-glibc gcc git-lfs --noconfirm
-	elif hash dnf 2>/dev/null; then
-	  dnf install -y ImageMagick python3-pip gcc git-lfs
+	if hash nix 2>/dev/null; then
+	  nix-shell --comand 'Done!'
 	else
-	  echo -e "Please install Imagemagick, python3-pip git-lfs and gcc"
+	  if hash apt-get 2>/dev/null; then
+	    apt-get update -qq >/dev/null && apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools gcc git-lfs
+	  elif hash pacman 2>/dev/null; then
+	    pacman -Sy imagemagick python-pip glibc lib32-glibc gcc git-lfs --noconfirm
+	  elif hash dnf 2>/dev/null; then
+	    dnf install -y ImageMagick python3-pip gcc git-lfs
+	  else
+	    echo -e "Please install Imagemagick, python3-pip git-lfs and gcc"
+	  fi
+	  pip3 install wheel  --upgrade
+	  pip3 install lektor --upgrade
 	fi
-	pip3 install wheel  --upgrade
-	pip3 install lektor --upgrade
 
 build:
 	set -e
-	if python3 -m lektor --version 2>/dev/null; then
+	if hash nix 2>/dev/null; then
+	  # sadly lektor has its own not configurable package installer
+	  # remove all referenced plugins and load them manually in shell.nix
+	  sed -n '/packages/q;p' vebit.lektorproject > vebit.lektorproject.tmp
+	  mv vebit.lektorproject.tmp vebit.lektorproject
+	  nix-shell --command 'lektor build'
+	elif python3 -m lektor --version 2>/dev/null; then
 	  python3 -m lektor build $(LEKTOR_PLUGIN_FLAGS)
 	else
 	  lektor build $(LEKTOR_PLUGIN_FLAGS)
@@ -35,7 +45,13 @@ build:
 
 server:
 	set -e
-	if python3 -m lektor --version 2>/dev/null; then
+	if hash nix 2>/dev/null; then
+	  # sadly lektor has its own not configurable package installer
+	  # remove all referenced plugins and load them manually in shell.nix
+	  sed -n '/packages/q;p' vebit.lektorproject > vebit.lektorproject.tmp
+	  mv vebit.lektorproject.tmp vebit.lektorproject
+	  nix-shell --command 'lektor server'
+	elif python3 -m lektor --version 2>/dev/null; then
 	  python3 -m lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
 	else
 	  lektor server $(LEKTOR_SERVER_FLAGS) $(LEKTOR_PLUGIN_FLAGS)
