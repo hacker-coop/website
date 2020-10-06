@@ -70,12 +70,13 @@ setTimeout(progressupdate(),3000);
 </ul>
 <!--p></p-->
 </div>
-<h3 id="formulare">PDF-Formulare</h3>
+<h3 id="formulare">PDF-Dateien</h3>
 <p>Hier die Formulare zum <a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown#user-content-aufnahme-von-mitgliedern">Beitrittsprozess</a>:</p>
 
 <ul>
 	<!--li>Alternativ zum Onlineformular: <a href="" target="_blank">Zusage der Anteilszeichnung (PDF)</a> an den Vorstand senden.</li-->
 	<li><a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/vebit_beitrittserklaerung_ausfuellbar.pdf" target="_blank">Beitritt zum VEBIT e. V.</a> (bitte per Post zusenden oder persönlich übergeben)</li>
 	<li><a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/fragebogen.pdf" target="_blank">Fragebogen für Neumitglieder</a> (bitte per E-Mail übersenden)</li>
+	<li><a href="https://vebit.xyz/wtf-flyer.pdf">WTF Flyer</a></li>
 </ul>
 
