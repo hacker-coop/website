@@ -2176,18 +2176,12 @@ progress[value] {
 	background-color: red;
 	color: green;
 }
-#progressbars progress[id=deadline] {
+#progressbars progress[id=deadline] + span.progress-text {
 	color: red;
 }
-#progressbars progress[id=compeers] {
+#progressbars progress[id=compeers]  + span.progress-text {
 	color: orange;
 }
-#progressbars progress[id=share] {
+#progressbars progress[id=share]  + span.progress-text {
 	color: darkgreen;
-}
-.formbox #progressbars li progress:after {
-	content: attr(data-value)'/'attr(data-max);
-	display: inline;
-	position: relative;
-	left: 9ex;
 }
