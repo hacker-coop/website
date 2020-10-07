@@ -18,8 +18,8 @@ body:
 <p>Mit Stand <time datetime="2020-10-07 12:23:42">2020-10-07</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li><label for="deadline">Deadline:	</label><progress value="37" 	data-value="37" 	max="60" data-max="60" id="deadline"></progress></li>
-<li><label for="compeers">Genossen:	</label><progress value="34" 	data-value="34" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="share">Anteile:	</label><progress value="285"	data-value="285"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li><label for="compeers">Genossen:	</label><progress value="37" 	data-value="37" 	max="100" data-max="100" id="compeers"></progress></li>
+<li><label for="share">Anteile:	</label><progress value="440"	data-value="440"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
 <script type="text/javascript" defer="defer">
 function ggt(a,b){
 	a=a*1;
