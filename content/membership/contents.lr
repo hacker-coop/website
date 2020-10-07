@@ -15,11 +15,11 @@ body:
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Fortschritt</h3>
 <div class="formbox">
-<p>Mit Stand <time datetime="2020-10-07 00:23:42">2020-10-07</time> zur Zeichnung:</p>
+<p>Mit Stand <time datetime="2020-10-07 11:42:23">2020-10-07</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li><label for="deadline">Deadline:	</label><progress value="37" 	data-value="37" 	max="60" data-max="60" id="deadline"></progress></li>
-<li><label for="compeers">Genossen:	</label><progress value="31" 	data-value="31" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="share">Anteile:	</label><progress value="260"	data-value="260"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li><label for="compeers">Genossen:	</label><progress value="32" 	data-value="32" 	max="100" data-max="100" id="compeers"></progress></li>
+<li><label for="share">Anteile:	</label><progress value="265"	data-value="265"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
 <script type="text/javascript" defer="defer">
 function ggt(a,b){
 	a=a*1;
