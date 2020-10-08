@@ -17,9 +17,27 @@ body:
 <div class="formbox">
 <p>Mit Stand <time datetime="2020-10-07 12:23:42">2020-10-07</time> zur Zeichnung:</p>
 <ul id="progressbars">
-<li><label for="deadline">Deadline:	</label><progress value="37" 	data-value="37" 	max="60" data-max="60" id="deadline"></progress></li>
-<li><label for="compeers">Genossen:	</label><progress value="37" 	data-value="37" 	max="100" data-max="100" id="compeers"></progress></li>
-<li><label for="share">Anteile:	</label><progress value="440"	data-value="440"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 --></li>
+<li>
+    <label for="deadline">Deadline:	</label>
+    <div>
+        <progress value="37" 	data-value="37" 	max="60" data-max="60" id="deadline"></progress>
+        <span class="progress-text"></span>
+    </div>
+</li>
+<li>
+    <label for="compeers">Genossen:	</label>
+    <div>
+        <progress value="37" 	data-value="37" 	max="100" data-max="100" id="compeers"></progress>
+        <span class="progress-text"></span>
+    </div>
+</li>
+<li>
+    <label for="share">Anteile:	</label>
+    <div>
+        <progress value="440"	data-value="440"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 -->
+        <span class="progress-text"></span>
+    </div>
+</li>
 <script type="text/javascript" defer="defer">
 function ggt(a,b){
 	a=a*1;
@@ -62,6 +80,18 @@ function progressupdate(repeat){
 //		kuerze('deadline');
 //		kuerze('compeers');
 //		kuerze('share');
+
+        // Beschriftung der Fortschrittsbalken aktualisieren
+        let progressElements = document.getElementById('progressbars').getElementsByTagName('progress')
+        for (let progressElement of progressElements) {
+            let textElement = progressElement.nextElementSibling;
+            if (!textElement || textElement.tagName.toLowerCase() !== 'span') {
+                return;
+            }
+            let text = progressElement.dataset.value + '/' + progressElement.dataset.max;
+            textElement.innerText = text;
+        }
+
 		progressupdate(60*1000);
     }, repeat);
 }

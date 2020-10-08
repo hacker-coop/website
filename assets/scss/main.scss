@@ -2110,7 +2110,6 @@
     margin: 1em 2em;
     padding: 0.5em 1em;
     max-width: 90%;
-    min-width: 45ex;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     background-color: #eee;
 }
@@ -2156,39 +2155,44 @@
 ul#progressbars {
 	list-style-type:none;
 }
+#progressbars li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
 #progressbars li label {
-	max-width: 6ex;
+	width: 11ex;
 	display: inline-block;
 	font-size: 120%;
+	margin: 0;
 }
 progress[value] {
 	-webkit-appearance: none;
 	appearance: none;
 }
 .formbox #progressbars li progress {
-	position: relative;
-	left: 6ex;
-	top: 2ex;
-	max-width: 24ex;
-	min-width: 6ex;
+	max-width: 27ex;
+	min-width: 11em;
+	height: 1.5em;
+	margin-right: 1em;
 }
 #progressbars progress::progress-value,
 #progressbars progress::progress-bar {
 	background-color: red;
 	color: green;
 }
-#progressbars progress[id=deadline] {
+#progressbars progress::-moz-progress-bar {
+	background-color: green;
+}
+#progressbars progress[id=deadline] + span.progress-text {
 	color: red;
 }
-#progressbars progress[id=compeers] {
+#progressbars progress[id=compeers]  + span.progress-text {
 	color: orange;
 }
-#progressbars progress[id=shares] {
+#progressbars progress[id=share]  + span.progress-text {
 	color: darkgreen;
 }
-.formbox #progressbars li progress:after {
-	content: attr(data-value)'/'attr(data-max);
-	display: inline;
-	position: relative;
-	left: 8ex;
+span.progress-text {
+	min-width: 8ex;
 }
