@@ -13,7 +13,10 @@
   },
   "Weitere Infos": {
     "href": "/about",
-    "items": {}
+    "list_childs": true,
+    "items": {
+      "Audio und Video": "/about"
+    }
   },
   "Mitglied werden": {
     "href": "/member",
