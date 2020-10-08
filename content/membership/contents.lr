@@ -15,18 +15,18 @@ body:
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Fortschritt</h3>
 <div class="formbox">
-<p>Mit Stand <time datetime="2020-10-08 15:23:42">2020-10-08</time> zur Zeichnung:</p>
+<p>Mit Stand <time datetime="2020-10-08 17:13:37">2020-10-08</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li><label for="deadline">Deadline:	</label><div>
-	<progress value="37" 	data-value="41" 	max="60" data-max="60" id="deadline"></progress>
+	<progress value="37" 	data-value="43" 	max="60" data-max="60" id="deadline"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li><label for="compeers">Genossen:	</label><div>
-	<progress value="37" 	data-value="41" 	max="100" data-max="100" id="compeers"></progress>
+	<progress value="37" 	data-value="43" 	max="100" data-max="100" id="compeers"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li><label for="share">Anteile:	</label><div>
-	<progress value="440"	data-value="465"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 -->
+	<progress value="440"	data-value="480"	max="500" data-max="500" id="share"></progress><!-- 50k => 500 Anteile zu 100 -->
 	<span class="progress-text"></span></div>
 </li>
 <script type="text/javascript" defer="defer">
