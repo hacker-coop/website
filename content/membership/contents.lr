@@ -36,7 +36,7 @@ function ggt(a,b){
 	if (a<b) return ggt(b,a);
 	if (a==b) return a;
 	if (a % b == 0) return b;
-	f = (a - a % b) / b;      
+	f = (a - a % b) / b;
 	return ggt(a - f * b, b);
 }
 
