@@ -14,4 +14,81 @@ podcastmp3: wtf-s01e12.mp3
 ---
 podcastogg: wtf-s01e12.ogg
 ---
-_hidden: yes
+feed_shownotes:
+
+<div id="doc" class="markdown-body container-fluid"><h2 id="Sonersendung-aus-dem-WTF-Cyberbunker">Sonersendung aus dem WTF Cyberbunker</h2><p>Teile der WTF-Crew haben sich im Cyberbunker zum podcasten versammelt,<br>
+und die Bunkerluft tut ihr Übriges. Die Dinge sind ja nicht, wie sie<br>
+scheinen, und so erklären wir kurz die Wahrheit™ über die WTF, den<br>
+VEB IT (alte Stasiübung aus den 70ern die immer noch läuft) und was das<br>
+mit dem Ubootbunker unter der Spree vor der c-base zu tun hat. Jaaa, und<br>
+dann erklären wir den Wegweiserstein, auf dem WTF 1620 steht und wie der<br>
+Zeitlochgenerator funktioniert.</p><p><strong>ACHTUNG:</strong> Wer Details aus diesem geheimen<br>
+Geheimpodcast verrät und ermittelt worden sein wird, den macht der<br>
+Zeitlochgenerator um mindestens 50 Jahre älter!</p><p>Hier noch ein paar Links, die euch ins Internet führen:</p><ul>
+<li><a href="https://countdown.podigee.io/" target="_blank" rel="noopener">Countdown Podcast</a></li>
+<li><a href="https://logbuch.c-base.org/c-booc" target="_blank" rel="noopener">C-Book</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Iron_Sky_(Film)" target="_blank" rel="noopener">Iron Sky</a></li>
+<li><a href="https://cre.fm/cre159-nachrichtendienste" target="_blank" rel="noopener">CRE 159 - Nachrichtendienste</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Long_Lines_Building" target="_blank" rel="noopener">Hochhaus ohne Fenster</a></li>
+<li><a href="https://www.tropical-islands.de/" target="_blank" rel="noopener">Tropical Islands</a></li>
+<li><a href="https://cfp.privacyweek.at/pw20/talk/8V7EG9/" target="_blank" rel="noopener">WTF auf der Privacy Week</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Chaos_Communication_Camp" target="_blank" rel="noopener">Chaos Communication Camp</a></li>
+<li><a href="https://vebit.xyz/wtf-flyer.pdf" target="_blank" rel="noopener">WTF Flyer</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Postrakete" target="_blank" rel="noopener">Postrakete</a></li>
+<li><a href="https://de.wikipedia.org/wiki/Rohrpostnetze_in_Deutschland" target="_blank" rel="noopener">Rohrpost</a></li>
+<li><a href="http://kronos-projekt.de/index-start.html" target="_blank" rel="noopener">Kronos Projekt</a></li>
+<li><a href="https://social.bund.de/@bfdi" target="_blank" rel="noopener">BfDI auf Mastodon</a></li>
+<li><a href="https://de.wikipedia.org/wiki/1984_(Roman)" target="_blank" rel="noopener">1984</a></li>
+<li><a href="https://www.c-radar.de/" target="_blank" rel="noopener">C-Radar</a></li>
+<li><a href="https://vebit.xyz/bbb/" target="_blank" rel="noopener">vebit.xyz/bbb</a></li>
+</ul>
+<img src="https://vebit.xyz/podcast/wtf-s01-e12/wtf_e12_1.jpg" class="image"></img>
+<img src="https://vebit.xyz/podcast/wtf-s01-e12/wtf_e12_3.jpg" class="image"></img>
+<img src="https://vebit.xyz/podcast/wtf-s01-e12/wtf_e12_2.jpg" class="image"></img>
+<img src="https://vebit.xyz/podcast/wtf-s01-e12/wtf_e12_4.jpg" class="image"></img></div>
+---
+podcast_shownotes:
+
+Jaaa, und dann erklären wir den Wegweiserstein, auf dem WTF 1620 steht und wie der
+Zeitlochgenerator funktioniert.
+
+**ACHTUNG:** Wer Details aus diesem geheimen
+Geheimpodcast verrät und ermittelt worden sein wird, den macht der
+Zeitlochgenerator um mindestens 50 Jahre älter!
+
+Hier noch ein paar Links, die euch ins Internet führen:
+ + [Countdown Podcast](https://countdown.podigee.io/)
+ + [C-Book](https://logbuch.c-base.org/c-booc)
+ + [Iron Sky](https://de.wikipedia.org/wiki/Iron_Sky_(Film))
+ + [CRE 159 - Nachrichtendienste](https://cre.fm/cre159-nachrichtendienste)
+ + [Hochhaus ohne Fenster](https://de.wikipedia.org/wiki/Long_Lines_Building)
+ + [Tropical Islands](https://www.tropical-islands.de/)
+ + [WTF auf der Privacy Week](https://cfp.privacyweek.at/pw20/talk/8V7EG9/)
+ + [Chaos Communication Camp](https://de.wikipedia.org/wiki/Chaos_Communication_Camp)
+ + [WTF Flyer](https://vebit.xyz/wtf-flyer.pdf)
+ + [Postrakete](https://de.wikipedia.org/wiki/Postrakete)
+ + [Rohrpost](https://de.wikipedia.org/wiki/Rohrpostnetze_in_Deutschland)
+ + [Kronos Projekt](http://kronos-projekt.de/index-start.html)
+ + [BfDI auf Mastodon](https://social.bund.de/@bfdi)
+ + [1984](https://de.wikipedia.org/wiki/1984_(Roman))
+ + [C-Radar](https://www.c-radar.de/)
+ + [vebit.xyz/bbb](https://vebit.xyz/bbb/)
+
+<img src="/podcast/wtf-s01-e12/wtf_e12_1.jpg" class="image" width="360"></img>
+<img src="/podcast/wtf-s01-e12/wtf_e12_3.jpg" class="image" width="360"></img>
+<img src="/podcast/wtf-s01-e12/wtf_e12_2.jpg" class="image" width="360"></img>
+<img src="/podcast/wtf-s01-e12/wtf_e12_4.jpg" class="image" width="360"></img>
+---
+podcast_teaser:
+
+Teile der WTF-Crew haben sich im Cyberbunker zum podcasten versammelt,
+und die Bunkerluft tut ihr Übriges. Die Dinge sind ja nicht, wie sie
+scheinen, und so erklären wir kurz die Wahrheit™ über die WTF, den
+VEB IT (alte Stasiübung aus den 70ern die immer noch läuft) und was das
+mit dem Ubootbunker unter der Spree vor der c-base zu tun hat.
+---
+duration: 7186
+---
+mp3leng: 242620796
+---
+oggleng: 201454586
