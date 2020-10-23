@@ -15,7 +15,7 @@ body:
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Fortschritt</h3>
 <div class="formbox">
-<p>Mit Stand <time datetime="2020-10-23 20:23:42">2020-10-23</time> zur Zeichnung:</p>
+<p>Mit Stand <time datetime="2020-10-23 09:23:42">2020-10-23</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li data-value="⌛"><label for="deadline">Deadline:	</label><div>
 	<progress value="50" 	data-value="50" 	max="60" data-max="60" id="deadline"></progress>
