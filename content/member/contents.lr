@@ -25,17 +25,18 @@ Die Zahlung der erstattbaren Anteile erfolgt entsprechend zeitverzögert.
 
 <center><a href="/membership/" class="button special">Anteile Zeichnen</a></center><br />
 
-<h3>Der Vorstand bittet alle willigen Chaoten ihren Beitritt zu erklären:</h3>
+<h3 id="ablauf-beitritt">Der Vorstand bittet alle willigen Chaoten ihren Beitritt zu erklären:</h3>
 
 0. PGP-Key zur Vefügung stellen (als Anhang oder Link via E-Mail) – und bitte möglichst vor Ablauf hinreichend verlängern.
-1. Beitrag an das in der Erklärung benannte Konto überweisen oder in anderer Weise an uns übergeben.
-2. [Beitrittserklärung] in Papierform(!) an uns senden.
-3. [Fragebogen], gerne auch nur Digital via E-Mail, abgeben.
+1. [Fragebogen], gerne auch nur Digital via E-Mail an <i>vorstand&#160;at&nbsp;vebit&#160;punkt&#160;xyz</i>, abgeben.
+2. [Beitrittserklärung] in Papierform(!) an uns senden (oder persönlich übergeben).
+3. Beitrag an das in der Erklärung benannte Konto überweisen (oder in anderer Weise an uns übergeben).
+4. <a href="https://vebit.xyz/membership/#webform">Zeichnungserklärung</a> für die eG.
 
 PDF-Formulare und ihre direkte Nutzung sind sehr abhängig von den
-verwendeten Elementen und dem verwendeten Programm. Getestet wurde
-zum direkten Befüllen u. a. Libre Office Draw und Foxit Reader.
-  
+verwendeten Elementen und dem verwendeten Programm. Erfolgreich getestet wurde
+zum direkten Befüllen Libre Office Draw und Foxit Reader, kleine Probleme machen u. a. Okular und Evince.
+
 Ein weiterer Beitrag aus den Reihen der neuen Mitglieder war eine
 [Beitrittserklärung als ODT](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_beitrittserklaerung_ausfuellbar.odt)
 (und [PDF](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_beitrittserklaerung_ausfuellbar.pdf)) sowie ein
@@ -46,7 +47,7 @@ Ein weiterer Beitrag aus den Reihen der neuen Mitglieder war eine
 [Fragebogen]: https://git.vebit.xyz/vebit/wiki/src/branch/master/fragebogen.pdf
 
 
-## Aufnahme von Mitgliedern
+<h3 id="aufnahme">Aufnahme von Mitgliedern</h3>
 
 Nachdem die Gründung der Genossenschaft finanziell nach bestem Wissen
 sicher gestellt ist, bearbeiten wir die Beitrittsanträge nun nach
@@ -54,12 +55,12 @@ Sichtung in Reihenfolge der Einreichung. Zunächst werden die Anträge
 natürlicher Personen bearbeitet, juristische Personen folgen
 im Anschluss.
 
-Unvollständige Beitrittserklärungen, z.B. ohne Mitteilung und
+Unvollständige Beitrittserklärungen, z. B. ohne Mitteilung und
 Bereitstellung von PGP-Schlüssel, ein Ausbleiben des Mitgliedsbeitrages
-oder andere Ausschlussgründe führen zur Verzögerung der Aufnahme.
+oder andere Ausschlussgründe können zur Verzögerung der Aufnahme oder Einschränkungen der Mitwirkung bis hin zum Ausschluss führen.
+Wenn es Probleme gibt, wendet euch bitte an den Vorstand, bisher gab es noch keine unüberwindbaren Hürden.
 
-
-### Ablauf beim eV
+<h4 id="ablauf-aufnahme">Ablauf beim Verein</h4>
 
 0. PGP-Schlüssel werden vereinsintern abgelegt.
 1. Beitrittserklärung und Fragebogen werden digital verschlüsselt und im Original abgelegt.
