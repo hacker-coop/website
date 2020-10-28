@@ -27,6 +27,7 @@ install:
 	  fi
 	  pip3 install wheel  --upgrade
 	  pip3 install lektor --upgrade
+	  pip3 install lektor-scss --upgrade
 	fi
 
 build:
