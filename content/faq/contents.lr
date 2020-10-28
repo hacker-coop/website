@@ -1,0 +1,14 @@
+_model: faq
+---
+title: FAQ
+---
+body: test
+---
+description: test
+---
+faq:
+
+#### table ####
+odd: Question
+----
+even: Answer

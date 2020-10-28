@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{%- block site_description -%}
+  {{ this.description }}
+{%- endblock -%}
+
+{% block body %}
+<section id="main" class="container">
+  <header>
+    <h2>{{ this.title }}</h2>
+  </header>
+  <div class="box">
+   {{ this.body }}
+    <div class="table-wrapper">
+      <table>
+        <tbody>
+          {% for blk in this.faq.blocks %}
+            {{ blk }}
+          {% endfor %}
+        </tbody>
+      </table>
+	  </div>
+  </div>
+
+</section>
+{% endblock %}
