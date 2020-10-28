@@ -1,14 +1,129 @@
 _model: faq
 ---
-title: FAQ
+title: Fragen rund um die WTF Genossenschaft
 ---
-body: test
+body:
+
+Um bei der Werkkooperative der Technikfreundinnen e. G. mit zu machen, kommen bei euch gewiss viele Fragen auf. Wir haben ein paar der häufig gestellten Fragen hier beantwortet.
+
+Wenn ihr weitere Fragen habt, dürft ihr die gerne zum Beispiel im internen Forum stellen. Oder an einer der [WTF Fragestunden](/bbb/).
+
+ Fragen und Antworten
+------------------------------
 ---
-description: test
+description: Ihr habt Fragen zur WTF Genossenschaft? Sehr gut! Hier findet ihr einige Antworten.
 ---
 faq:
 
 #### table ####
-odd: Question
+odd:
+
+ Wieso braucht die Genossenschaft mindestens 50k Eigenkapital, besser 100k?
 ----
-even: Answer
+id: eigenkapital
+----
+even: Das Geschäftsguthaben ist rückzahlbares Eigenkapital. Wir brauchen es als Polster für unerwartete Kosten, Anlaufkosten, Fuckups (Abmahnungen o.ä.) und als Liquiditätsreserve für Steuern, denn: Wenn es gut läuft, dann müssen wir vielleicht mal längere Zeit zehntausende Euro als Guthaben beim Finanzamt vorhalten, bis sich das später ausgleicht. (Für Profis: Bei der Gewerbesteuer gibt es nur Verlustvortrag, keinen Rücktrag).
+#### table ####
+odd: Wofür wird das Geld des VEBIT gebraucht, warum müssen alle neuen Member dort 100€ einzahlen?
+----
+id: einmalbeitrag
+----
+even:
+
+Wir haben im Vebit ca. 15k eingenommen, und weit über 10k sind noch da. Die brauchen wir für die formalen Gründungskosten der Genossenschaft:<br/> 
+  - Prüfungsgebühr des Genossenschaftsverbandes im Genehmigungsverfahren (bis 3k)
+  - Anwaltliche Beratung (170-350€/h)
+  - Steuerberatung (170€/h)
+  - Reisekosten des Kernteams bei zB Bürosuche, Personalsuche, Steuerberater- und Anwaltsterminen
+  - Notargebühren (546 € auf den angenommenen Gegenstandswert)
+  - Registergebühren des Amtsgerichts
+
+Das macht insgesammt schnell über 10k €.
+Für den Rest könnte man ne Gründungsparty nachholen, wenn wir endlich wieder dürfen.
+#### table ####
+odd: Warum müssen die Genossenschaftsmitglieder 100€ Jahresbeitrag bezahlen?
+----
+id: mitgliedsbeitrag
+----
+even:
+
+100€ sind eine gerade Zahl und einfach zu rechnen. Wir hätten hier genauso 90€ oder 120€ sagen können.
+Wir werden das später justieren und im Lauf der Reise anpassen. Die Frage ist, wie viel Umsatz die Genossenschaft macht und welche Fixkosten entstehen.
+
+Hier nur eine grobe Abschätzung:
+
+Die Genossenschaft hat pro Jahr >10k fixe Kosten, ohne das irgendwie Umsatz gemacht würde. Mit Steuerberater, Verbands(Wirtschafts-)prüfer, Berufsgenossenschaft, Versicherungen, Handelskammer, Genossenschaftsverband, Büromiete, Bankgebühren, Kreditkartenlizenzen, div. Bezahlplattformen, Genehmigungen für zB Arbeitnehmerüberlassung, Minijobb der Officemanagerin, Kosten für Webshop, Aufwandsentschädigungen für Vorstand und Sekretär, etc. etc. kommt man schnell auf ein solchen Betrag. Und ganz ohne dass das Geschäft in Gang gekommen ist.
+#### table ####
+odd: Warum muss von jedem Umsatz der Mitglieder über die Genossenschaft ein Anteil von 23% einbehalten werden?
+----
+id: entropieumlage
+----
+even:
+
+Die 23% sind eine schöne Zahl, es könnten auch 20 oder 25 Prozent sein. Wir werden das später justieren und im Lauf der Reise Ausnahmetatbestände *(reduzierte Sätze)* für Fälle definieren, wo sonst grobes Unrecht entstünde. Die Frage ist, wieviel Umsatz die Genossenschaft macht und welche Fixkosten entstehen.
+
+Hier nur eine grobe Abschätzung:
+
+Die Genossenschaft hat pro Jahr 10k fixe Kosten, ohne das irgendwie Umsatz gemacht würde. *(Siehe [Warum müssen die Genossenschaftsmitglieder 100€ Jahresbeitrag bezahlen?](#mitgliedsbeitrag))*
+
+Wenn das Geschäft in Gang kommt, wird das für den Vorstand in Arbyte ausarten. Da sind dann auch zumindest Minijobs auf Kosten der Genossenschaft fällig. Und es steigen die Kosten der Verwaltung.
+Gerade am Anfang ist der Kosten- und Erlösverlauf schwer vorherzusagen. Geld für Arbeit zur Verwaltung der Genossenschaft gibt es erst, wenn Umsatz da ist. Es kann trotzdem sein, dass auch bei 23% Umsatzabgabe an die Genossenschaft im ersten Jahr ein Verlust von 10-20k entsteht. Das muss zunächst aus dem Geschäftsguthaben bezahlt und später ausgeglichen werden.
+
+Größenordnung, Schätzung: Bei zB 100k Umsatz hätte die Genossenschaft 10k Beitragseinahmen und 23k Umsatzanteile als Einnahme. Diese 33k gehen ohne weiteres drauf. Bei 500k Jahresumsatz sieht das dann schon anders aus, wir könnten ermäßigte Abgaben einführen und die Arbeiter für die Genossenschaft (Amtsträger, Admins, Entwickler) bescheiden aber anständig bezahlen. So ungefähr.
+
+Wenn die Genossenschaft einmal viel zuviel Gewinn zu machen droht, kann man über die genossenschaftliche Rückvergütung Teile der Abzüge an die Mitglieder zurückzahlen. Das sind dann Luxuxprobleme. Nur das Gegenteil, Geldmangel, müssen wir unbedingt vermeiden
+#### table ####
+odd:
+
+ Wieviele Anteile muss/darf ich zeichnen?
+----
+id: anteile
+----
+even: Bisheriger Stand vorab der Gründung sind mindestens 1 Anteil und maximal 100 Anteile.
+#### table ####
+odd:
+
+Soll der Beitrag für die eG wirklich jährlich und nicht z. B. monatlich gezahlt werden? 
+----
+id: monatlich
+----
+even: Die Beitragsordnung wird dies noch beantworten. Eine Zahlung pro Jahr ist sparsamer, da für die Geldeingänge ebenfalls eine Gebühr der Bank anfällt.
+#### table ####
+odd:
+
+Wohin, mit welchem Betreff und bis wann soll das Geld für die Genossenschaftsanteile überweisen werden? 
+----
+id: zeichnen
+----
+even:
+
+Das Geld für die Anteile bleibt noch bei dir solange die eG nicht
+gegründet ist und kein Konto hat; derzeit ist nur die Zusage gefordert
+damit wir dem Prüfverband und den Behörden zeigen können, dass wir nicht
+in 3 Monaten insolvent sind.
+#### table ####
+odd:
+
+Wann ist der Beitrag für den eV fällig? 
+----
+id: vereinsbeitrag
+----
+even: Der Beitrag zum VEBIT eV ist bis auf Weiteres nur einmalig zum Beitritt zahlbar. Als Betreff bitte den Nickname angeben.
+#### table ####
+odd:
+
+ Ist der VEBIT eV gemeinützig? 
+----
+id: verein-gemeinnützig
+----
+even:
+
+ Der Verein VEBIT e.V. ist bisher durch die Finanzverwaltung nicht als Gemeinnützig im Sinne der Abgabenordnung anerkannt.
+#### table ####
+odd:
+
+Soll der Verein parallel zu der Genossenschaft bestehen bleiben? 
+----
+id: vereinszukunft
+----
+even: Das entscheiden die Mitglider, dabei kann auch die Satzung angepasst und ggf. die Anstrebung der Gemeinnützigkeit oder alternativ eine Auftragsvergabe mit dem Restvermögen an die Genossenschaft und die Auflösung beschlossen werden.
