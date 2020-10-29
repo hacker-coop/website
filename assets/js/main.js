@@ -28,11 +28,6 @@
 			}, 100);
 		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			alignment: 'right'
-		});
-
 	// NavPanel.
 
 		// Button.
