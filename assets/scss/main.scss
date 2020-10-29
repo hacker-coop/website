@@ -1205,6 +1205,20 @@
 						display: none;
 					}
 
+					&:hover {
+						> ul {
+							display: block;
+							position: absolute;
+
+							> li {
+
+								> a {
+									color: _palette(fg);
+								}
+							}
+						}
+					}
+
 					a {
 						display: inline-block;
 						height: 2em;
@@ -1321,7 +1335,7 @@
 		}
 	}
 
-	.dropotron {
+	#header nav > ul > li > ul {
 		background: #fff;
 		border-radius: _size(border-radius);
 		box-shadow: 0 2px 0 0 rgba(0,0,0,0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px transparentize(_palette(border), 0.5);
