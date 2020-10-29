@@ -51,7 +51,7 @@
 		border: 1px solid black;
 		position: relative;
 		top: -2ex;
-		
+
 		blackground-color: #aa0;
 		font-size: 80%;
 		content: attr(datetime);
@@ -1203,23 +1203,54 @@
 
 					> ul {
 						display: none;
-					}
+						background: #fff;
+						border-radius: _size(border-radius);
+						box-shadow: 0 2px 0 0 rgba(0,0,0,0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px transparentize(_palette(border), 0.5);
+						list-style: none;
+						margin: calc(-0.5em + 1px) 0 0 1px;
+						padding: 0.5em 0;
 
-					&:hover {
-						> ul {
-							display: block;
-							position: absolute;
+						> li {
+							padding: 0;
 
-							> li {
+							a, span {
+								@include vendor('transition', 'none');
+								border: 0;
+								border-top: solid 1px #f2f2f2;
+								color: _palette(fg);
+								display: block;
+								line-height: 1.65em;
+								padding: 0.15em 1em;
+							}
 
-								> a {
-									color: _palette(fg);
+							&:first-child {
+								> a, > span {
+									border-top: 0;
+								}
+							}
+
+							&.active,
+							&:hover {
+								> a, > span {
+									background: _palette(accent2, bg) !important;
+									color: _palette(accent2, fg-bold);
 								}
 							}
 						}
 					}
 
-					a {
+					&:hover {
+						> a:not(.button) {
+							background-color: transparentize(_palette(header, fg-light), 0.75);
+						}
+
+						> ul {
+							display: block;
+							position: absolute;
+						}
+					}
+
+					> a {
 						display: inline-block;
 						height: 2em;
 						line-height: 1.95em;
@@ -1227,7 +1258,7 @@
 						border-radius: _size(border-radius);
 					}
 
-					a:not(.button) {
+					> a:not(.button) {
 						color: _palette(header, fg-bold);
 						display: inline-block;
 						text-decoration: none;
@@ -1251,7 +1282,7 @@
 						}
 					}
 
-					.button {
+					> .button {
 						margin: 0 0 0 0.5em;
 						position: relative;
 					}
@@ -1331,65 +1362,6 @@
 				&:active {
 					background-color: rgba(255,255,255,0.2);
 				}
-			}
-		}
-	}
-
-	#header nav > ul > li > ul {
-		background: #fff;
-		border-radius: _size(border-radius);
-		box-shadow: 0 2px 0 0 rgba(0,0,0,0.065), inset 0 -1px 0 0 #fff, inset 0 0 0 1px transparentize(_palette(border), 0.5);
-		list-style: none;
-		margin: calc(-0.5em + 1px) 0 0 1px;
-		padding: 0.5em 0;
-		width: 11em;
-
-		li {
-			padding: 0;
-
-			a, span {
-				@include vendor('transition', 'none');
-				border: 0;
-				border-top: solid 1px #f2f2f2;
-				color: inherit;
-				display: block;
-				padding: 0.15em 1em;
-			}
-
-			&:first-child {
-				> a, > span {
-					border-top: 0;
-				}
-			}
-
-			&.active,
-			&:hover {
-				> a, > span {
-					background: _palette(accent2, bg);
-					color: _palette(accent2, fg-bold);
-				}
-			}
-		}
-
-		&.level-0 {
-			font-size: 0.9em;
-			margin: 1em 0 0 0;
-
-			&:before {
-				@include vendor('transform', 'rotate(45deg)');
-				background: #fff;
-				border: solid 1px transparentize(_palette(border), 0.5);
-				border-bottom: 0;
-				border-right: 0;
-				box-shadow: -0.25em -0.125em 0.125em 0 rgba(0,0,0,0.015);
-				content: '';
-				display: block;
-				height: 0.75em;
-				position: absolute;
-				right: 1.25em;
-				top: -0.375em;
-				width: 0.75em;
-				z-index: 0;
 			}
 		}
 	}
@@ -1616,14 +1588,6 @@
 
 			body, input, select, textarea {
 				font-size: 11pt;
-			}
-
-		/* Header */
-
-			.dropotron {
-				&.level-0 {
-					font-size: 1em;
-				}
 			}
 
 		/* Banner */
