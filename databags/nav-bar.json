@@ -22,8 +22,17 @@
     "href": "/member",
     "list_childs": true,
     "items": {
-      "VEBIT e. V.": "/member",
-      "WTF e. G.": "/membership"
+      "VEBIT e.V.": "/member",
+      "WTF e.G.": "/membership"
+    }
+  },
+  "FAQ": {
+    "href": "/faq",
+    "list_childs": true,
+    "items": {
+      "Häufige Fragen": "/faq",
+      "WTF-Fragestunde": "/bbb",
+      "Jour-Fixe": "/bbb"
     }
   },
   "Impressum": {
