@@ -1763,7 +1763,7 @@
 				.link {
 					border-bottom: 0;
 					border-top: solid 1px rgba(255,255,255,0.05);
-					color: _palette(header, fg);
+					color: _palette(header, fg-bold);
 					display: block;
 					height: 44px;
 					line-height: 44px;
@@ -1774,8 +1774,9 @@
 						border-top: 0;
 					}
 
-					&.depth-0 {
-						color: _palette(header, fg-bold);
+					&.active {
+						background: darken(_palette(accent2, bg), 40);
+						color: _palette(accent2, fg-bold);
 					}
 
 					.indent-1 { display: inline-block; width: 1em; }
