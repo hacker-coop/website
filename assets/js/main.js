@@ -28,35 +28,12 @@
 			}, 100);
 		});
 
-	// NavPanel.
-
-		// Button.
-			$(
-				'<div id="navButton">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
+	// Register event handler to toggle the menu panel in mobile view
+	document.getElementById('navButton').addEventListener('click', ev => {
+		ev.preventDefault();
+		ev.stopPropagation();
+		document.body.classList.toggle('navPanel-visible');
+	})
 
 	// Header.
 		if (!browser.mobile

@@ -141,6 +141,36 @@ __        ____________________
       </footer>
     </div>
 
+    <div id="navButton"><a href="#navPanel" class="toggle"></a></div>
+
+    <div id="navPanel">
+        <nav>
+            {%- for title, mapping in bag('nav-bar').items() %}
+            <a class="link depth-0" href="{{ mapping['href']|url }}">
+                <span class="indent-0"></span>{{- title -}}
+            </a>
+
+
+            {%- if mapping.get('list_childs') %}
+                {%- set root = site.get( mapping['href'], alt=this.alt) %}
+                {%- for child in root.children recursive %}
+                    {%- if loop.index <= 4 %}
+                        <a class="link depth-1 {%- if this._path == child._path -%}{{ ' ' }} active{%- endif %}" href="{{ child|url }}">
+                            <span class="indent-1"></span>{{ child.title }}
+                        </a>
+                    {%- endif %}
+                {%- endfor %}
+            {%- endif %}
+
+            {%- for nav_title, nav_url in mapping['items'].items() %}
+                <a class="link depth-1" href="{{ nav_url if 'http' in nav_url else nav_url|url }}" {%- if nav_title in mapping.get('buttons', []) %} class="button nav"{% endif %}>
+                <span class="indent-1"></span>{{- nav_title -}}
+                </a>
+            {%- endfor %}
+            {%- endfor %}
+        </nav>
+    </div>
+
     <!-- Scripts -->
     <script src="{{ '/js/jquery.min.js'|asseturl }}"></script>
     <script src="{{ '/js/jquery.scrollex.min.js'|asseturl }}"></script>
