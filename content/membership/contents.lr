@@ -66,8 +66,8 @@ function progressupdate(repeat){
 		let end=new Date('2020-10-31T23:42:00');
 		let now=new Date();
 		let content=60-Math.ceil((end-now)/(60*60*24*1000));
-		e.setAttribute('data-value', content)
-		e.value = content;
+/*		e.setAttribute('data-value', content)
+		e.value = content;*/
 //		kuerze('deadline');
 //		kuerze('compeers');
 //		kuerze('share');
@@ -86,7 +86,7 @@ function progressupdate(repeat){
 		progressupdate(60*1000);
     }, repeat);
 }
-/* setTimeout(progressupdate(),3000); */
+setTimeout(progressupdate(),3000);
 </script>
 </ul>
 <!--p></p-->
