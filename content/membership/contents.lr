@@ -63,11 +63,13 @@ function kuerze(id){
 function progressupdate(repeat){
 	setTimeout(function () {
 		let e=document.getElementById('deadline');
-		let end=new Date('2020-10-31T23:42:00');
+		let end=new Date('2020-11-15T23:42:00');
 		let now=new Date();
 		let content=60-Math.ceil((end-now)/(60*60*24*1000));
-/*		e.setAttribute('data-value', content)
-		e.value = content;*/
+		if (end > now) {
+			e.setAttribute('data-value', content)
+			e.value = content;
+		}
 //		kuerze('deadline');
 //		kuerze('compeers');
 //		kuerze('share');
