@@ -18,15 +18,15 @@ body:
 <p>Mit Stand <time datetime="2020-11-01 07:23:42">2020-11-01</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li data-value="⌛"><label for="deadline">Deadline:	</label><div>
-	<progress value="58" 	data-value="58" 	max="60" data-max="60" id="deadline"></progress>
+	<progress value="60" 	data-value="60" 	max="60" data-max="60" id="deadline"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
-	<progress value="124" 	data-value="124" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
+	<progress value="125" 	data-value="125" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="✍"><label for="share">Anteile:	</label><div>
-	<progress value="1113"	data-value="1113"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
+	<progress value="1118"	data-value="1118"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
 	<span class="progress-text"></span></div>
 </li>
 <script type="text/javascript" defer="defer">
@@ -86,7 +86,7 @@ function progressupdate(repeat){
 		progressupdate(60*1000);
     }, repeat);
 }
-setTimeout(progressupdate(),3000);
+/* setTimeout(progressupdate(),3000); */
 </script>
 </ul>
 <!--p></p-->
