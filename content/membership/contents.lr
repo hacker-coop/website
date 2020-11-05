@@ -15,18 +15,18 @@ body:
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Fortschritt</h3>
 <div class="formbox">
-<p>Fristverlängerung wg. Erfolgs <time datetime="2020-11-15 23:59:59">2020-11-15</time>; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren. Mit Stand <time datetime="2020-11-05 13:23:42">2020-11-05</time> zur Zeichnung:</p>
+<p>Fristverlängerung wg. Erfolgs <time datetime="2020-11-15 23:59:59">2020-11-15</time>; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren. Mit Stand <time datetime="2020-11-05 17:23:42">2020-11-05</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li data-value="⌛"><label for="deadline">Deadline:	</label><div>
 	<progress value="60" 	data-value="60" 	max="60" data-max="60" id="deadline" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
-	<progress value="130" 	data-value="130" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
+	<progress value="131" 	data-value="131" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="✍"><label for="share">Anteile:	</label><div>
-	<progress value="1140"	data-value="1140"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
+	<progress value="1145"	data-value="1145"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
 	<span class="progress-text"></span></div>
 </li>
 <script type="text/javascript" defer="defer">
