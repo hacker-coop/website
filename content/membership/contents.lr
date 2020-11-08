@@ -18,7 +18,7 @@ body:
 <p>Fristverlängerung wg. Erfolgs <time datetime="2020-11-15 23:59:59">2020-11-15</time>; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren. Mit Stand <time datetime="2020-11-08 23:11:23">2020-11-08</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <li data-value="⌛"><label for="deadline">Deadline:	</label><div>
-	<progress value="60" 	data-value="60" 	max="60" data-max="60" id="deadline" style="border-right: .7ex inset lightgreen !important;"></progress>
+	<progress value="68" 	data-value="68" 	max="75" data-max="75" id="deadline" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
@@ -65,7 +65,7 @@ function progressupdate(repeat){
 		let e=document.getElementById('deadline');
 		let end=new Date('2020-11-15T23:42:00');
 		let now=new Date();
-		let content=60-Math.ceil((end-now)/(60*60*24*1000));
+		let content=75-Math.ceil((end-now)/(60*60*24*1000));
 		if (end > now) {
 			e.setAttribute('data-value', content)
 			e.value = content;
