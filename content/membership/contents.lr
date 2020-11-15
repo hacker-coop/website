@@ -22,11 +22,11 @@ body:
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
-	<progress value="143" 	data-value="143" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
+	<progress value="145" 	data-value="145" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="✍"><label for="share">Anteile:	</label><div>
-	<progress value="1192"	data-value="1192"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
+	<progress value="1199"	data-value="1199"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
 	<span class="progress-text"></span></div>
 </li>
 <script type="text/javascript" defer="defer">
