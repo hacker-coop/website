@@ -2,24 +2,25 @@ _model: membershipform
 ---
 title: Genossenschaftsgründung
 ---
-description: Zeichne Teile der WTF Genossenschaft
+description: Gezeichnete Teile der WTF Genossenschaft
 ---
 body:
 
-<div class="membership-form formbox">
-<noscript>Hier soll noch – für jene, die kein JavaScript im Browser aktiv haben – ein PDF-Formular verlinkt werden. Unterstützung für derlei Dinge ist gerne gesehen.</noscript></div>
+<h2>Die Startvorbereitungen laufen</h2>
 
-<h3 id="manifest">Manifest</h3>
-<p>Es gibt ein Manifest zur Gründung der Genossenschaft. Dieses findet man dort:</p>
-<a class="button special" href="https://pads.vebit.xyz/s/Z3KcAqvDI">Manifest™</a>
+Zur Gründung unserer Genossenschaft haben sich über 150 Wesen gefunden, Gemeinsam haben wir mit den Startvorbereitungen begonnen und unsere Rakete steht auf der Startrampe. Die letzten Vorbereitungen werden getroffen und der Lift-off ist geplant für den 2. Januar 2021. Dann soll unsere Genossenschaft gegründet werden.<br/><br/>
+
+Wir sind mit diesem <a href="https://pads.vebit.xyz/s/Z3KcAqvDI">Manifest</a> angetreten und haben Genossinnen und Genossen gefunden mit denen wir zusammen unsere Genossenschaft Gründen werden. Bis zum 15. 11 habt ihr euch Melden können um von Anfang an mit bei der Genossenschaft zu sein. Nun laufen die Startvorbereitungen in der heißen Phase und wir konzentrieren uns auf den sicheren Start der Genossenschaft. Sobald die Rakete fliegt wird ein neuer Beitrittsprozess definiert. Solange müsst ihr aber nicht tatenlos warten, sondern ihr könnt euch für eine Warteliste melden um weiter Informiert zu bleiben und mit zu machen sobald wir wieder Aufnahmebereit sind und die neuen Prozesse in der Genossenschaft dafür geschaffen sind. Wendet euch hierfür an <code>interesse at vebit.xyz</code>.
+
+ 
 <br/><br/>
-<h3 id="fortschritt-zeichnung">Fortschritt</h3>
+<h3 id="fortschritt-zeichnung">Zusagen bei der Zeichnungsrunde</h3>
 <div class="formbox">
 <p><strong>Die Frist für Neumitglieder ist am <!-- Fristverlängerung wg. Erfolgs --><time datetime="2020-11-15 23:59:59">2020-11-15</time>abgelaufen.<!-- ; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren.--> Mit Stand <time datetime="2020-11-20 11:42:23">2020-11-20</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <!--li data-value="⌛"><label for="deadline">Deadline:	</label><div>
 	<progress value="75" 	data-value="75" 	max="75" data-max="75" id="deadline" style="border-right: .7ex inset lightgreen !important;"></progress>
-	<span class="progress-text"></span></div>
+	<span class="progress-text"></span></div><br/>
 </li-->
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
 	<progress value="154" 	data-value="154" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
@@ -93,13 +94,8 @@ setTimeout(progressupdate(),3000);
 </ul>
 <!--p></p-->
 </div>
-<h3 id="formulare">PDF-Dateien</h3>
-<p>Hier die Formulare zum <a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/progress.markdown#user-content-aufnahme-von-mitgliedern">Beitrittsprozess</a>:</p>
 
-<ul>
-	<!--li>Alternativ zum Onlineformular: <a href="" target="_blank">Zusage der Anteilszeichnung (PDF)</a> an den Vorstand senden.</li-->
-	<li><a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/vebit_beitrittserklaerung_ausfuellbar.pdf" target="_blank">Beitritt zum VEBIT e. V.</a> (bitte per Post zusenden oder persönlich übergeben)</li>
-	<li><a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/fragebogen.pdf" target="_blank">Fragebogen für Neumitglieder</a> (bitte per E-Mail übersenden)</li>
-	<li><a href="https://vebit.xyz/wtf-flyer.pdf">WTF Flyer</a></li>
-</ul>
+Bei der Zeichnungsrunde haben über 150 Wesen zugesagt bei unserer Genossenschaft mit zu machen. Und dabei über 1200 Anteile gezeichnet. Vielen Dank dafür.
 
+---
+_template: page.html
