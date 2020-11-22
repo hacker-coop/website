@@ -116,9 +116,7 @@ odd:
 ----
 id: verein-gemeinnützig
 ----
-even:
-
-Der Verein VEBIT e.V. hat weder die Anerkennung beantragt noch ist er durch die Finanzverwaltung als Gemeinnützig im Sinne der Abgabenordnung anerkannt.
+even: Der Verein VEBIT e.V. hat weder die Anerkennung beantragt noch ist er durch die Finanzverwaltung als Gemeinnützig im Sinne der Abgabenordnung anerkannt.
 #### table ####
 odd:
 
@@ -127,3 +125,9 @@ Soll der Verein parallel zu der Genossenschaft bestehen bleiben?
 id: vereinszukunft
 ----
 even: Das entscheiden die Mitglider, dabei kann auch die Satzung angepasst und ggf. die Anstrebung der Gemeinnützigkeit oder alternativ eine Auftragsvergabe mit dem Restvermögen an die Genossenschaft und die Auflösung beschlossen werden.
+#### table ####
+odd: Wie kann ich Kontakt aufnehmen?
+----
+id: kontakt
+----
+even: Das kommt darauf an, wen du erreichen möchtest. Möchtest du mit dem Vorstand schreiben, sende eine Mail an `vorstand` at `lists.vebit.xyz`. Die Mail darf gern mit [diesem Key](/publickeys/vorstand@lists.vebit.xyz.asc) verschlüsselt sein. Brauchst du Hilfe mit deinem Zugang ins Forum etc.: `helpdesk` at `lists.vebit.xyz` (mit [diesem Key](/publickeys/helpdesk@lists.vebit.xyz.asc) verschlüsselbar).
