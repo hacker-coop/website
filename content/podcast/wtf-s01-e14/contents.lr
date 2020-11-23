@@ -14,3 +14,34 @@ podcastmp3: wtf-s01e14.mp3
 ---
 podcastogg: wtf-s01e14.ogg
 ---
+duration: 1888
+---
+feed_shownotes:
+
+<div id="doc" class="markdown-body container-fluid"><p>Umfrage zur Namensfrage: <a href="https://meta.vebit.xyz/t/neue-abstimmung-zur-namensfrage-ihr-seid-final-gefagt/548" target="_blank" rel="noopener">https://meta.vebit.xyz/t/neue-abstimmung-zur-namensfrage-ihr-seid-final-gefagt/548</a><br>
+Stellenbeschreibungen: <a href="https://meta.vebit.xyz/t/stellenbeschreibungen-aemter-und-gremien/582" target="_blank" rel="noopener">https://meta.vebit.xyz/t/stellenbeschreibungen-aemter-und-gremien/582</a></p><p>Mailinglisten für alle:</p><ul>
+<li><code>helpdesk@lists.vebit.xyz</code></li>
+<li><code>vorstand@lists.vebit.xyz</code></li>
+</ul><p>Ihr könntet auch Mails von <code>all@lists.vebit.xyz</code> erhalten</p><p>Den Key einer Liste erhält man über eine Mail an <code>&lt;liste&gt;-sendkey@lists.vebit.xyz</code> (z.B. <code>helpdesk-sendkey@lists.vebit.xyz</code>) und demnächst von den üblichen PGP-Servern.</p></div>
+---
+podcast_shownotes:
+
+
+Umfrage zur Namensfrage: https://meta.vebit.xyz/t/neue-abstimmung-zur-namensfrage-ihr-seid-final-gefagt/548
+Stellenbeschreibungen: https://meta.vebit.xyz/t/stellenbeschreibungen-aemter-und-gremien/582
+
+Mailinglisten für alle:
+- `helpdesk@lists.vebit.xyz` 
+- `vorstand@lists.vebit.xyz`
+
+Ihr könntet auch Mails von `all@lists.vebit.xyz` erhalten
+
+Den Key einer Liste erhält man über eine Mail an `<liste>-sendkey@lists.vebit.xyz` (z.B. `helpdesk-sendkey@lists.vebit.xyz`) und demnächst von den üblichen PGP-Servern.
+
+
+---
+podcast_teaser: In der 14. Folge des WTF Podcast verkünden wir nicht nur den Aufnahmestop zur Genossenschaft um uns voll und ganz auf den sicheren Start zu konzentrieren, sondern erzählen euch auch, das wir mehr mit verschlüsselten E-Mails hantieren. Und wie ihr uns sicher und verschlüsselt erreichen könnt.
+---
+mp3leng: 64228479
+---
+oggleng: 66497933
