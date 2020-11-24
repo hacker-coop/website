@@ -18,8 +18,8 @@ duration: 1005
 ---
 feed_shownotes:
 
-<div id="doc" class="markdown-body container-fluid"><h1 id="Shownotes-Folge-130">Shownotes Folge 13</h1><ul>
-<li>Privacy Week Vortrag: <a href="https://fahrplan.privacyweek.at/pw20/talk/8V7EG9/" target="_blank" rel="noopener">Fahrplan</a>, <a href="https://streaming.media.ccc.de/pw20/relive/341" target="_blank" rel="noopener">ReLive</a></li>
+<div id="doc" class="markdown-body container-fluid"><h1 id="Shownotes-Folge-13">Shownotes Folge 13</h1><ul>
+<li>Privacy Week Vortrag: <a href="https://fahrplan.privacyweek.at/pw20/talk/8V7EG9/" target="_blank" rel="noopener">Fahrplan</a> <a href="https://streaming.media.ccc.de/pw20/relive/341" target="_blank" rel="noopener">ReLive</a></li>
 <li><a href="https://vebit.xyz/membership/" target="_blank" rel="noopener">Genossenschaftsanteile Zeichnen</a> - Nachfrist bis 15. November 2020<br>
 <strong>Bitte</strong> bis zum 15. Nuvember Anteile Zeichnen. Ab dann gibt es eine Warteliste und wir nehmen erst ab 2021 neue GenossInnen auf.</li>
 <li>Die Startvorbereitungen laufen auf hochturen. Diese laufen mit mehr Hilfe besser. Wenn ihr Lust habt zu helfen wendet euch an vorstand at vebit.xyz und sagt uns, wie viel Zeit ihr aufbringen könnt und wo eure Skills liegen.<br>
@@ -28,6 +28,56 @@ BWL, Wirtschaft, Programmieren, Coden, Design, DevOps und vieles mehr - das alle
 <li><a href="https://www.eisexpeditionen.de/blog/die-endurance-expedition-von-ernest-shackleton-einer-der-groessten-heldengeschichten-der-antarktis/" target="_blank" rel="noopener">Südpolexpedition</a></li>
 <li>Jeden Mittwoch um 21 Uhr: <a href="https://vebit.xyz/bbb/" target="_blank" rel="noopener">WTF Jour-Fixe</a></li>
 <li>Nächste WTF Fragestunde am Sonntag, den 15. November um 20 Uhr. Mehr dazu auf <a href="https://vebit.xyz/bbb/" target="_blank" rel="noopener">vebit.xyz/bbb</a></li>
+</ul><h2 id="Inhalt-der-Folge">Inhalt der Folge</h2><ul>
+<li>diesmal nicht aus dem Cyberbunker, @home</li>
+<li>2.11., 13.Folge</li>
+<li>angestoßen auf die erfolgreiche Zeichnungsrunde</li>
+<li>Pläne übererfüllt, 126 Genossen, etwas über 100k Zeichnungskapital (1124 Anteile)</li>
+<li>optimal: 200 Genossen, 250k Eigenkapital → Erleichterung</li>
+<li>Nachfrist bis 15.11. 24:00, bis dahin kann man noch zeichnen</li>
+<li>am Sonntag kamen noch massenweise Zeichnungen rein</li>
+<li>vielleicht Post nicht immer die schnellste</li>
+<li>danach paar Wochen Pause mit Zeichnung, min. bis 2.1.</li>
+<li>legal Henne-Ei-Battle (Verein / Genossenschaft) – was passiert mit dem Verein? Bleibt eine Weile bestehen.</li>
+<li>Geno muss im Register stehen und Bürokratiemühlen mahlen evtl. zu langsam</li>
+<li>in der Zwischenzeit: Warteliste</li>
+<li>neben der Satzung: Carta wie mit Geld umzugehen ist (beteiligt euch! Forum / Git Issues)</li>
+<li>Studenten, alle die es knapp haben: nur 1 Anteil geht auch, aktuell 100€ für Verein, ansonsten Januar/Februar Anteile kaufen</li>
+<li>Vergleich Genossenschaft|Raketenflug: Gerade Landing-Pad, sauberer Start erwünscht.</li>
+<li><strong>Developer</strong> developer developer ganz dringend, admins, Gestalter, Texter
+<ul>
+<li>Kosten-/Leistungsrechnung</li>
+<li>PGP / Schleuder / Mailserver</li>
+<li>melden bei head of IT Michi</li>
+</ul>
+</li>
+<li>mehr Text gewünscht → ist in Arbeit</li>
+<li>im Forum so eine Art Stellenausschreibungen</li>
+<li>“this is a non profit organisation, and we planned it so”</li>
+<li>Jeden Mittwoch 21:00 Tele-Bier / Jour Fixe auf <a href="https://vebit.xyz/bbb" target="_blank" rel="noopener">BBB</a></li>
+<li>Fragen beantworten, austauschen, casual conversation</li>
+<li>nächste WTF-Fragestunde So. 15.11. 20:00</li>
+<li>bei weitem nicht alles im <strong>Forum</strong>:
+<ul>
+<li>Pad</li>
+<li>Runden</li>
+<li><strong>Git</strong></li>
+<li><strong>Podcast</strong></li>
+<li>FAQ auf vebit.xyz-Seite+Forum</li>
+<li>und ziemlicher Backlog an Dingen</li>
+</ul>
+</li>
+<li>WTF und Öffentlichkeit – eher so nicht so (genau überlegen was publiziert werden soll und was nicht)</li>
+<li>soll nach außenhin für Nicht-Chaoten harmlos und seriös aussehen, aber für Insider erkennbar sein</li>
+<li>Viele Wiederholungen der vorher genannten Punkte</li>
+<li>Podcast geht weiter, ca. alle 2-3 Wochen, versuchen mehrmals pro Monat</li>
+<li>Coronamasken sind noch da – lange rumlaufen und Brille beschlägt nicht
+<ul>
+<li>Mail → anmeldung@vebit.xyz</li>
+</ul>
+</li>
+<li>aktuell kein Office+Lockdown</li>
+<li>Plakate für rC3 o.Ä. liegen auch noch rum</li>
 </ul></div>
 ---
 mp3leng: 34454741
@@ -36,7 +86,7 @@ oggleng: 28897765
 ---
 podcast_shownotes:
 
-+ Privacy Week Vortrag: [Fahrplan](https://fahrplan.privacyweek.at/pw20/talk/8V7EG9/), [ReLive](https://streaming.media.ccc.de/pw20/relive/341)
++ Privacy Week Vortrag: [Fahrplan](https://fahrplan.privacyweek.at/pw20/talk/8V7EG9/) [ReLive](https://streaming.media.ccc.de/pw20/relive/341)
 + [Genossenschaftsanteile Zeichnen](https://vebit.xyz/membership/) - Nachfrist bis 15. November 2020
 **Bitte** bis zum 15. Nuvember Anteile Zeichnen. Ab dann gibt es eine Warteliste und wir nehmen erst ab 2021 neue GenossInnen auf.
 + Die Startvorbereitungen laufen auf hochturen. Diese laufen mit mehr Hilfe besser. Wenn ihr Lust habt zu helfen wendet euch an vorstand at vebit.xyz und sagt uns, wie viel Zeit ihr aufbringen könnt und wo eure Skills liegen.
@@ -45,6 +95,51 @@ podcast_shownotes:
 + [Südpolexpedition](https://www.eisexpeditionen.de/blog/die-endurance-expedition-von-ernest-shackleton-einer-der-groessten-heldengeschichten-der-antarktis/)
 + Jeden Mittwoch um 21 Uhr: [WTF Jour-Fixe](https://vebit.xyz/bbb/)
 + Nächste WTF Fragestunde am Sonntag, den 15. November um 20 Uhr. Mehr dazu auf [vebit.xyz/bbb](https://vebit.xyz/bbb/)
+
+
+ Inhalt der Folge
+-------------------
+
+- diesmal nicht aus dem Cyberbunker, @home
+- 2.11., 13.Folge
+- angestoßen auf die erfolgreiche Zeichnungsrunde
+- Pläne übererfüllt, 126 Genossen, etwas über 100k Zeichnungskapital (1124 Anteile)
+- optimal: 200 Genossen, 250k Eigenkapital → Erleichterung
+- Nachfrist bis 15.11. 24:00, bis dahin kann man noch zeichnen
+- am Sonntag kamen noch massenweise Zeichnungen rein
+- vielleicht Post nicht immer die schnellste
+- danach paar Wochen Pause mit Zeichnung, min. bis 2.1.
+- legal Henne-Ei-Battle (Verein / Genossenschaft) – was passiert mit dem Verein? Bleibt eine Weile bestehen.
+- Geno muss im Register stehen und Bürokratiemühlen mahlen evtl. zu langsam
+- in der Zwischenzeit: Warteliste
+- neben der Satzung: Carta wie mit Geld umzugehen ist (beteiligt euch! Forum / Git Issues)
+- Studenten, alle die es knapp haben: nur 1 Anteil geht auch, aktuell 100€ für Verein, ansonsten Januar/Februar Anteile kaufen
+- Vergleich Genossenschaft|Raketenflug: Gerade Landing-Pad, sauberer Start erwünscht.
+- **Developer** developer developer ganz dringend, admins, Gestalter, Texter
+  - Kosten-/Leistungsrechnung
+  - PGP / Schleuder / Mailserver
+  - melden bei head of IT Michi
+- mehr Text gewünscht → ist in Arbeit
+- im Forum so eine Art Stellenausschreibungen
+- "this is a non profit organisation, and we planned it so"
+- Jeden Mittwoch 21:00 Tele-Bier / Jour Fixe auf [BBB](https://vebit.xyz/bbb)
+ - Fragen beantworten, austauschen, casual conversation
+- nächste WTF-Fragestunde So. 15.11. 20:00
+- bei weitem nicht alles im **Forum**:
+  - Pad
+  - Runden
+  - **Git**
+  - **Podcast**
+  - FAQ auf vebit.xyz-Seite+Forum
+  - und ziemlicher Backlog an Dingen
+- WTF und Öffentlichkeit – eher so nicht so (genau überlegen was publiziert werden soll und was nicht)
+- soll nach außenhin für Nicht-Chaoten harmlos und seriös aussehen, aber für Insider erkennbar sein
+- Viele Wiederholungen der vorher genannten Punkte
+- Podcast geht weiter, ca. alle 2-3 Wochen, versuchen mehrmals pro Monat
+- Coronamasken sind noch da – lange rumlaufen und Brille beschlägt nicht
+  - Mail → anmeldung@vebit.xyz
+- aktuell kein Office+Lockdown
+- Plakate für rC3 o.Ä. liegen auch noch rum
 ---
 podcast_teaser:
 
