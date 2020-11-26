@@ -16,18 +16,18 @@ Wir sind mit diesem <a href="https://pads.vebit.xyz/s/Z3KcAqvDI">Manifest</a> an
 <br/><br/>
 <h3 id="fortschritt-zeichnung">Zusagen bei der Zeichnungsrunde</h3>
 <div class="formbox">
-<p><strong>Die Frist für Neumitglieder ist am <!-- Fristverlängerung wg. Erfolgs --><time datetime="2020-11-15 23:59:59">2020-11-15</time>abgelaufen.<!-- ; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren.--> Mit Stand <time datetime="2020-11-20 11:42:23">2020-11-20</time> zur Zeichnung:</p>
+<p><strong>Die Frist für Neumitglieder ist am <!-- Fristverlängerung wg. Erfolgs --><time datetime="2020-11-15 23:59:59">2020-11-15</time>abgelaufen.<!-- ; danach erstmal eine Pause um die Energie auf die die Arbeiten zur tatsächlichen Gründung zu konzentrieren.--> Mit Stand <time datetime="2020-11-26 10:42:23">2020-11-20</time> zur Zeichnung:</p>
 <ul id="progressbars">
 <!--li data-value="⌛"><label for="deadline">Deadline:	</label><div>
 	<progress value="75" 	data-value="75" 	max="75" data-max="75" id="deadline" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div><br/>
 </li-->
 <li data-value="👤"><label for="compeers">Genossen:	</label><div>
-	<progress value="154" 	data-value="154" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
+	<progress value="160" 	data-value="160" 	max="100" data-max="100" id="compeers" style="border-right: .7ex inset lightgreen !important;"></progress>
 	<span class="progress-text"></span></div>
 </li>
 <li data-value="✍"><label for="share">Anteile:	</label><div>
-	<progress value="1250"	data-value="1250"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
+	<progress value="1273"	data-value="1273"	max="500" data-max="500" id="share" style="border-right: .7ex inset lightgreen !important;"></progress><!-- 50k => 500 Anteile zu 100 -->
 	<span class="progress-text"></span></div>
 </li>
 <script type="text/javascript" defer="defer">
