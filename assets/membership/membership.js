@@ -25,9 +25,9 @@ document.getElementsByClassName('membership-form')[0].classList.add('formbox');
 
 //~ document.getElementsByClassName('membership-form')[0].innerHTML='';
 var container = $(this);
-container.html('<h3>Zusage der Anteilszeichnung</h3>'+
+container.html('<h3 id="webform">Zusage der Anteilszeichnung</h3>'+
 '<p>Ich erkläre mich hiermit verbindlich bereit, der <b>Werkkooperative der Technikfreundinnen</b> beizutreten und binnen eines Jahres nach Gründung, als Einmalzahlung oder in Raten, Anteile <i>(Anhalt für den Gesamtbetrag 500 €)</i> zur Zeichnung an die Genossenschaft zu überweisen.<br/>'+
-'Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100 €) zu leisten.</p>'+
+'Weiterhin bin ich bereit, einen jährlichen Mitgliedsbeitrag (vmtl. rund 100 € je Mitglied) zu leisten.</p>'+
 '<p>&nbsp;</p>'+
 
 '<p><input type="radio" name="membership" id="oldmember" value="oldmember" checked="checked"><label for="oldmember">Ich <strong>bin bereits Mitglied</strong> im VEBIT&nbsp;e. V.</label></p>'+
@@ -51,7 +51,7 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 '</div>'+
 
 '<p><input type="text" id="nick"></p>'+
-'<p class="desc"><label for="nick">Nick (Nationalien bitte mit Beitrittserklärung und Fragebogen, s. PDF-Dateien)</label></p>'+
+'<p class="desc"><label for="nick">(Nick)name (Bürgerliche Personalien bitte mit <a href="#formulare">Beitrittserklärung und Fragebogen, s. PDF-Dateien</a>)</label></p>'+
 '<p><input type="text" id="shares" value="5"></p>'+
 '<p class="desc"><label for="shares">Anteile (Empfehlung: 5 oder mehr Anteile zu je 100 €, weniger Anteile bei knappen Mitteln)</label></p>'+
 '<p><textarea rows="3" cols="40" id="note"></textarea>'+
@@ -59,7 +59,8 @@ container.html('<h3>Zusage der Anteilszeichnung</h3>'+
 
 '<p><input type="text" id="date"></p>'+
 '<p class="desc"><label for="date">Datum</label></p>'+
-'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.xml" id="ok">Zeichnungserklärung generieren</a> und signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>' );
+'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.text" id="ok">Zeichnungserklärung&nbsp;generieren</a> und (mit eurem PGP-Key) signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>'+
+'<p>Die erzeugte Datei fasst die Angaben als Text und zusätzlich als XML kurz zusammen. Den Inhalt könnt ihr genau so in die E-Mail an uns pasten.</p>' );
 
 function getText(id) {
 	return container.find('#' + id).val();
@@ -129,9 +130,9 @@ function generateEml() {
 		var pgp = getText('pgp');
 	}
 
-	eml += 'Ich erkläre mich, ' + nick + ' (Mitglied ' + chiffre + ') hiermit verbindlich bereit, der *Werkkooperative der Technikfreundinnen* beizutreten.\n';
+	eml += 'Ich erkläre mich, ' + nick + ((chiffre)?' (Mitglied ' + chiffre + ')':'') + ' hiermit verbindlich bereit, der *Werkkooperative der Technikfreundinnen* beizutreten.\n';
 	eml += 'Ich sichere zu, den Betrag von ' + (shares*100) + ' € für ' + shares + ' Anteile binnen eines Jahres nach Gründung zu überweisen und den jährlichen Mitgliedsbeitrag (etwa 100 €) zu leisten.\n';
-	eml += 'Ich werde in Kürze mit der E-Mail ' + email + ' (' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
+	if(isChecked('newmember'))eml += 'Ich werde in Kürze mit der E-Mail ' + email + ' (' + pgp + ') als Mitglied dem VEBIT e. V. beitreten.' + '\n';
 	eml += note + '\n\n';
 	eml += d;
 
@@ -154,18 +155,16 @@ function update() {
 	}
 	if (!getText('date')) {
 		var d = new Date();
-		d.setHours(23);
-		d.setDate(1);
-		var s = d.toISOString().replace(/T.+/, "");
-		container.find('#date').val(s);
-		
+		d.setHours(-Math.ceil(d.getTimezoneOffset()/60));
+		setText('date', d.toISOString().replace(/T.+/, ""));
 	}
 
 	var xmlDat = generateXml();
 	var xmlUri = 'data:application/xml;charset=utf-8,' + encodeURIComponent(xmlDat);
 	var emlUri = 'mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=' + encodeURIComponent(generateEml()+'\n\n\n'+xmlDat);
-	container.find('#ok').attr('href', xmlUri);
-	container.find('#mailto').attr('href', emlUri);
+	//~ container.find('#ok').attr('href', xmlUri);
+	document.getElementById('ok').setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(generateEml()+'\n\n\n'+xmlDat) );
+	document.getElementById('mailto').setAttribute('href', emlUri);
 }
 
 //~ var elm = document.getElementsByTagName('input');
