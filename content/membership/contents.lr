@@ -6,7 +6,7 @@ description: Zeichne Teile der WTF Genossenschaft
 ---
 body:
 
-<div class="membership-form"></div>
+<div class="membership-form hidden"><span class="noscript">Hier soll noch – für jene, die kein JavaScript im Browser aktiv haben – ein PDF-Formular verlinkt werden. Unterstützung für derlei Dinge ist gerne gesehen.</span></div>
 
 <h3>Manifest</h3>
 <p>Es gibt ein Manifest zur Gründung der Genossenschaft. Dieses findet man dort:</p>

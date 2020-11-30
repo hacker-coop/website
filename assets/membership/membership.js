@@ -8,6 +8,21 @@ function escape(s) {
 		.replace(/>/g, "&gt;");
 }
 
+// hide noscript elm with class while js is executed
+var list=document.getElementsByClassName('noscript');
+Array.prototype.slice.call(list).forEach(function(e) {
+	console.log(e);
+	e.style.display='none';
+});
+
+// text for uri fragment
+if (window.location.hash.substr(1) !== "webform") {
+	return;
+}
+
+// add style class formbox
+document.getElementsByClassName('membership-form')[0].classList.add('formbox');
+
 //~ document.getElementsByClassName('membership-form')[0].innerHTML='';
 var container = $(this);
 container.html('<h3>Zusage der Anteilszeichnung</h3>'+
