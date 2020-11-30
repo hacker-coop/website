@@ -2093,28 +2093,29 @@
 	}
 
 // additional form CSS
-.membership-form {
+/* Webformular Mitgliedschaft/Zeichnung */
+.formbox {
     margin: 1em 2em;
     padding: 0.5em 1em;
-    width: 40em;
+    max-width: 90%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     background-color: #eee;
 }
-.membership-form h3 {
+.formbox h3 {
     margin: 1rem 0.5rem;
 }
-.membership-form p {
+.formbox p {
     margin: 0.5rem 0.5rem 0;
 }
-.membership-form p.indented {
+.formbox p.indented {
     margin-left: 2rem;
 }
-.membership-form label {
+.formbox label {
     padding-right: 1rem;
 }
-.membership-form input[type=text], .membership-form textarea {
+.formbox input[type=text], .formbox textarea {
     margin: 0.5rem 0 0;
-    width: 100%;
+    max-width: 95%;
     font-family: monospace;
     font-size: 110%;
     background-color: white;
@@ -2122,14 +2123,14 @@
     border: none;
     border-bottom: 1px solid black;
 }
-.membership-form input[type=text] {
+.formbox input[type=text] {
     height: 2em;
 }
-.membership-form p.desc {
+.formbox p.desc {
     margin: 0 0.5rem 0;
     font-size: 70%;
 }
-.membership-form #ok {
+.formbox #ok {
     background-color: white;
     color: #333;
     cursor: pointer;
@@ -2138,4 +2139,48 @@
     border-radius: 2px;
     border: 1px solid black;
 }
-
+/* Fortschrittsanzeige der Zeichnung */
+ul#progressbars {
+	list-style-type:none;
+}
+#progressbars li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+#progressbars li label {
+	width: 11ex;
+	display: inline-block;
+	font-size: 120%;
+	margin: 0;
+}
+progress[value] {
+	-webkit-appearance: none;
+	appearance: none;
+}
+.formbox #progressbars li progress {
+	max-width: 27ex;
+	min-width: 11em;
+	height: 1.5em;
+	margin-right: 1em;
+}
+#progressbars progress::progress-value,
+#progressbars progress::progress-bar {
+	background-color: red;
+	color: green;
+}
+#progressbars progress::-moz-progress-bar {
+	background-color: green;
+}
+#progressbars progress[id=deadline] + span.progress-text {
+	color: red;
+}
+#progressbars progress[id=compeers]  + span.progress-text {
+	color: orange;
+}
+#progressbars progress[id=share]  + span.progress-text {
+	color: darkgreen;
+}
+span.progress-text {
+	min-width: 8ex;
+}
