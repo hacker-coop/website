@@ -11,36 +11,30 @@
       "OGG Abonieren": "/wtf-ogg.xml"
     }
   },
-  "Weitere Infos": {
-    "href": "/about",
-    "list_childs": true,
-    "items": {
-      "Audio und Video": "/about"
-    }
-  },
-  "Mitglied werden": {
-    "href": "/member",
-    "list_childs": true,
-    "items": {
-      "VEBIT e.V.": "/member",
-      "WTF e.G.": "/membership"
-    }
-  },
-  "FAQ": {
+  "Mehr Erfahren": {
     "href": "/faq",
     "list_childs": true,
     "items": {
+      "Medienerscheinungen": "/about",
       "Häufige Fragen": "/faq",
       "WTF-Fragestunde": "/bbb",
       "Jour-Fixe": "/bbb"
     }
   },
+  "Mitmachen": {
+    "href": "/member",
+    "list_childs": true,
+    "items": {
+      "im Verein": "/member",
+      "in der Genossenschaft": "/membership"
+    }
+  },
   "Impressum": {
     "href": "/impressum",
-    "items": {}
-  },
-  "Datenschutz": {
-    "href": "/datenschutz",
-    "items": {}
+    "list_childs": true,
+    "items": {
+      "Impressum": "/impressum",
+      "Datenschutz": "/datenschutz"
+    }
   }
 }
