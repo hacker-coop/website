@@ -1,0 +1,24 @@
+BEGIN:VEVENT
+
+DTSTAMP:00010101T000000Z
+UID:0e8b077c201dedc707ce5190aa4387b5
+DTSTART;VALUE=DATE-TIME;TZID=Europe/Zurich:20200826T200000
+CLASS:PUBLIC
+
+DESCRIPTION;LANGUAGE=de-CH:At this event we proudly present the project for the first time.
+
+
+LOCATION;LANGUAGE=de-CH:
+
+
+STATUS:CONFIRMED
+SUMMARY;LANGUAGE=de-CH:Initial Presentation
+TRANSP:OPAQUE
+URL:http://localhost:1313/hugo-ical-templates-demo/events/event_1/
+DTEND;VALUE=DATE-TIME;TZID=Europe/Zurich:20200826T220000
+
+CONTACT;LANGUAGE=de-CH:F. Nord: me@example.org
+COLOR:crimson
+
+
+END:VEVENT

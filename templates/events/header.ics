@@ -1,0 +1,17 @@
+
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+UID:03c1ca7de80bdb806a60bce3d3b7f652
+
+URL:http://localhost:1313/hugo-ical-templates-demo/events/
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+SOURCE;VALUE=URI:https://localhost:1313/hugo-ical-templates-demo/events/calendar.ics
+COLOR:crimson
+NAME;LANGUAGE=de-DE:Example Events
+DESCRIPTION;LANGUAGE=de-DE:Example Events Calendar
+
+
+X-WR-CALNAME:Example Events
+X-WR-CALDESC:Example Events Calendar
