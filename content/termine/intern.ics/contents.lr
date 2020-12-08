@@ -4,21 +4,12 @@ title: interne Termine
 ---
 _template: calendar.ics
 ---
-dates:
-
-#### events ####
-start: 1970-01-23 13:37:42 Europe/Berlin
-----
-ende: 1970-01-23 23:42:00 Europe/Berlin
-----
-event: test
-----
-ort: 
-----
-url: 
-----
-description: 
-----
-mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
-----
-confirmed: false
+dates: 
+---
+description: interne Termine der WTF eG
+---
+name: WTF - interne Termine
+---
+color: crimson
+---
+lang: de_DE
