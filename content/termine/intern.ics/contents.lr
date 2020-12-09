@@ -1,0 +1,52 @@
+_model: calendar
+---
+title: interne Termine
+---
+_template: calendar.ics
+---
+dates:
+
+#### events ####
+start: 2020-12-16 20:30:42 Europe/Berlin
+----
+ende: 2020-12-16 21:00:23 Europe/Berlin
+----
+event: AG  Kommunikation - Mumble
+----
+ort: meta.vebit.xyz
+----
+url: https://meta.vebit.xyz/c/10?u=l3d
+----
+description: Die AG Kommunikation trifft sich regelmäßig um die aktuellen Aufgaben in der WTF Genossenschaft zu besprechen und vorran zu bringen. |Komm vorbei und mach mit!
+----
+sumary: 
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+#### events ####
+start: 2020-12-08 20:00:42 Europe/Berlin
+----
+ende: 2020-12-08 22:00:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: WTF Kernteam treffen
+----
+sumary: Das Zentralkomitee der WTF Genossenschaft trifft sich
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+---
+description: interne Termine der WTF eG
+---
+name: WTF - interne Termine
+---
+color: crimson
+---
+lang: de_DE

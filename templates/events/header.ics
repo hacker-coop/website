@@ -1,0 +1,17 @@
+{#- © by L3D <l3d@c3woc.de> #}
+
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+UID:{{ this._gid }}
+
+URL:http://localhost:1313/hugo-ical-templates-demo/events/
+REFRESH-INTERVAL;VALUE=DURATION:P1W
+SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
+COLOR:{{ this.color }}
+NAME;LANGUAGE={{ this.lang }}:{{ this.name }}
+DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description }}
+
+X-WR-CALNAME:{{ this.name }}
+X-WR-CALDESC:{{ this.description }}

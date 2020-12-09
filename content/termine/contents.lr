@@ -1,0 +1,19 @@
+_model: htmlcalendar
+---
+title: Terminkalender
+---
+body:
+
+Wir haben einige Termine bei unserer Genossenschaft. Bei vielen kann man auch mitmachen.
+
+Die nächsten Termine gibt es in der folgenden Tabelle und als Kalendar Abonierbar.
+---
+description: Der WTF Terminkalnender mit allen geplanten öffentlichen Events zum Teilnehmen und oft auch zum Mitmachen.
+---
+_template: htmlcalendar.html
+---
+terminanzeiger:
+
+/termine/wtf.ics 
+---
+abobutton: Kalendar Abonieren (ics)
