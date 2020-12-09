@@ -17,8 +17,8 @@
     "items": {
       "Medienerscheinungen": "/about",
       "Häufige Fragen": "/faq",
-      "WTF-Fragestunde": "/bbb",
-      "Jour-Fixe": "/bbb"
+      "Terminkalender": "/termine",
+      "WTF-Fragestunde": "/bbb"
     }
   },
   "Mitmachen": {
