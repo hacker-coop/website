@@ -13,7 +13,7 @@ STATUS:
   {%- else -%}
     TENTATIVE
   {%- endif %}
-SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.sumary }}
+SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.event | wordwrap(45) }}
 TRANSP:OPAQUE
 URL:{{ blk.url }}
 DTEND;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.ende.strftime('%Y%m%dT%H%M%S') }}
