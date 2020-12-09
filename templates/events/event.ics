@@ -4,9 +4,10 @@
 BEGIN:VEVENT
 UID:{{ blk.start.strftime('%m%H%d%M%Y%S') }}{{ blk.event[:1] }}{{ blk.event[-1:] }}{{ blk.ende.strftime('%m%H%d%M%Y%S') }}@{{ fqdn[8:-1] }}
 DTSTART;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.start.strftime('%Y%m%dT%H%M%S') }}
+DTSTAMP;{{ blk.start.strftime('%Y%m%dT%H%M%S') }}
 CLASS:PUBLIC
 DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\n")| wordwrap(45)  }}\n{{ blk.url }}
-LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort }}
+LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort | wordwrap(45) }}
 STATUS:
   {%- if blk.confirmed -%}
     CONFIRMED

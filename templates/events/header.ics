@@ -1,5 +1,6 @@
 {#- © by L3D <l3d@c3woc.de> #}
 VERSION:2.0
+PRODID:-//WTF Kooperative eG//Werkkooperative der Technikfreundinnen eG//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 UID:{{ this._gid }}
@@ -9,5 +10,5 @@ SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
 COLOR:{{ this.color }}
 NAME;LANGUAGE={{ this.lang }}:{{ this.name }}
 DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description }}
-X-WR-CALNAME:{{ this.name }}
-X-WR-CALDESC:{{ this.description }}
+X-WR-CALNAME:{{ this.name | wordwrap(45) }}
+X-WR-CALDESC:{{ this.description | wordwrap(45) }}
