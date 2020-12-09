@@ -8,7 +8,7 @@ URL:http://localhost:1313/hugo-ical-templates-demo/events/
 REFRESH-INTERVAL;VALUE=DURATION:P1W
 SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
 COLOR:{{ this.color }}
-NAME;LANGUAGE={{ this.lang }}:{{ this.name }}
-DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description }}
+NAME;LANGUAGE={{ this.lang }}:{{ this.name | wordwrap(45) }}
+DESCRIPTION;LANGUAGE={{ this.lang }}:{{ this.description | wordwrap(45) }}
 X-WR-CALNAME:{{ this.name | wordwrap(45) }}
 X-WR-CALDESC:{{ this.description | wordwrap(45) }}
