@@ -9,6 +9,4 @@ BEGIN:VCALENDAR
 {%- for blk in this.dates.blocks|sort(attribute='start', reverse = True) -%}
   {% include "events/event.ics" %}
 {%- endfor %}
-
-
 END:VCALENDAR

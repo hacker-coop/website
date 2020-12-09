@@ -2,14 +2,11 @@
 {% set fqdn = '/' | url(external=true) | string  -%}
 
 BEGIN:VEVENT
-
 UID:{{ blk.start.strftime('%m%H%d%M%Y%S') }}{{ blk.event[:1] }}{{ blk.event[-1:] }}{{ blk.ende.strftime('%m%H%d%M%Y%S') }}@{{ fqdn[8:-1] }}
 DTSTART;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.start.strftime('%Y%m%dT%H%M%S') }}
 CLASS:PUBLIC
-
-DESCRIPTION;LANGUAGE=de-CH:{{ blk.description|replace( "|", "\n") }}\n{{ blk.url }}
-
-LOCATION;LANGUAGE={{ this.lang }}:
+DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\n")| wordwrap(45)  }}\n{{ blk.url }}
+LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort }}
 STATUS:
   {%- if blk.confirmed -%}
     CONFIRMED
@@ -20,8 +17,6 @@ SUMMARY;LANGUAGE={{ this.lang }}:{{ blk.sumary }}
 TRANSP:OPAQUE
 URL:{{ blk.url }}
 DTEND;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.ende.strftime('%Y%m%dT%H%M%S') }}
-
 CONTACT;LANGUAGE={{ this.lang }}:{{ this.mail }}
 COLOR:{{ this.color }}
-
 END:VEVENT
