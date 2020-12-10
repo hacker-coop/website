@@ -3,6 +3,7 @@ name = VEBIT e.V.
 url = https://vebit.xyz/
 url_style = absolute
 excluded_assets = sass, *.scss
+output_path = temp/builds/vebit.xyz/
 
 [servers.vebit]
 name = vebit
