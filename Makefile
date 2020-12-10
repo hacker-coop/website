@@ -19,11 +19,11 @@ install:
 	  if hash apt-get 2>/dev/null; then
 	    apt-get update -qq >/dev/null && apt-get install -qq apt-utils imagemagick python3-pip python3-setuptools gcc git-lfs
 	  elif hash pacman 2>/dev/null; then
-	    pacman -Sy imagemagick python-pip glibc lib32-glibc gcc git-lfs docs2unix --noconfirm
+	    pacman -Sy imagemagick python-pip glibc lib32-glibc gcc git-lfs dos2unix --noconfirm
 	  elif hash dnf 2>/dev/null; then
 	    dnf install -y ImageMagick python3-pip gcc git-lfs
 	  else
-	    echo -e "Please install Imagemagick, python3-pip git-lfs and gcc docs2unix"
+	    echo -e "Please install Imagemagick, python3-pip git-lfs and gcc dos2unix"
 	  fi
 	  pip3 install wheel  --upgrade
 	  pip3 install lektor --upgrade

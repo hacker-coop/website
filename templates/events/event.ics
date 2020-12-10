@@ -8,7 +8,7 @@ DTSTAMP;VALUE=DATE-TIME;TZID=Europe/Berlin:{{ blk.start.strftime('%Y%m%dT%H%M%S'
 CLASS:PUBLIC
 DESCRIPTION;LANGUAGE={{ this.lang }}:{{ blk.description|replace( "|", "\n")  | wordwrap(width=45, wrapstring='\n   ') }}
 {%- if blk.url is defined and not blk.url == '' %}\n
-{{ blk.url }}{% endif %}
+  Weiteres dazu auf {{ blk.url }}{% endif %}
 LOCATION;LANGUAGE={{ this.lang }}:{{ blk.ort  | wordwrap(width=45, wrapstring='\n   ') }}
 STATUS:
   {%- if blk.confirmed -%}
