@@ -21,7 +21,7 @@ channel:before {
   font-size: 20pt;
 }
 lastBuildDate:before {
-  content: "Füge diesen XML Feed in deinen Podcatcher ein um den Podcast zu abonieren!";
+  content: "Füge diesen XML Feed in deinen Podcatcher ein um den Podcast zu abonnieren!";
   padding-top: 10px;
   padding-bottom: 20px;
   display: block;
