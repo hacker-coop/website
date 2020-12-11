@@ -34,9 +34,9 @@
             <tr>
               <th>
                   {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
-                    {{ blk.start.strftime('%d.%m.%y %H') }} - {{  blk.ende.strftime('%H') }} Uhr
+                    <b>{{ blk.start|datetimeformat('EEEE') }}</b>, {{ blk.start.strftime('%d.%m.%Y') }} von <b>{{ blk.start.strftime('%H:%M') }}</b> bis {{  blk.ende.strftime('%H:%M') }} Uhr
                   {%- else -%}
-                    {{ blk.start.strftime('%d.%m') }} - {{ blk.ende.strftime('%d.%m.%Y') }}
+                    <b>{{ blk.start|datetimeformat('EEEE') }}</b>, {{ blk.start.strftime('%d.%m') }} bis <b>{{ blk.ende|datetimeformat('EEEE') }}</b> {{ blk.ende.strftime('%d.%m.%Y') }}
                   {%- endif -%}
                 </th>
               <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
