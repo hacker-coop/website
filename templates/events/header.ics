@@ -4,7 +4,7 @@ PRODID:-//WTF Kooperative eG//Awesome Calendar//DE
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 UID:{{ this._gid }}
-URL:http://localhost:1313/hugo-ical-templates-demo/events/
+URL:{{ this.moreinfourl }}
 REFRESH-INTERVAL;VALUE=DURATION:P1W
 SOURCE;VALUE=URI:{{ this._path | url(external=true) }}
 COLOR:{{ this.color }}
