@@ -30,6 +30,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2020-12-16 21:00:42 Europe/Berlin
 ----
@@ -46,6 +48,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2020-12-23 21:00:42 Europe/Berlin
 ----
@@ -62,6 +66,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2020-12-30 21:00:42 Europe/Berlin
 ----
@@ -78,6 +84,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2021-01-06 21:00:42 Europe/Berlin
 ----
@@ -94,6 +102,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2021-01-13 21:00:42 Europe/Berlin
 ----
@@ -110,6 +120,8 @@ description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wi
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2020-12-20 20:00:42 Europe/Berlin
 ----
@@ -126,6 +138,8 @@ description: Ihr habt Fragen zur WTF Genossenschaft? |Ihr wollt mitmachen und wi
 mail: Vorstand <vorstand@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange
 #### events ####
 start: 2020-12-27 10:37:42 Europe/Berlin
 ----
@@ -142,3 +156,5 @@ description: Auch die WTF ist bei rC3 vertreten. |Wir haben einen Vortrag im Fah
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: darkorange

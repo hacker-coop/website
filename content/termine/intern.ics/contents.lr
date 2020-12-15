@@ -22,10 +22,12 @@ description: Die AG Kommunikation trifft sich regelmäßig um die aktuellen Aufg
 mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: orange
 #### events ####
 start: 2020-12-08 20:00:42 Europe/Berlin
 ----
-ende: 2020-12-08 22:00:42 Europe/Berlin
+ende: 2020-12-08 22:30:42 Europe/Berlin
 ----
 event: WTF Kernteam Mumble
 ----
@@ -33,11 +35,103 @@ ort: Mumble
 ----
 url: 
 ----
-description: WTF Kernteam treffen
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
 ----
 mail: WTF Vorstand <vorstand@lists.vebit.xyz>
 ----
 confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-15 20:00:42 Europe/Berlin
+----
+ende: 2020-12-15 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-22 20:00:42 Europe/Berlin
+----
+ende: 2020-12-22 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-29 20:00:42 Europe/Berlin
+----
+ende: 2020-12-29 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: false
+----
+color: deepskyblue
+#### events ####
+start: 20201-01-05 20:00:42 Europe/Berlin
+----
+ende: 20201-01-05 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: no
+----
+color: deepskyblue
+#### events ####
+start: 20201-01-12 20:00:42 Europe/Berlin
+----
+ende: 20201-01-12 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: false
+----
+color: deepskyblue
 ---
 description: interne Termine der WTF eG
 ---
