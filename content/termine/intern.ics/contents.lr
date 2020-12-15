@@ -140,3 +140,5 @@ name: WTF - interne Termine
 color: deepskyblue
 ---
 lang: de_DE
+---
+hide_from_global_index: yes
