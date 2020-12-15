@@ -44,7 +44,7 @@ container.html('<h3 id="webform">Zusage der Anteilszeichnung</h3>'+
 
 '<p><input type="text" id="date"></p>'+
 '<p class="desc"><label for="date">Datum</label></p>'+
-'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.text" id="ok">Zeichnungserklärung&nbsp;generieren</a> und (mit eurem PGP-Key) signiert an <a href="mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@vebit.xyz</a> senden!</p>'+
+'<p style="margin: 2rem 0.5rem 1rem">Bitte <a href="#" download="antrag-vebit-wtf.text" id="ok">Zeichnungserklärung&nbsp;generieren</a> und (mit eurem PGP-Key) signiert an <a href="mailto:vorstand@lists.vebit.xyz?subject=Zeichnungserklärung&body=Ich%20erkläre%20mich%20bereit%20…" id="mailto">vorstand@lists.vebit.xyz</a> senden!</p>'+
 '<p>Die erzeugte Datei fasst die Angaben als Text und zusätzlich als XML kurz zusammen. Den Inhalt könnt ihr genau so in die E-Mail an uns pasten.</p>' );
 
 function getText(id) {
@@ -146,7 +146,7 @@ function update() {
 
 	var xmlDat = generateXml();
 	var xmlUri = 'data:application/xml;charset=utf-8,' + encodeURIComponent(xmlDat);
-	var emlUri = 'mailto:vorstand@vebit.xyz?subject=Zeichnungserklärung&body=' + encodeURIComponent(generateEml()+'\n\n\n'+xmlDat);
+	var emlUri = 'mailto:vorstand@lists.vebit.xyz?subject=Zeichnungserklärung&body=' + encodeURIComponent(generateEml()+'\n\n\n'+xmlDat);
 	//~ container.find('#ok').attr('href', xmlUri);
 	document.getElementById('ok').setAttribute('href', 'data:text/plain;charset=utf-8,'+encodeURIComponent(generateEml()+'\n\n\n'+xmlDat) );
 	document.getElementById('mailto').setAttribute('href', emlUri);

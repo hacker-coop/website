@@ -39,7 +39,7 @@
                     <b>{{ blk.start|datetimeformat('EEEE') }}</b>, {{ blk.start.strftime('%d.%m') }} bis <b>{{ blk.ende|datetimeformat('EEEE') }}</b> {{ blk.ende.strftime('%d.%m.%Y') }}
                   {%- endif -%}
                 </th>
-              <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", " ") }}">{{ blk.event }}</a></th>
+              <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", "\n") }}">{{ blk.event }}</a></th>
               <th>
                 {%- if blk.url is defined -%}
                   <a href="{{ blk.url }}">{{ blk.ort }}</a>
