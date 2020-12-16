@@ -132,6 +132,42 @@ mail: WTF Vorstand <vorstand@lists.vebit.xyz>
 confirmed: false
 ----
 color: deepskyblue
+#### events ####
+start: 2020-12-17 19:00:23 Europe/Berlin
+----
+ende: 2020-12-17 21:00:42 Europe/Berlin
+----
+event: Funktionäre Kennenlernen
+----
+ort: Cyberspace (BBB)
+----
+url: 
+----
+description: Die zukünftigen Vorstände, Aufsichtsräte und Stellvertreter treffen sich. Es wird über Fortschritte geredet, die aktuelle Lage der Genossenschaft und wir lernen uns besser kennen.
+----
+mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2020-12-23 20:30:23 Europe/Berlin
+----
+ende: 2020-12-23 21:30:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: Die AG Kommunikation trifft sich um die Webseite weiter voran zu treiben.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
 ---
 description: interne Termine der WTF eG
 ---
@@ -142,3 +178,5 @@ color: deepskyblue
 lang: de_DE
 ---
 hide_from_global_index: yes
+---
+moreinfourl: https://meta.vebit.xyz/
