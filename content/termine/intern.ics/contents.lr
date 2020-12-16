@@ -7,24 +7,6 @@ _template: calendar.ics
 dates:
 
 #### events ####
-start: 2020-12-16 20:30:42 Europe/Berlin
-----
-ende: 2020-12-16 21:00:23 Europe/Berlin
-----
-event: AG  Kommunikation - Mumble
-----
-ort: meta.vebit.xyz
-----
-url: https://meta.vebit.xyz/c/10?u=l3d
-----
-description: Die AG Kommunikation trifft sich regelmäßig um die aktuellen Aufgaben in der WTF Genossenschaft zu besprechen und vorran zu bringen. |Komm vorbei und mach mit!
-----
-mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
-----
-confirmed: yes
-----
-color: orange
-#### events ####
 start: 2020-12-08 20:00:42 Europe/Berlin
 ----
 ende: 2020-12-08 22:30:42 Europe/Berlin
@@ -42,6 +24,24 @@ mail: WTF Vorstand <vorstand@lists.vebit.xyz>
 confirmed: yes
 ----
 color: deepskyblue
+#### events ####
+start: 2020-12-16 20:30:42 Europe/Berlin
+----
+ende: 2020-12-16 21:00:23 Europe/Berlin
+----
+event: AG  Kommunikation - Mumble
+----
+ort: meta.vebit.xyz
+----
+url: https://meta.vebit.xyz/c/10?u=l3d
+----
+description: Die AG Kommunikation trifft sich regelmäßig um die aktuellen Aufgaben in der WTF Genossenschaft zu besprechen und vorran zu bringen. |Komm vorbei und mach mit!
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
 #### events ####
 start: 2020-12-15 20:00:42 Europe/Berlin
 ----
@@ -97,9 +97,9 @@ confirmed: false
 ----
 color: deepskyblue
 #### events ####
-start: 20201-01-05 20:00:42 Europe/Berlin
+start: 2021-01-05 20:00:42 Europe/Berlin
 ----
-ende: 20201-01-05 22:30:42 Europe/Berlin
+ende: 2021-01-05 22:30:42 Europe/Berlin
 ----
 event: WTF Kernteam Mumble
 ----
@@ -115,9 +115,9 @@ confirmed: no
 ----
 color: deepskyblue
 #### events ####
-start: 20201-01-12 20:00:42 Europe/Berlin
+start: 2021-01-12 20:00:42 Europe/Berlin
 ----
-ende: 20201-01-12 22:30:42 Europe/Berlin
+ende: 2021-01-12 22:30:42 Europe/Berlin
 ----
 event: WTF Kernteam Mumble
 ----
