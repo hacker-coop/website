@@ -7,31 +7,34 @@
     "href": "/podcast",
     "list_childs": true,
     "items": {
-      "MP3 Abonieren": "/wtf.xml",
-      "OGG Abonieren": "/wtf-ogg.xml"
+      "MP3 abonnieren": "/wtf.xml",
+      "OGG abonnieren": "/wtf-ogg.xml"
     }
   },
-  "Weitere Infos": {
-    "href": "/about",
+  "Mehr Erfahren": {
+    "href": "/faq",
     "list_childs": true,
     "items": {
-      "Audio und Video": "/about"
+      "Medienerscheinungen": "/about",
+      "Häufige Fragen": "/faq",
+      "Terminkalender": "/termine",
+      "WTF-Fragestunde": "/bbb"
     }
   },
-  "Mitglied werden": {
+  "Mitmachen": {
     "href": "/member",
     "list_childs": true,
     "items": {
-      "VEBIT e. V.": "/member",
-      "WTF e. G.": "/membership"
+      "im Verein": "/member",
+      "in der Genossenschaft": "/membership"
     }
   },
   "Impressum": {
     "href": "/impressum",
-    "items": {}
-  },
-  "Datenschutz": {
-    "href": "/datenschutz",
-    "items": {}
+    "list_childs": true,
+    "items": {
+      "Impressum": "/impressum",
+      "Datenschutz": "/datenschutz"
+    }
   }
 }

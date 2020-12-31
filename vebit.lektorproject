@@ -3,6 +3,7 @@ name = VEBIT e.V.
 url = https://vebit.xyz/
 url_style = absolute
 excluded_assets = sass, *.scss
+output_path = temp/builds/vebit.xyz/
 
 [servers.vebit]
 name = vebit
@@ -17,3 +18,6 @@ target = rsync://vebit@vebit.xyz/var/www/virtual/vebit/html
 name = Deutsch
 primary = yes
 locale = de_DE
+
+[packages]
+lektor-scss = 1.3.8

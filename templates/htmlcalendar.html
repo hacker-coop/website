@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+
+{%- block site_description -%}
+  {{ this.description }}
+{%- endblock -%}
+
+{% block body %}
+<section id="main" class="container">
+  <header>
+    <h2>{{ this.title }}</h2>
+  </header>
+  <div class="box">
+      <center>
+   {{ this.body }}
+      <br/>
+        <a href="{{ this.terminanzeiger | url(external=true) }}" class="button special">{{ this.abobutton }}</a>
+      </center>
+      <br/>
+        <table>
+          <thead>
+            <tr>
+              <th>Datum</th>
+              <th>Veranstaltung</th>
+              <th>Ort</th>
+            </tr>
+          </thead>
+          <tbody>
+            {%- set pages = site.query('/termine/').include_undiscoverable(true).all() -%}
+            {%- for page in pages -%}
+              {%- if page._model == 'calendar' and page._path == this.terminanzeiger|string -%}
+                {%- for blk in page.dates.blocks|sort(attribute='start', reverse = False) -%}
+                  {%- if blk.start.strftime('%Y%m%d%H%M') > none|datetimeformat('yyyyMMddhhmm') -%}
+            <tr>
+              <th>
+                  {%- if  blk.start.strftime('%d.%m') ==  blk.ende.strftime('%d.%m') -%}
+                    <b>{{ blk.start|datetimeformat('EEEE') }}</b>, {{ blk.start.strftime('%d.%m.%Y') }} von <b>{{ blk.start.strftime('%H:%M') }}</b> bis {{  blk.ende.strftime('%H:%M') }} Uhr
+                  {%- else -%}
+                    <b>{{ blk.start|datetimeformat('EEEE') }}</b>, {{ blk.start.strftime('%d.%m') }} bis <b>{{ blk.ende|datetimeformat('EEEE') }}</b> {{ blk.ende.strftime('%d.%m.%Y') }}
+                  {%- endif -%}
+                </th>
+              <th><a href="{{ blk.url }}" title="{{ blk.description|replace("|", "\n") }}">{{ blk.event }}</a></th>
+              <th>
+                {%- if blk.url is defined -%}
+                  <a href="{{ blk.url }}">{{ blk.ort }}</a>
+                {%- else -%}
+                  {{ blk.ort }}
+                {%- endif -%}
+              </th>
+            </tr>
+                {%- endif -%}
+              {%- endfor -%}
+          </tbody>
+        </table><br/>
+        {%- endif -%}
+        {%- endfor %}
+
+    </div>
+  </section>
+
+{% endblock %}

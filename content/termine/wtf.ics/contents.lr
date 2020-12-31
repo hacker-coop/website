@@ -1,0 +1,160 @@
+_model: calendar
+---
+title: öffentliche Termine
+---
+_template: calendar.ics
+---
+description: öffentliche Termine der WTF eG - viele auch zum Mitmachen
+---
+name: WTF Terminkalender
+---
+color: darkorange
+---
+lang: de_DE
+---
+dates:
+
+#### events ####
+start: 2020-12-09 21:00:42 Europe/Berlin
+----
+ende: 2020-12-09 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2020-12-16 21:00:42 Europe/Berlin
+----
+ende: 2020-12-16 23:42:23 Europe/Berlin
+----
+event: WTF Glüh-BBB
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |Diese mal ist der Abend so gemütlich, das wir hier Omas Glühwein von damals ™ haben! |Also, afair, war das so:  |3 x 0,7 l Blaufränkisch oder Tarragona erwärmen. |In einem Topf 200 g weissen Kandis auflösen, mit sowenig Wasser wie  möglich. |Zunächst nur die Hälfte der Lösung zum Wein hinzugeben. |Dazu den Saft von 6 Orangen und 3 Zitronen, Kerne ausfiltern |In Einwegteebeutel tun: 6 Stangen Zimt, gleich hinzutun, nach dem Aufkochen wieder entfernen. |6 Gewürznelken, gleich hinzutun und bis zum Schluss drin lassen. |6 Vanilleschoten innen auskratzen, das Mark erst zusetzen wenn der Wein warm ist (einmal 30 Sek aufkochen, dann durch Zugabe des Saftes sofort  kühlen, bei 50 bis 60° lassen. |Eine Prise Salz. |Nach Absinken der Temperatur 1 Flasche 0,7 l echten Rum hinzugiessen,  langsam wieder aufwärmen. |Nach Geschmack mit Rest des aufgelösten Kandis nachsüssen. |Servieren und binnen 2 h verzehren, ggf. neu ansetzen danach. |Prost. |ajuvo
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2020-12-23 21:00:42 Europe/Berlin
+----
+ende: 2020-12-23 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2020-12-30 21:00:42 Europe/Berlin
+----
+ende: 2020-12-30 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2021-01-06 21:00:42 Europe/Berlin
+----
+ende: 2021-01-06 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2021-01-13 21:00:42 Europe/Berlin
+----
+ende: 2021-01-13 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2020-12-20 20:00:42 Europe/Berlin
+----
+ende: 2020-12-20 21:00:42 Europe/Berlin
+----
+event: WTF Fragestunde
+----
+ort: vebit.xyz/bbb
+----
+url: https://vebit.xyz/bbb/
+----
+description: Ihr habt Fragen zur WTF Genossenschaft? |Ihr wollt mitmachen und wisst nicht wie? |Ihr seid euch nicht sicher ob euer Business Case passt? |Kommt zur WTF Fragestunde! Lasst uns über eure Fragen sprechen und diese beantworten.
+----
+mail: Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2020-12-27 10:37:42 Europe/Berlin
+----
+ende: 2020-12-30 23:42:00 Europe/Berlin
+----
+event: rC3 - remote Chaos Experience
+----
+ort: streaming.media.ccc.de
+----
+url: https://streaming.media.ccc.de/
+----
+description: Auch die WTF ist bei rC3 vertreten. |Wir haben einen Vortrag im Fahrplan versteckt und wollen uns auch im BigBlueButton treffen.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange

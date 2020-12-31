@@ -1,0 +1,19 @@
+_model: htmlcalendar
+---
+title: Terminkalender
+---
+body:
+
+Bei unserer Genossenschaft treffen wir uns häufiger. Dabei lernen wir uns kennen, beantworten unsere Fragen, tauschen uns aus, halten Vorträge oder machen sonstige spannende Sachen.
+
+Die nächsten Termine sind nach Datum sortiert in der unten stehenden Tabelle. Und auch per ICS abonnierbar.
+---
+description: Der WTF-Terminkalender mit allen geplanten öffentlichen Events zum Teilnehmen und oft auch zum Mitmachen.
+---
+_template: htmlcalendar.html
+---
+terminanzeiger:
+
+/termine/wtf.ics
+---
+abobutton: Kalendar abonnieren (ics)

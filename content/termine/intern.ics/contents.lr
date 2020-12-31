@@ -1,0 +1,200 @@
+_model: calendar
+---
+title: interne Termine
+---
+_template: calendar.ics
+---
+dates:
+
+#### events ####
+start: 2020-12-08 20:00:42 Europe/Berlin
+----
+ende: 2020-12-08 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-16 20:30:42 Europe/Berlin
+----
+ende: 2020-12-16 21:00:23 Europe/Berlin
+----
+event: AG  Kommunikation - Mumble
+----
+ort: meta.vebit.xyz
+----
+url: https://meta.vebit.xyz/c/10?u=l3d
+----
+description: Die AG Kommunikation trifft sich regelmäßig um die aktuellen Aufgaben in der WTF Genossenschaft zu besprechen und vorran zu bringen. |Komm vorbei und mach mit!
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
+#### events ####
+start: 2020-12-15 20:00:42 Europe/Berlin
+----
+ende: 2020-12-15 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-22 20:00:42 Europe/Berlin
+----
+ende: 2020-12-22 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-29 20:00:42 Europe/Berlin
+----
+ende: 2020-12-29 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: false
+----
+color: deepskyblue
+#### events ####
+start: 2021-01-05 20:00:42 Europe/Berlin
+----
+ende: 2021-01-05 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: no
+----
+color: deepskyblue
+#### events ####
+start: 2021-01-12 20:00:42 Europe/Berlin
+----
+ende: 2021-01-12 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: false
+----
+color: deepskyblue
+#### events ####
+start: 2020-12-17 19:00:23 Europe/Berlin
+----
+ende: 2020-12-17 21:00:42 Europe/Berlin
+----
+event: Funktionäre Kennenlernen
+----
+ort: Cyberspace (BBB)
+----
+url: 
+----
+description: Die zukünftigen Vorstände, Aufsichtsräte und Stellvertreter treffen sich. Es wird über Fortschritte geredet, die aktuelle Lage der Genossenschaft und wir lernen uns besser kennen.
+----
+mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2020-12-23 20:30:23 Europe/Berlin
+----
+ende: 2020-12-23 21:30:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: Die AG Kommunikation trifft sich um die Webseite weiter voran zu treiben.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
+#### events ####
+start: 2021-01-07 19:00:23 Europe/Berlin
+----
+ende: 2021-01-07 21:30:23 Europe/Berlin
+----
+event: Funktionärsmeeting
+----
+ort: Cyberspace (BBB)
+----
+url: 
+----
+description: WTF Funktionäre treffen sich am 7.1. |Vorstände, Aufsichtsräte und Stellvertreter: Herzlich Willkommen!
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: crimpson
+---
+description: interne Termine der WTF eG
+---
+name: WTF - interne Termine
+---
+color: deepskyblue
+---
+lang: de_DE
+---
+hide_from_global_index: yes
+---
+moreinfourl: https://meta.vebit.xyz/

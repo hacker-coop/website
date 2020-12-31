@@ -2,18 +2,18 @@ _model: page
 ---
 title: Die Genossenschaft "WTF eG"
 ---
-description: Erfahre mehr über die WTF eg. Was haben wir vor? Wie macht man mit? Und warum?
+description: Erfahre mehr über die WTF eG. Was haben wir vor? Wie macht man mit? Und warum?
 ---
 body:
 
 <h3>Wir haben hier ein paar Informationen zur Genossenschaft zusammen gefasst. Teilweise als Audio und auch das ein oder andere Video.</h3>
-Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interesse</code> an <i>interesse at vebit dot xyz</i>. Verschlüsselt werden kann an <a href="https://vebit.xyz/vorstand.asc">diesen PGP-Key</a>, Fingerprint <code>6142 D66A ECA5 4DB3 5101  259D E214 219F 4496 1D5A</code>.
-
+Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interesse</code> an <i>vorstand at vebit dot xyz</i>.
+Verschlüsselt werden kann an <a href="https://vebit.xyz/vorstand.asc">diesen PGP-Key</a>, Fingerprint <code>6142 D66A ECA5 4DB3 5101  259D E214 219F 4496 1D5A</code>.
 
  Wieso das alles?
 ----------------
-> Die Genossenschaft ermöglicht es uns Hackern legal uns bürokratiehasselarm Nebentätigkeiten zu betreiben, Geld zu nehmen von Leuten so wie Projekte zu iniziieren, wenn man mal eine Firma braucht.
-> Also so zu sagen eine Firma, die man mal benutzen kann, wenn man sie braucht. Oder auch eine Firma, in der man Arbeiten kann und sich selber in der eigenen Firma anstellt.
+> Die Genossenschaft ermöglicht es uns Hackern legal und bürokratiehasselarm Nebentätigkeiten zu betreiben, Geld zu nehmen von Leuten, sowie Projekte zu initiieren, wenn man mal eine Firma braucht.
+> Also sozusagen eine Firma, die man mal benutzen kann, wenn man sie braucht. Oder auch eine Firma, in der man Arbeiten kann und sich selbst in der eigenen Firma anstellt.
 > Damit bieten sich den interessierten Hacksen und Hackern viele Möglichkeiten.
 <audio controls>
 <source src="/audio/short.ogg" type="audio/ogg">
@@ -21,23 +21,23 @@ Bei Fragen oder Interesse schreibe uns eine E-Mail mit dem Betreff <code>Interes
 Your browser does not support the audio element.
 </audio>
 
-<a class="button" href="/audio/short.mp3" download>Wieso das alles als MP3 Downloaden</a>
+<a class="button" href="/audio/short.mp3" download>Wieso das alles als MP3 downloaden</a>
 
 
 
  Mitgliedschaft im VEBIT e.V.
 ----------------
-> Wir sind kurz davor die Firmenrechtsform "Genossenschaft" zu gründen. Das ist kostenintensiv und damit dafür nicht einer alleine seinen Kopf hinhalten muss, haben wir den VEBIT e.V. gegründet.
+> Wir sind kurz davor die Firmenrechtsform „Genossenschaft“ zu gründen. Das ist kostenintensiv und damit dafür nicht einer alleine seinen Kopf hinhalten muss, haben wir den VEBIT e.V. gegründet.
 <audio controls>
 <source src="/audio/mitgliedschaft.ogg" type="audio/ogg">
 <source src="/audio/mitgliedschaft.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
-<a class="button" href="/audio/mitglidschaft.mp3" download>Mitgliedschaft als MP3 Downloaden</a>
+<a class="button" href="/audio/mitglidschaft.mp3" download>Mitgliedschaft als MP3 downloaden</a>
 
 
- Hacker e.G. Vorstellung auf dem 35c3
+ Hacker eG Vorstellung auf dem 35c3
 ----------------------------------------------
 > Viele von uns brauchen neben ihrem alltäglichen Broterwerb eine Genossenschaft, die uns gehört und uns bei Bedarf sogar nebenbei anstellt. Viele von uns wissen nicht, dass das so ist und warum. Dieser Vortrag erklärt die Zusammenhänge und das Vorhaben.
 >
@@ -71,13 +71,24 @@ Die Presentation findet ihr unserem [öffentlichen Repository auf github](https:
 <a class="button" href="https://cdn.media.ccc.de/events/rc3/h264-hd/rc3-cwtv-36-deu-Hackergenossenschaft_als_Plattform_chaosnahen_Wirtschaftens_hd.mp4">Direkt zum Video</a>
 <a class="button" href="https://youtu.be/rkBM3-b1XAI">Video auf YouTube</a>
 
+ Genossenschaft für chaosnahes Wirtschaften auf der privacyweek
+-------------------------------------------------------------
+Ca. 150 Chaoten sind dabei, eine Hackergenossenschaft zur gründen, um ein Unternehmen zu haben, wenn man mal eines braucht. Erklärvideos gibt es u.a. auf media.ccc.de, Suchwort "Hacker eG".
+
+Wir wollen auch hier mal ein Update geben und Meinungen und Anregungen einfangen.
+
+<center><iframe width="640" height="480" src="https://media.ccc.de/v/pw20-341-die-hackergenossenschaft-als-plattform-chaosnahen-wirtschaftens/oembed" frameborder="0" allowfullscreen></iframe></center>
+
+<a href="https://media.ccc.de/v/pw20-341-die-hackergenossenschaft-als-plattform-chaosnahen-wirtschaftens" class="button special">Video auf media.ccc.de</a>
+<a class="button" href="https://cdn.media.ccc.de/events/privacyweek/2020/h264-hd/pw20-341-deu-eng-Die_Hackergenossenschaft_als_Plattform_chaosnahen_Wirtschaftens_hd.mp4">Direkt zum Video</a>
+
  Podcast
 -------------
 Die neusten Informationen zu unserer Genossenschaft gibt es als Podcast. Diesen findet ihr auf [vebit.xyz/podcast/](https://vebit.xyz/podcast/).<br/>
-Ihr könnt ihn natürlich auch auf anderen Podcast Platformen finden wie:
+Ihr könnt ihn natürlich auch auf anderen Podcast-Plattformen finden wie:
 
-<a class="button special" href="https://vebit.xyz/wtf.xml">MP3 Feed zum Abonieren</a>
-<a class="button special" href="https://vebit.xyz/wtf-ogg.xml">OGG Feed zum Abonieren</a>
+<a class="button special" href="https://vebit.xyz/wtf.xml">MP3 Feed zum Abonnieren</a>
+<a class="button special" href="https://vebit.xyz/wtf-ogg.xml">OGG Feed zum Abonnieren</a>
 <a class="button" href="https://podcasts.apple.com/us/podcast/wtf-eg-podcast/id1518405048">Apple Podcast</a>
 <a class="button" href="https://fyyd.de/podcast/wtf-eg-podcast/">fyyd</a>
 <a class="button" href="https://de.player.fm/series/wtf-eg-podcast">player.fm</a>

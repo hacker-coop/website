@@ -6,12 +6,17 @@
 # VEBIT Webseite
 
 Hier findet ihr den Static Side Generator zur [vebit.xyz](https://vebit.xyz) Webseite.<br/>
-Die Webseite wird automatisch mitels [Github Actions](https://github.com/hacker-coop/website/actions) gebaut und deployed.
+<!-- Diese Webseite wird automatisch mitels [Github Actions](https://github.com/hacker-coop/website/actions) gebaut und deployed. aktuell leider kaputt.--> Die Webseite wird manuell auf den Webserver gepushed. Dies müsste man mal™ automatisieren.
 
 ## Verwenden
 
-Zum Erweitern der Webseite empfielt sich das Installieren von [lektor](https://getlektor.com); *am besten via `sudo pip3 install lektor`*.
-Dieses Repo speichert Podcastfolgen mit Hilfe von  [git-lfs](https://git-lfs.github.com).
+Die Webseite erweitert man, in dem man mit dem static side generator eine lokale Kopie der Webseite generiert und diese bequem per eingebauten Webeditor bearbeitet und erweitert.
+
+Um dies zu tun muss man Lektor [lektor](https://getlektor.com) installieren und den Webserver starten.
+
+Zur Installation der Abhängigkeiten gibt es ein Makefile. ``sudo make install`` und lektor so wie ein paar abhängigkeiten werden installiert.
+
+Gut zu Wissen ist auch, das dieses Repo zB Podcastfolgen mit Hilfe von  [git-lfs](https://git-lfs.github.com) speichert.
 Daher muss `git-lfs` installiert sein.
 
 ### lokaler Webserver starten
@@ -32,4 +37,4 @@ Reiche dein Pull-Request bei [git.vebit.xyz/vebit/website](https://git.vebit.xyz
 
  Podcast Meta
 --------------
-Podcast Meta Infos lassen sich gut mit `picard` bearbeiten ;-)
+Podcast Meta Infos lassen sich gut mit `picard` bearbeiten ;-) Eine genauere Anleitung zur Podcast Pipeline gibt es unter [content/podcast/](https://git.vebit.xyz/vebit/website/src/branch/master/content/podcast) im README.
