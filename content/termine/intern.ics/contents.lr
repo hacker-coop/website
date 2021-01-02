@@ -186,6 +186,24 @@ mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: crimpson
+#### events ####
+start: 2021-01-06 20:30:23 Europe/Berlin
+----
+ende: 2021-01-06 21:15:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: 
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
 ---
 description: interne Termine der WTF eG
 ---
