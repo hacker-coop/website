@@ -158,3 +158,94 @@ mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: darkorange
+#### events ####
+start: 2021-01-20 21:00:42 Europe/Berlin
+----
+ende: 2021-01-20 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+
+#### events ####
+start: 2021-01-27 21:00:42 Europe/Berlin
+----
+ende: 2021-01-27 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2021-02-03 21:00:42 Europe/Berlin
+----
+ende: 2021-02-03 23:42:23 Europe/Berlin
+----
+event: WTF JourFixe
+----
+ort: BigBlueButton
+----
+url: https://vebit.xyz/bbb/
+----
+description: Mittwochs treffen wir uns ab 21 Uhr zum Jour-Fixe. Hier plaudern wir nicht nur über die Genossenschaft und beantworten untereinander unsere Fragen, sondern verbringen auch einen gemütlichen Abend miteinander. |So gut das in diesen Zeiten eben geht.
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorange
+#### events ####
+start: 2021-01-13 20:00:42 Europe/Berlin
+----
+ende: 2020-01-13 21:00:42 Europe/Berlin
+----
+event: WTF Fragestunde
+----
+ort: vebit.xyz/bbb
+----
+url: https://vebit.xyz/bbb/
+----
+description: Ihr habt Fragen zur WTF Genossenschaft? |Ihr wollt mitmachen und wisst nicht wie? |Ihr seid euch nicht sicher ob euer Business Case passt? |Kommt zur WTF Fragestunde! Lasst uns über eure Fragen sprechen und diese beantworten.
+----
+mail: Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkor
+#### events ####
+start: 2021-01-31 20:00:42 Europe/Berlin
+----
+ende: 2021-01-31 21:00:42 Europe/Berlin
+----
+event: WTF Fragestunde
+----
+ort: vebit.xyz/bbb
+----
+url: https://vebit.xyz/bbb/
+----
+description: Ihr habt Fragen zur WTF Genossenschaft? |Ihr wollt mitmachen und wisst nicht wie? |Ihr seid euch nicht sicher ob euer Business Case passt? |Kommt zur WTF Fragestunde! Lasst uns über eure Fragen sprechen und diese beantworten.
+----
+mail: Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: darkorangeange

@@ -6,7 +6,7 @@
 # VEBIT Webseite
 
 Hier findet ihr den Static Side Generator zur [vebit.xyz](https://vebit.xyz) Webseite.<br/>
-<!-- Diese Webseite wird automatisch mitels [Github Actions](https://github.com/hacker-coop/website/actions) gebaut und deployed. aktuell leider kaputt.--> Die Webseite wird manuell auf den Webserver gepushed. Dies müsste man mal™ automatisieren.
+<!-- Diese Webseite wird automatisch mitels [Github Actions](https://github.com/hacker-coop/website/actions) gebaut und deployed. aktuell leider kaputt.--> Die Webseite wird manuell auf den Webserver gepushed. Dies müsste man mal™ automatisieren. Um das manuell zu triggern bitte ``vv01f`` oder ``L3D`` ansprechen.
 
 ## Verwenden
 

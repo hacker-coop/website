@@ -204,6 +204,78 @@ mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: orange
+#### events ####
+start: 2021-01-20 20:30:23 Europe/Berlin
+----
+ende: 2021-01-20 21:15:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: 
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
+#### events ####
+start: 2021-02-03 20:30:23 Europe/Berlin
+----
+ende: 2021-02-03 21:15:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: 
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
+#### events ####
+start: 2021-01-19 20:00:42 Europe/Berlin
+----
+ende: 2021-01-19 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
+#### events ####
+start: 2021-01-26 20:00:42 Europe/Berlin
+----
+ende: 2021-01-26 22:30:42 Europe/Berlin
+----
+event: WTF Kernteam Mumble
+----
+ort: Mumble
+----
+url: 
+----
+description: Das Zentralkomitee der WTF Genossenschaft trifft sich und Bespricht und Entscheidet unser aller Zukunft. ||Teilnahme nur wer Mitarbeitet.
+----
+mail: WTF Vorstand <vorstand@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: deepskyblue
 ---
 description: interne Termine der WTF eG
 ---
