@@ -169,9 +169,9 @@ confirmed: yes
 ----
 color: orange
 #### events ####
-start: 2021-01-07 19:00:23 Europe/Berlin
+start: 2021-01-07 20:00:23 Europe/Berlin
 ----
-ende: 2021-01-07 21:30:23 Europe/Berlin
+ende: 2021-01-07 21:42:23 Europe/Berlin
 ----
 event: Funktionärsmeeting
 ----
