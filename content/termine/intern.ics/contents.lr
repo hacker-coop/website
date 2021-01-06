@@ -276,6 +276,24 @@ mail: WTF Vorstand <vorstand@lists.vebit.xyz>
 confirmed: yes
 ----
 color: deepskyblue
+#### events ####
+start: 2021-01-09 18:00:23 Europe/Berlin
+----
+ende: 2021-01-09 19:15:23 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: Mumble
+----
+url: 
+----
+description: Es geht um Logo, Dokumente und Briefbögen
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
 ---
 description: interne Termine der WTF eG
 ---
