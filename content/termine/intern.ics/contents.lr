@@ -294,6 +294,24 @@ mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: orange
+#### events ####
+start: 2021-01-21 20:00:23 Europe/Berlin
+----
+ende: 2020-12-17 21:42:42 Europe/Berlin
+----
+event: Funktionärs Meeting
+----
+ort: Cyberspace (BBB)
+----
+url: 
+----
+description: Die zukünftigen Vorstände, Aufsichtsräte und Stellvertreter treffen sich. Es wird über Fortschritte geredet, die aktuelle Lage der Genossenschaft und was im CYBERSPACE sonst noch so passiert...
+----
+mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: crimpson
 ---
 description: interne Termine der WTF eG
 ---
