@@ -312,6 +312,24 @@ mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
 confirmed: yes
 ----
 color: crimpson
+#### events ####
+start: 2021-01-13 19:00:23 Europe/Berlin
+----
+ende: 2021-01-09 19:59:42 Europe/Berlin
+----
+event: AG Kommunikation
+----
+ort: BigBlueButton der AG Kommunikation
+----
+url: https://pads.vebit.xyz/qAv5MQj0TNySRMaa6b87AA
+----
+description: Es geht um den Status der Briefbögen, des Logo und um die entstehung der Webseite
+----
+mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: orange
 ---
 description: interne Termine der WTF eG
 ---
