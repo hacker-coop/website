@@ -330,6 +330,24 @@ mail: WTF Kooperative eG <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: orange
+#### events ####
+start: 2021-01-15 15:00:23 Europe/Berlin
+----
+ende: 2020-12-17 16:23:42 Europe/Berlin
+----
+event: WTF Podcast Episode 17
+----
+ort: StudioLink
+----
+url: 
+----
+description: Am Mittwoch, bzw. Pungenday, den 13 Tag des Chaos, im YOLD 3186 wurde unsere Genossenschaft, die WTF Kooperative eG, gegründet... Und darum geht es in diesem Podcast.
+----
+mail: WTF Podcaster Desk <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: lime
 ---
 description: interne Termine der WTF eG
 ---
