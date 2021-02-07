@@ -522,3 +522,21 @@ mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
 confirmed: yes
 ----
 color: crimpson
+#### events ####
+start: 2021-02-25 19:00:23 Europe/Berlin
+----
+ende: 2021-02-18 20:30:42 Europe/Berlin
+----
+event: AG Admin Meeting
+----
+ort: Admin BBB
+----
+url: 
+----
+description: Die AG Admin trifft sich.
+----
+mail: WTF Helpdesk <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: yellow
