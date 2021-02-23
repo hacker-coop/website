@@ -529,7 +529,7 @@ ende: 2021-02-18 20:30:42 Europe/Berlin
 ----
 event: AG Admin Meeting
 ----
-ort: Admin BBB
+ort: Vebit Mumble
 ----
 url: 
 ----
@@ -540,3 +540,39 @@ mail: WTF Helpdesk <helpdesk@lists.vebit.xyz>
 confirmed: yes
 ----
 color: yellow
+#### events ####
+start: 2021-03-18 20:00:23 Europe/Berlin
+----
+ende: 2021-03-18 21:00:42 Europe/Berlin
+----
+event: Funktionärs Meeting
+----
+ort: Funktionärs-BBB
+----
+url: 
+----
+description: Unsere Vorstände, Aufsichtsräte und Stellvertreter treffen sich. Es wird über Fortschritte geredet, die aktuelle Lage der Genossenschaft und was es sonst noch an akuten Redebedarf gibt.
+----
+mail: WTF Funktionäre <funktionaere@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: crimpson
+#### events ####
+start: 2021-03-04 20:00:23 Europe/Berlin
+----
+ende: 2021-03-04 21:00:42 Europe/Berlin
+----
+event: WTF Einkaufs Meeting
+----
+ort: WTF Meeting BBB
+----
+url: https://meta.vebit.xyz/t/778/?u=l3d
+----
+description: Die WTF Kooperative eG soll den Einkauf führ Ihre Mitglieder ermöglichen. Wie/Was/WO? In diesem Meeting!
+----
+mail: WTF <helpdesk@lists.vebit.xyz>
+----
+confirmed: yes
+----
+color: green
