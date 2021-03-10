@@ -6,14 +6,12 @@ body:
 
 Bei unserer Genossenschaft treffen wir uns häufiger. Dabei lernen wir uns kennen, beantworten unsere Fragen, tauschen uns aus, halten Vorträge oder machen sonstige spannende Sachen.
 
-Die nächsten Termine sind nach Datum sortiert in der unten stehenden Tabelle. Und auch per ICS abonnierbar.
+<a href="https://work.wtf-eg.de/apps/calendar/p/mWm73pymB5zPaWpg" class="button special">Zum Kalender</a> <a href="https://work.wtf-eg.de/remote.php/dav/public-calendars/mWm73pymB5zPaWpg/?export" class="button special">ICAL</a> 
 ---
 description: Der WTF-Terminkalender mit allen geplanten öffentlichen Events zum Teilnehmen und oft auch zum Mitmachen.
 ---
-_template: htmlcalendar.html
+_template: page.html
 ---
-terminanzeiger:
-
-/termine/wtf.ics
+terminanzeiger: /termine/wtf.ics
 ---
 abobutton: Kalendar abonnieren (ics)

@@ -23,6 +23,10 @@ Anschließend wird die Folge als mp3 und ogg exportiert.
 --------------
 Mit picard werden die Metadaten ergänzt so wie das Albumcover hinzugefügt.
 
+ 4.1 - Kapitelmarken *(optional)*
+-----------------------
+https://github.com/dskrad/mp3chaps
+
  5 - Veröffentlichen
 ----------------
 Zu guter letzt hier im Lektor passend einfügen. Mit Shownotes und Metadaten ergänzen und veröffentlichen.
