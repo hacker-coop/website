@@ -1,0 +1,13 @@
+00:00:00.000 - Einleitung
+00:01:05.000 - Generalversammlung
+00:04:34.000 - Was läuft bei der WTF?
+00:06:49.000 - Ticketsystem - OTOBO
+00:08:16.000 - GPG - Schleuder
+00:10:18.000 - ehrenamtliches Engagement
+00:13:58.000 - gitea und remote Mitarbeiten
+00:15:56.000 - neue Webseite wird gelaunched
+00:17:50.000 - Warteliste
+00:21:45.000 - Prozesshandbuch
+00:24:01.000 - dezentrales Arbyten
+00:26:20.000 - Heben wir noch Themen?
+00:30:13.000 - Verabschiedung
