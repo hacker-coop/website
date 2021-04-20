@@ -66,4 +66,4 @@ deploy:
 	lektor clean --yes
 	lektor plugin flush-cache
 	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
-	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS) --key-file ~/.ssh/ssh_ed25519
