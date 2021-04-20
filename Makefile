@@ -63,7 +63,8 @@ server:
 
 deploy:
 	set -e
-	lektor clean --yes
-	lektor plugin flush-cache
 	lektor build $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS)
+	if hash unix2dos 2>/dev/null; then
+	  unix2dos temp/builds/vebit.xyz/termine/*.ics
+	fi
 	lektor deploy $(LEKTOR_PLUGIN_FLAGS) $(LEKTOR_DEPLOY_FLAGS) --key-file ~/.ssh/ssh_ed25519
