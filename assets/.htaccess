@@ -1,3 +1,4 @@
 # Permanent URL redirect
 RewriteEngine on
 Redirect 301 /termine/wtf.ics https://work.wtf-eg.de/remote.php/dav/public-calendars/mWm73pymB5zPaWpg/?export
+Redirect 301 /BBB/ https://vebit.xyz/bbb/
