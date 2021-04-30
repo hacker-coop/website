@@ -54,6 +54,11 @@ Source: https://github.com/c3woc/c3woc-podcast.git
     <generator>Von Hand als Jinja2 Template von L3D geschrieben</generator>
     <itunes:author class="itunes_author">{{ podcastauthor }}</itunes:author>
     <itunes:type class="itunes_serial">serial</itunes:type>
+    {%- if this.path == oggfeed -%}
+      <itunes:new-feed-url>https://wtf-eg.de/wtf-ogg.xml</itunes:new-feed-url>
+    {% else %}
+      <itunes:new-feed-url>https://wtf-eg.de/wtf.xml</itunes:new-feed-url>
+    {% endif %}
     <itunes:summary class="itunessummary">
     {{ podcastsummary }}
     </itunes:summary>
