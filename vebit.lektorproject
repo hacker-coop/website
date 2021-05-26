@@ -20,4 +20,4 @@ primary = yes
 locale = de_DE
 
 [packages]
-lektor-scss = 1.4.0
+lektor-scss = 1.4.1
