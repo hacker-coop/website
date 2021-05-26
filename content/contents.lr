@@ -1,8 +1,8 @@
-title: WTF eG
+title: WTF Kooperative eG
 ---
 _model: home
 ---
-slogan: Werkkooperative der Technikfreundinnen eG
+slogan: Wir sind erfolgreich Gegründet
 ---
 about_header: Willkommen beim Projekt „Hacker eG“
 ---
@@ -11,113 +11,28 @@ about_text:
 Wenn du auf diese Seite gelangt bist, interessierst du dich vermutlich für eine völlig neue Form der IT-Arbyte.<br/>
 Wem soll sie nützen? Uns allen, wenn es nach uns geht.
 
-Wenn du mehr wissen willst, sende uns eine E-Mail.
+Der VEBIT eV. ist mit dem Ziel Gegründet worden, eine Genossenschaft ins Leben zu rufen. Die Genossenschaft "WTF Kooperative eG" wurde Ende 2020 gegründet und hat sich begonnen in dieser Welt zu Materialisieren. Wie es weiter mit dem Verein geht, wird auf der Mitgliederversammlung des VEBIT e.V. entschieden. Was bei der Genossenschaft passiert, das erfahrt ihr auf [wtf-eg.de](https://wtf-eg.de).
+
+Wenn du mehr wissen willst, darfst du uns auch eine E-Mail zukommen lassen.
 Wähle als Betreff „Interesse“ und nenne im Text deinen (Nick-)Namen.<br />
 Wendet euch an <i>interesse&#160;at&nbsp;vebit&#160;punkt&#160;xyz</i>.<br />
 <small>Solltest du einen PGP-Key dazu suchen, findest du diesen u. a. <a href="https://vebit.xyz/vorstand.asc">hier</a> oder auch mit dem Fingerprint <code>6142 D66A ECA5 4DB3 5101 259D E214 219F 4496 1D5A</code> auf manchen Keyservern.</small>
 ---
-featurebox:
-
-#### featurebox ####
-title: Bürokratie abgeben, Arbyte ermöglichen
-----
-icon: fa-paperclip
-----
-accent: accent4
-----
-text: Viele von uns erledigen neben ihrem Alltagsjob nebenbei $Dinge, für die deren Nutznießer uns gern ein bisschen Geld geben würden. Man betreut eine Webseite, einen Server, macht einen Podcast, administriert und scriptet vor sich hin – aber Geld nehmen, Rechnungen schreiben? Dafür ein Gewerbe anmelden? Mehraufwand für Buchführung und Steuererklärung? Spare dir den Aufwand und lass‘ das deine Genossenschaft machen!
-#### featurebox ####
-title: Virtuelle Teams
-----
-icon: fa-users
-----
-accent: accent3
-----
-text:
-
-Viele von uns arbeiten freiberuflich. Von überall her, überall hin, flexibel und freundlich. Klein und allein. An manche Kunden kommt man so nicht ran. An öffentliche Aufträge schon gar nicht.<br/>
-Mit der Genossenschaft kann man sich in virtuellen Teams treffen, zusammenschließen und als Genossenschaft seriös anbieten.
-#### featurebox ####
-title: Interessiert?
-----
-icon: fa-podcast
-----
-accent: accent5
-----
-text:
-
-Wir halten Mitglieder und Interessierte durch regelmäßige Rundmails, Beiträge im Wiki und unseren Podcast auf dem Laufenden.<br/>
-Für den Zugang zu E-Mails und Wiki schreib uns einfach eine Mail mit dem Betreff "Interesse".<br/>
-Unseren Podcast findest du auf [vebit.xyz/podcast](https://vebit.xyz/podcast/)
-#### featurebox ####
-title: Genossenschaftlich solidarisch
-----
-icon: fa-church
-----
-accent: accent2
-----
-text:
-
-So eine Hackergenossenschaft wäre ja schon mal ein Auftritt. Gemeinschaftlich stark, beschützend und ermöglichend.<br/>
-Auch der Idealismus soll nicht zu kurz kommen. Tun wir zusammen ruhig Gutes™.
-#### featurebox ####
-title: Gemeinsam stark
-----
-icon: fa-fist-raised
-----
-accent: accent3
-----
-text:
-
-Was eine/r nicht kann, das können viele. Auch finanziell.<br/>
-Man könnte sich nach Bedarf zu virtuellen Teams zusammentun. Aber in rechtssicherer, wirtschaftlich stabiler Umgebung. Die gemeinsame Sicherheit kostet Geld. Aber wenn wir viele sind, wird das wirtschaftlich machbar. Und wir können zusammen Dinge tun, Dinge finanzieren, Dinge kaufen. Crowdfunding, Crowdbuying, Startup, Ausschreibung, Förderanträge, Zollnummer usw.
-#### featurebox ####
-title: Freiberuflerin und/oder Angestellter
-----
-icon: fa-briefcase
-----
-accent: accent4
-----
-text:
-
-Beteilige Dich an Deinem eigenen Arbeitgeber, in dem Du Dich bei der Genossenschaft anstellen lässt. In Voll- oder Teilzeit, mit Mini- oder Midijob.<br/>
-Natürlich kannst Du auch freiberuflich für die Genossenschaft arbyten, wenn die gesetzlichen Voraussetzungen dafür vorliegen oder geschaffen sind.
-#### featurebox ####
-title: Helfen und Lernen
-----
-icon: fa-university
-----
-accent: accent2
-----
-text:
-
-Profitiere von dem Know-How aus der Genossenschaft und von der Beratung mit unseren Mitgliedern und Fachleuten.<br/>
-Und helfe anderen Genossinnen weiter. Tausche Leistungen unter Genossenschaftsteilhabern.
-#### featurebox ####
-title: Langfristige Träume verwirklichen
-----
-icon: fa-dragon
-----
-accent: accent4
-----
-text:
-
-So ganz langfristig müsste man mal™… ein Wohnprojekt starten, ein Altersheim für ruhende Haecksen und Hacker gründen, Geld zurücklegen…
-Realisiere gemeinsam Dein langfristiges Projekt. Von Haecksen und Hackern für Hacker und Haecksen.
+featurebox: 
 ---
 head_add: yes
 ---
-head_link_1: https://vebit.xyz/member/
+head_link_1: https://wtf-eg.de/
 ---
-head_link_2: https://vebit.xyz/membership/
+head_link_2: https://wtf-eg.de/mitglieder/
 ---
 head_link_3: https://vebit.xyz/about/
 ---
-head_text_1: Mitmachen
+head_text_1: Zur Genossenschaft
 ---
-head_text_2: Zeichnen
+head_text_2: Mitmachen
 ---
-head_text_3: Weitere Infos
+head_text_3: Infos zu diesem Verein
 ---
 about_header_2: des Vereins zur Erschließung neuer Betätigungsformen in der Informationstechnologie e. V. (VEB IT), mit dem Ziel der Gründung der Werkkooperative der Technikfreundinnen eG
 ---
@@ -132,9 +47,9 @@ picture:
 ----
 text: Du solltest ein wenig Hacker-Spirit haben. Ob Du nun Coder oder Cu:nstlerin bist. Ob Dein Nick schon bekannt ist oder nicht. Triff uns, erzähle uns von Dir, schreib uns eine E-Mail. Lege gern deinen PGP-Key bei oder verrate uns wo wir ihn finden können.
 ----
-url: https://vebit.xyz/member/
+url: https://wtf-eg.de/mitglieder/beitreten/
 ----
-url_txt: Mitglied werden VEBIT e. V.
+url_txt: Mitglied werden in der WTF Kooperative eG
 ---
 promobox2:
 
@@ -147,8 +62,8 @@ text:
 
 Du bist dir noch nicht ganz sicher, was hier dahinter steckt?
 Schreib uns gerne mal eine E-Mail. Oder Sprich uns auf Veranstaltungen oder in sozialen Netzwerken an.
-Oder erfahre mehr über uns.
+Oder erfahre mehr über die Genossenschaft.
 ----
-url: https://vebit.xyz/about/
+url: https://wtf-eg.de/about/
 ----
-url_txt: Mehr über uns erfahren
+url_txt: Mehr über die WTF erfahren

@@ -7,35 +7,15 @@ description: Hier erfährst du alles was du wissen musst um bei uns mit zu mache
 body:
 
 <h3>Der VEBIT eV ist angetreten die notwendigen Mittel zu sammeln und Schritte zu unternehmen eine „Hacker Genossenschaft“ zu gründen.</h3>
-<center><a href="/about/" class="button special">Weitere Informationen</a></center><br />
 
-Um Teil der Genossenschaft zu werden, wirst du erstmal Mitglied im VEBIT eV.
-Dazu gibt es die Satzung und eine Beitragsordnung zu lesen.
-Die Beiträge rechnen nicht auf Anteile der Genossenschaft an.
+Dies ist geschehen und wie es mit dem Verein weiter geht, entscheiden die Mitglieder auf der Mitgliederversammlung.
+<br/>
 
-<center>
-<a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/satzung.markdown" class="button">Satzung</a>
-<a href="https://git.vebit.xyz/vebit/wiki/src/branch/master/beitragsordnung.markdown" class="button">Beitragsordnung</a>
-</center><br />
+#### Dich könnten dennoch folgende Dokumente interessieren:
 
-<h3>Genossenschaftsanteile zeichnen</h3>
+- [Satzung](https://git.vebit.xyz/vebit/wiki/src/branch/master/satzung.markdown)
+- [Beitragsordnung](https://git.vebit.xyz/vebit/wiki/src/branch/master/beitragsordnung.markdown)
 
-Noch sind wir keine Genossenschaft, aber für die Gründung der WTF eG sind die Mitglieder – und solche die es werden wollen – aufgerufen, eine Zeichnungserklärung abzugeben. Wenn das Ziel der Zeichnung erreicht wird, können wir die eG tatsächlich starten.
-Die Zahlung der erstattbaren Anteile erfolgt entsprechend zeitverzögert.
-
-<center><a href="/membership/" class="button special">Anteile Zeichnen</a></center><br />
-
-<h3 id="ablauf-beitritt">Der Vorstand bittet alle willigen Chaoten ihren Beitritt zu erklären:</h3>
-
-0. PGP-Key zur Vefügung stellen (als Anhang oder Link via E-Mail) – und bitte möglichst vor Ablauf hinreichend verlängern.
-1. [Fragebogen], gerne auch nur Digital via E-Mail an <i>vorstand&#160;at&nbsp;vebit&#160;punkt&#160;xyz</i>, abgeben.
-2. [Beitrittserklärung] in Papierform(!) an uns senden (oder persönlich übergeben).
-3. Beitrag an das in der Erklärung benannte Konto überweisen (oder in anderer Weise an uns übergeben).
-4. <a href="https://vebit.xyz/membership/#webform">Zeichnungserklärung</a> für die eG.
-
-PDF-Formulare und ihre direkte Nutzung sind sehr abhängig von den
-verwendeten Elementen und dem verwendeten Programm. Erfolgreich getestet wurde
-zum direkten Befüllen Libre Office Draw und Foxit Reader, kleine Probleme machen u. a. Okular und Evince.
 
 Ein weiterer Beitrag aus den Reihen der neuen Mitglieder war eine
 [Beitrittserklärung als ODT](https://git.vebit.xyz/vebit/wiki/raw/branch/master/vebit_beitrittserklaerung_ausfuellbar.odt)
