@@ -7,8 +7,8 @@
     "href": "/podcast",
     "list_childs": true,
     "items": {
-      "MP3 abonnieren": "/wtf.xml",
-      "OGG abonnieren": "/wtf-ogg.xml"
+      "MP3 abonnieren": "https://wtf-eg.de/wtf.xml",
+      "OGG abonnieren": "https://wtf-eg.de/wtf-ogg.xml"
     }
   },
   "Mehr Erfahren": {

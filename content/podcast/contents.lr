@@ -4,7 +4,7 @@ title: WTF eG Podcast
 ---
 description: Der Podcast der Werkkooperative der Technikfreundinnen e. G. i. G.
 ---
-link: /wtf.xml
+link: https://wtf-eg.de/wtf.xml
 ---
 spruch: Podcast MP3 Feed
 ---
@@ -12,6 +12,6 @@ enable: yes
 ---
 enable2: yes
 ---
-link2: /wtf-ogg.xml
+link2: https://wtf-eg.de/wtf-ogg.xml
 ---
 spruch2: Podcast OGG Feed
